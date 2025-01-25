@@ -1,0 +1,239 @@
+.logo-slider-item img {
+    height: 100%;
+    margin: 0 auto;
+    max-height: 40px;
+    object-fit: contain;
+    width: auto
+}
+
+.logo-slider h6.no-spacing {
+    letter-spacing: 0
+}
+
+.no-slider .logo-slider-item img {
+    width: auto
+}
+
+.logo-slider.mobile {
+    display: none !important
+}
+
+.logo-slider.no-slider .logo-slider-item .logo {
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center
+}
+
+.logo-slider.Center {
+    text-align: center
+}
+
+.logo-slider.Right {
+    text-align: right
+}
+
+.logo-slider h6 {
+    display: table;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 21px;
+    margin: 0 auto 30px;
+    position: relative;
+    text-transform: uppercase
+}
+
+.logo-slider h6:after {
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 0;
+    right: 0;
+    width: 100%
+}
+
+.logo-slider.no-slider .logo-slider-wrap {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.logo-slider.no-slider .logo-slider-wrap .logo-slider-item {
+    width: 20%
+}
+
+.logo-slider .slick-arrow.slick-disabled {
+    display: none
+}
+
+.logo-slider {
+    padding: 0 15px;
+    width: 100%
+}
+
+.logo-slider .logo-slider-item .logo {
+    margin-bottom: 30px;
+    margin-top: 10px;
+    padding: 0 30px
+}
+
+.logo-slider .slick-track {
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+.logo-slider .slick-arrow {
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    display: none !important;
+    font-size: 0;
+    height: 44px;
+    margin-top: -13.5px;
+    position: absolute;
+    text-indent: -9999px;
+    top: 50%;
+    width: 35px;
+    z-index: 5
+}
+
+.logo-slider .slick-arrow:before {
+    font-family: FontAwesome;
+    font-size: 14px
+}
+
+.logo-slider .slick-arrow:hover {
+    background: #fff;
+    color: #000
+}
+
+.logo-slider .slick-arrow.slick-prev {
+    left: 20px;
+    top: 55%;
+    transform: translateY(-50%)
+}
+
+.logo-slider .slick-arrow.slick-prev:before {
+    background-image: url(https://cdn2.hubspot.net/hubfs/445465/Nexa-2019/Images/arrow-right.svg);
+    background-position: 100%;
+    background-size: cover;
+    content: " ";
+    height: 20px;
+    width: 25px
+}
+
+.logo-slider .slick-arrow.slick-next {
+    right: 10px;
+    right: 29px;
+    top: 55%;
+    transform: translateY(-50%)
+}
+
+.logo-slider .slick-arrow.slick-next:before {
+    background-position: 100%;
+    background-size: cover;
+    content: " ";
+    height: 20px;
+    width: 25px
+}
+
+.logo-slider .slick-arrow.slick-next:before,
+.logo-slider .slick-arrow.slick-prev:before {
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "\f105";
+    font-size: 25px;
+    left: 5px;
+    opacity: 1;
+    position: absolute;
+    top: 22px;
+    width: inherit
+}
+
+.logo-slider .slick-arrow.slick-prev:before {
+    transform: rotate(180deg)
+}
+
+.logo-slider .slick-arrow.slick-next:before {
+    width: 26px
+}
+
+.logo-slider * {
+    outline: none
+}
+
+[dir=rtl] .slick-next {
+    left: auto
+}
+
+.logo-slider .logo-slider-item .logo.original-img img.original-logo,
+.logo-slider .logo-slider-item .logo.original-img:hover img.black-white-logo {
+    display: none
+}
+
+.logo-slider .logo-slider-item .logo.original-img:hover img.original-logo {
+    display: block
+}
+
+.logo-slider .logo-slider-item .logo img {
+    filter: grayscale(1) opacity(.6);
+    transition: all .3s ease
+}
+
+.logo-slider .logo-slider-item .logo:hover img {
+    filter: none
+}
+
+@media (max-width:1140px) {
+    .logo-slider .slick-arrow.slick-next,
+    .logo-slider .slick-arrow.slick-prev {
+        top: 50%;
+        transform: translateY(-50%)
+    }
+}
+
+@media (min-width:768px) {
+    .logo-slider.no-slider .logo-slider-wrap .logo-slider-item.six {
+        width: 16.6666%
+    }
+    .logo-slider.no-slider .logo-slider-wrap .logo-slider-item.five {
+        width: 20%
+    }
+    .logo-slider.no-slider .logo-slider-wrap .logo-slider-item.four {
+        width: 25%
+    }
+    .logo-slider.no-slider .logo-slider-wrap .logo-slider-item.three {
+        width: 33.33333%
+    }
+    .logo-slider.no-slider .logo-slider-wrap .logo-slider-item.two {
+        width: 50%
+    }
+}
+
+@media (max-width:767px) {
+    .logo-slider.desktop {
+        display: none !important
+    }
+    .logo-slider.mobile {
+        display: block !important
+    }
+    .logo-slider .logo-slider-item {
+        padding: 0
+    }
+    .logo-slider.no-slider .logo-slider-wrap .logo-slider-item {
+        width: 33.3333%
+    }
+}
+
+@media (max-width:479px) {
+    .logo-slider.no-slider .logo-slider-wrap .logo-slider-item {
+        margin-bottom: 15px;
+        width: 50%
+    }
+    .logo-slider .logo-slider-item .logo {
+        padding: 0 10px
+    }
+}

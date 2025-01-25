@@ -1,0 +1,59 @@
+.job-group h2 {
+    color:#3E2A1E;
+    font-family:Roboto;
+    font-size:27.65px;
+    font-weight:600;
+    line-height:normal
+}
+.job-item .hs-button {
+    min-width:127px
+}
+.job-group .desc p:last-child {
+    margin:0
+}
+.job-item {
+    align-items:center;
+    border-bottom:1px solid rgba(0,0,0,.1);
+    display:flex;
+    margin-bottom:50px;
+    padding-bottom:33px;
+    transition:all .3s ease
+}
+.job-item:hover {
+    background:hsla(0,0%,85%,.1);
+    border-bottom-color:hsla(0,0%,85%,.1)
+}
+.job-item .job-item-left {
+    padding-right:60px;
+    width:70%
+}
+.job-item .job-item-right {
+    border-left:2px solid #D1B099;
+    padding:5px 0 5px 50px;
+    width:30%
+}
+.job-item .job-item-right p {
+    color:#000;
+    margin:0 0 10px
+}
+.job-item:last-child {
+    border:0;
+    padding-bottom:0
+}
+@media(max-width:767px) {
+    .job-item .desc p:last-child {
+        margin:0
+    }
+    .job-item .job-item-left,.job-item .job-item-right {
+        padding:0;
+        width:100%
+    }
+    .job-item {
+        flex-direction:column
+    }
+    .job-item .job-item-right {
+        border:0;
+        margin-top:30px;
+        padding:0
+    }
+}
