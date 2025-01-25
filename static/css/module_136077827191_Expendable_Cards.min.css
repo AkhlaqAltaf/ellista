@@ -1,0 +1,336 @@
+.expendable-cards-group {
+    float: left;
+    padding: 80px 0;
+    width: 100%}
+.section-title {
+    margin: 0 auto 32px;
+}
+.expendable-cards-group .section-title h3 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 35px;
+}
+.expendable-cards-group .card-box .card-img {
+    background-position: 50%;
+    background-size: cover;
+    height: 150px;
+    margin: auto;
+    width: 150px;
+}
+.expendable-cards-group .card-box h5 {
+    ;
+    margin: 0;
+    padding-bottom: 20px;
+}
+.expendable-cards-group .card-box h5 a {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+}
+.expendable-cards-group .card-box .content {
+    font-size: 16px;
+    line-height: 20px;
+}
+.expendable-cards-group .card-box .learn a {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 20px;
+    padding-top: 20px;
+    text-transform: uppercase;
+    transition: all .5s;
+}
+.expendable-cards-group .card-box .learn a:hover {
+    ;
+    transform: translateX(-2px);
+}
+.expendable-cards-group .card-box .learn {
+    float: left;
+    width: 100%}
+.expendable-cards-group .card-box .learn a span i {
+    font-size: 17px;
+    font-weight: 600;
+    transition: all .5s;
+}
+.expendable-cards-group .card-box .learn a:hover span i {
+    transform: translateX(2px);
+}
+.expendable-cards-group .card-box {
+    float: left;
+    margin: 0 12px;
+    padding: 33px 30px 50px;
+    width: calc(33.33333% - 24px);
+}
+.expendable-cards-group .card-cover {
+    margin: 0 -20px;
+}
+.expendable-cards-group .card-box-inner {
+    float: left;
+    width: 100%}
+.expendable-cards-group .card-box .card-img {
+    height: 70px;
+    margin-bottom: 18px;
+    width: 70px;
+}
+.expendable-cards-group.Left .card-box .card-img {
+    margin-left: 0;
+}
+.expendable-cards-group .card-box:hover {
+    background: #A67763;
+}
+.expendable-cards-group .card-box:hover .content {
+    color: #fff;
+    opacity: .8;
+}
+.expendable-cards-group .card-box:hover:after {
+    background: #A67763;
+    content: "";
+    height: 71px;
+    left: 0;
+    margin-top: -1px;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 9;
+}
+.expendable-cards-group .card-box {
+    position: relative;
+}
+.expendable-cards-group .card-box:hover h4 {
+    color: #fff;
+}
+.expendable-cards-group .card-box .card-img.img-hover, .expendable-cards-group .card-box:hover .card-img {
+    display: none;
+}
+.expendable-cards-group .card-box:hover .card-img.img-hover {
+    display: block;
+}
+.expendable-cards-group .card-box .learn a:hover i {
+    margin-left: 10px;
+}
+.expendable-cards-group .card-box-inner .card-icon svg {
+    height: 30px;
+    margin-bottom: 10px;
+    width: 30px;
+}
+.expendable-cards-group .card-box.Left .card-box-inner {
+    padding-left: 45px;
+    position: relative;
+}
+.expendable-cards-group .card-box.Left .card-box-inner .card-icon {
+    left: 0;
+    position: absolute;
+}
+.expendable-cards-group .section-title.has-para {
+    margin: 0;
+}
+.expendable-cards-group .section-title.has-para h3 {
+    margin: 0 0 10px;
+}
+.expendable-cards-group.cLeft .setion-title {
+    margin-left: 0;
+}
+.expendable-cards-group h3 {
+    margin: 0 0 8px;
+}
+.expendable-cards-group.Center {
+    text-align: center;
+}
+.expendable-cards-group a.button.link-white {
+    color: #bed0ff;
+    font-weight: 600;
+    letter-spacing: -.32px;
+    line-height: 22px;
+    margin-top: 14px;
+}
+.expendable-cards-group.Right {
+    text-align: right;
+}
+.expendable-cards-group.Right .card-box .card-img {
+    margin-right: 0;
+}
+.card-cover.four_column .card-box {
+    width: calc(25% - 40px);
+}
+.card-box.anchor_line {
+    border-left: 2px solid #ecf0ff;
+    padding-left: 20px;
+}
+.expendable-cards-group .card-box.has-bg {
+    min-height: 330px;
+    padding: 20px;
+}
+.cards-gcroup .setion-title, .cards-gcroup .setion-title h3 {
+    margin: 0;
+}
+.section-title-text {
+    margin-bottom: 40px;
+}
+.expendable-cards-group .card-box.has-bg h4 {
+    font-size: 24px;
+    letter-spacing: 0;
+    margin-bottom: 4px;
+    margin-top: 46px;
+}
+.expendable-cards-group h4 {
+    color: #A67763;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0;
+    margin-bottom: 30px;
+}
+.section-title.no-subhead {
+    margin-bottom: 40px;
+}
+.section-title.no-subhead h2 {
+    margin: 0;
+}
+.card-cover.two_column .card-box.col2 {
+    width: calc(50% - 24px);
+}
+.card-box.no-icon h4 {
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+.expendable-cards-group.color-white, .expendable-cards-group.color-white h2, .expendable-cards-group.color-white h3, .expendable-cards-group.color-white h4, .expendable-cards-group.color-white h5, .expendable-cards-group.color-white h6 {
+    color: #e1e4e7;
+}
+.expendable-cards-group .card-cover.three_column {
+    margin: 0 -12px;
+}
+.expendable-cards-group .card-box .card-img img {
+    height: auto;
+    width: 100%}
+.card-cover.four_column .card-box.has-bg {
+    border-radius: 10px;
+    padding: 20px;
+}
+.expendable-cards-group.featured .card-img {
+    height: 200px!important;
+    padding-bottom: 56.25%;
+    position: relative;
+    width: 100%!important;
+}
+.expendable-cards-group.featured .card-img img {
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%}
+.expendable-cards-group .card-box.has-bg {
+    padding: 40px;
+}
+.expendable-cards-group .three-row {
+    clear: both;
+    float: left;
+    margin-bottom: 75px;
+    position: relative;
+    width: 100%}
+.expendable-cards-group .three-row:after {
+    background: #000;
+    bottom: -34px;
+    content: "";
+    height: 1px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: auto;
+    width: calc(100% - 80px);
+}
+.expendable-cards-group .three-row:last-child {
+    margin-bottom: 0;
+}
+.expendable-cards-group .three-row:last-child:after {
+    display: none;
+}
+.expendable-cards-group h6 {
+    color: #6252db;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 6px;
+}
+.expendable-cards-group .card-box.has-bg.auto-height {
+    min-height: auto;
+}
+.expendable-cards-group .card-box.has-bg.auto-height h4 {
+    margin-top: 0;
+}
+.expendable-cards-group .card-box.auto-height.has-bg .content {
+    color: #e1e4e7;
+    font-size: 18px;
+}
+.expendable-cards-group .card-box.auto-height.has-bg a.button.link-white {
+    color: #e0dcf8;
+    font-family: Test Founders Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: -.36px;
+    line-height: 22px;
+}
+.expendable-cards-group .card-box.auto-height.has-bg a.button.link-white i {
+    font-size: 14px;
+}
+html[lang=ar] .expendable-cards-group.Left .card-box .card-img {
+    margin-left: auto;
+    margin-right: 0;
+}
+html[lang=ar] .expendable-cards-group .card-box {
+    float: right;
+}
+@media (max-width:767px) {
+    .card-cover.two_column .card-box.col2 {
+    width: calc(100% - 24px);
+}
+.expendable-cards-group .section-title h3 {
+    font-size: 23px;
+}
+.card-cover .card-box.col2, .card-cover.four_column .card-box, .expendable-cards-group .card-box {
+    width: calc(50% - 40px);
+}
+.expendable-cards-group {
+    padding: 60px 0 40px;
+}
+.expendable-cards-group .card-cover {
+    margin: 0;
+}
+.card-cover .card-box.col2, .card-cover.four_column .card-box, .expendable-cards-group .card-box {
+    margin-bottom: 30px;
+    width: 100%}
+.expendable-cards-group .card-cover.three_column {
+    margin-left: 0;
+    margin-right: 0;
+}
+.expendable-cards-group .card-box {
+    margin-left: 0;
+    margin-right: 0;
+    min-height: auto;
+    width: 100%}
+.expendable-cards-group .card-box.col1 {
+    width: 100%}
+.card-box.no-icon h4 {
+    font-size: 20px;
+}
+.expendable-cards-group .card-box:hover:after, .expendable-cards-group .three-row:after {
+    display: none;
+}
+.expendable-cards-group .three-row {
+    margin: 0;
+}
+}@media (max-width:480px) {
+    .expendable-cards-group .section-title h3 {
+    font-size: 21px;
+}
+.expendable-cards-group .card-box {
+    margin: 0 0 30px;
+    width: 100%}
+.expendable-cards-group .card-cover.three_column {
+    margin: 0;
+}
+}

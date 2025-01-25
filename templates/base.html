@@ -1,8 +1,264 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+    <script src="{% static "javascript/jquery-1.11.2.js" %}"></script>
+    <script>hsjQuery = window['jQuery'];</script>
+        <meta property="og:description" content="Minimal Doors and Windows, blinds and curtains, aluminum and glazing, retractable pergolas and awnings from Euro Systems® in UAE, Qatar and Saudi Arabia.">
+        <meta property="og:title" content="Blinds and Curtains | Pergolas | Aluminum &amp; Glazing | Euro Systems">
+        <meta name="twitter:description" content="Minimal Doors and Windows, blinds and curtains, aluminum and glazing, retractable pergolas and awnings from Euro Systems® in UAE, Qatar and Saudi Arabia.">
+        <meta name="twitter:title" content="Blinds and Curtains | Pergolas | Aluminum &amp; Glazing | Euro Systems">
+        <style>
+    a.cta_button{-moz-box-sizing:content-box !important;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;vertical-align:middle}.hs-breadcrumb-menu{list-style-type:none;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px}.hs-breadcrumb-menu-item{float:left;padding:10px 0px 10px 10px}.hs-breadcrumb-menu-divider:before{content:'›';padding-left:10px}.hs-featured-image-link{border:0}.hs-featured-image{float:right;margin:0 0 20px 20px;max-width:50%}@media (max-width: 568px){.hs-featured-image{float:none;margin:0;width:100%;max-width:100%}}.hs-screen-reader-text{clip:rect(1px, 1px, 1px, 1px);height:1px;overflow:hidden;position:absolute !important;width:1px}
+    </style>
+    <link rel="stylesheet" href="{% static 'css/main.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/theme-overrides.min.css' %}">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&amp;display=swap">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&amp;display=swap">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&amp;display=swap">
+    <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+    <link rel="stylesheet" href="https://use.typekit.net/lmz8fip.css">
+    <link rel="stylesheet" href="{% static 'css/module_135732161380_Header_Right_Buttons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/module_135731583088_social-follow.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'css/module_135732161382_Homepage_Banner.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/module_135881832521_Two_Column_Featured_Image.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/module_136077827191_Expendable_Cards.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/module_135878474351_Image_with_Video_Section.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/module_135755836165_Euro_Systems_Products.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/module_135731583086_Section_Header.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/css/module_135732161378_Buttons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/module_135746016049_Our_Projects_-_Home.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/module_135731583093_Highlights_Counters.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slick-theme.css' %}">
+    <link rel="stylesheet" href="{% static 'css/module_135732161387_Logo_Silder.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'css/module_135732161386_Latest_News_-_Slider.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/module_183174388112_Two_Column_Form_-_Global.min.css' %}">
+    <style>
+      @font-face {
+        font-family: "Roboto";
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+        src: url("/_hcms/googlefonts/Roboto/500.woff2") format("woff2"), url("/_hcms/googlefonts/Roboto/500.woff") format("woff");
+      }
+      @font-face {
+        font-family: "Roboto";
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+        src: url("/_hcms/googlefonts/Roboto/regular.woff2") format("woff2"), url("/_hcms/googlefonts/Roboto/regular.woff") format("woff");
+      }
+      @font-face {
+        font-family: "Roboto";
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+        src: url("/_hcms/googlefonts/Roboto/700.woff2") format("woff2"), url("/_hcms/googlefonts/Roboto/700.woff") format("woff");
+      }
+    </style>
+    
+    <style id="hs_editor_style" type="text/css">
+    .dnd_area-row-0-force-full-width-section > .row-fluid {
+      max-width: none !important;
+    }
+    .dnd_area-row-1-max-width-section-centering > .row-fluid {
+      max-width: 1100px !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+    .dnd_area-row-3-max-width-section-centering > .row-fluid {
+      max-width: 1172px !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+    .dnd_area-bottom_container-row-0-max-width-section-centering > .row-fluid {
+      max-width: 1106px !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+    .dnd_area-bottom_container-row-2-force-full-width-section > .row-fluid {
+      max-width: none !important;
+    }
+    .dnd_area-bottom_container-row-4-force-full-width-section > .row-fluid {
+      max-width: none !important;
+    }
+    .dnd_area-bottom_container-row-5-force-full-width-section > .row-fluid {
+      max-width: none !important;
+    }
+    /* HubSpot Non-stacked Media Query Styles */
+    @media (min-width:768px) {
+      .dnd_area-bottom_container-row-2-vertical-alignment > .row-fluid {
+        display: -ms-flexbox !important;
+        -ms-flex-direction: row;
+        display: flex !important;
+        flex-direction: row;
+      }
+      .cell_16953801640712-vertical-alignment {
+        display: -ms-flexbox !important;
+        -ms-flex-direction: column !important;
+        -ms-flex-pack: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+      }
+      .cell_16953801640712-vertical-alignment > div {
+        flex-shrink: 0 !important;
+      }
+    }
+    /* HubSpot Styles (default) */
+    .dnd_area-row-0-padding {
+      padding-top: 0px !important;
+      padding-bottom: 0px !important;
+    }
+    .dnd_area-row-1-padding {
+      padding-top: 27px !important;
+      padding-bottom: 52px !important;
+    }
+    .dnd_area-row-2-padding {
+      padding-top: 57px !important;
+      padding-bottom: 0px !important;
+    }
+    .dnd_area-row-3-padding {
+      padding-top: 0px !important;
+      padding-bottom: 0px !important;
+    }
+    .dnd_area2-row-0-margin {
+      margin-top: 50px !important;
+    }
+    .dnd_area2-row-0-padding {
+      padding-top: 26px !important;
+      padding-bottom: 30px !important;
+    }
+    .dnd_area2-row-1-padding {
+      padding-top: 69px !important;
+      padding-bottom: 0px !important;
+    }
+    .dnd_area3-row-0-padding {
+      padding-top: 14px !important;
+    }
+    .dnd_area-bottom_container-row-0-padding {
+      padding-top: 9px !important;
+      padding-bottom: 0px !important;
+    }
+    .dnd_area-bottom_container-row-1-padding {
+      padding-top: 0px !important;
+      padding-bottom: 0px !important;
+    }
+    .dnd_area-bottom_container-row-2-padding {
+      padding-top: 52px !important;
+    }
+    .dnd_area-bottom_container-row-3-padding {
+      padding-top: 0px !important;
+      padding-bottom: 0px !important;
+    }
+    .dnd_area-bottom_container-row-4-padding {
+      padding-top: 0px !important;
+    }
+    .dnd_area-bottom_container-row-5-padding {
+      padding-top: 0px !important;
+      padding-bottom: 0px !important;
+    }
+    /* HubSpot Styles (mobile) */
+    @media (max-width: 767px) {
+      .dnd_area-row-2-padding {
+        padding-top: 1px !important;
+      }
+      .dnd_area2-row-0-padding {
+        padding-top: 0px !important;
+      }
+      .dnd_area2-row-1-padding {
+        padding-top: 60px !important;
+      }
+      .dnd_area3-row-0-padding {
+        padding-bottom: 60px !important;
+      }
+      .dnd_area-bottom_container-row-2-padding {
+        padding-bottom: 60px !important;
+      }
+    }
+    </style>
+    <script>
+        var _hsp = window._hsp = window._hsp || [];
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        var useGoogleConsentModeV2 = true;
+        var waitForUpdateMillis = 1000;
+        var hsLoadGtm = function loadGtm() {
+            if(window._hsGtmLoadOnce) {
+              return;
+            }
+        
+            if (useGoogleConsentModeV2) {
+        
+              gtag('set','developer_id.dZTQ1Zm',true);
+        
+              gtag('consent', 'default', {
+              'ad_storage': 'denied',
+              'analytics_storage': 'denied',
+              'ad_user_data': 'denied',
+              'ad_personalization': 'denied',
+              'wait_for_update': waitForUpdateMillis
+              });
+        
+              _hsp.push(['useGoogleConsentModeV2'])
+            }
+        
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-TL2S5T9');
+        
+            window._hsGtmLoadOnce = true;
+        };
+        
+        _hsp.push(['addPrivacyConsentListener', function(consent){
+          if(consent.allowed || (consent.categories && consent.categories.analytics)){
+            hsLoadGtm();
+          }
+        }]);
+        </script>
+            <link rel="canonical" href="https://www.eurosystems.com">
+        <meta http-equiv="imagetoolbar" content="no">
+            <style type="text/css"><!-- input,textarea{-webkit-touch-callout:default;-webkit-user-select:auto;-khtml-user-select:auto;-moz-user-select:text;-ms-user-select:text;user-select:text} *{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:-moz-none;-ms-user-select:none;user-select:none} --></style>
+            <style type="text/css" media="print"><!-- body{display:none} --></style>
+        <script type="text/javascript">
+            </script>
+        <meta name="google-site-verification" content="UcrJ1OEyYqu4xGi0eAIzsSrGc83hkCdy0v9pqRgg-34">
+        <script src="./javascript/lazyload.min.js"></script>
+        
+        <script>
+          $(window).load(function(){
+        
+                        var ll = new LazyLoad({
+                            elements_selector: ".lazy"	
+                        });
+            
+                var ll1 = new LazyLoad({
+                            elements_selector: ".lazy-bg"
+                        });
+            
+            });
+        </script>
+        <meta property="og:image" content="https://www.eurosystems.com/hubfs/WEBSITE%202024/WEBSITE%20IMAGES/Website%20Other%20Pages/Home%20page-1.jpg">
+        <meta property="og:image:width" content="2126">
+        <meta property="og:image:height" content="1236">
+        <meta property="og:image:alt" content="Architectural Systems, Doors &amp; Windows, Interior &amp; Outdoor Shading In Dubai, UAE, KSA, Qatar - Euro Systems® ">
+        <meta name="twitter:image" content="https://www.eurosystems.com/hubfs/WEBSITE%202024/WEBSITE%20IMAGES/Website%20Other%20Pages/Home%20page-1.jpg">
+        <meta name="twitter:image:alt" content="Architectural Systems, Doors &amp; Windows, Interior &amp; Outdoor Shading In Dubai, UAE, KSA, Qatar - Euro Systems® ">
+        <meta property="og:url" content="https://www.eurosystems.com">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta http-equiv="content-language" content="en">
+          <meta name="generator" content="HubSpot">    
 </head>
 
 
@@ -10,8 +266,221 @@
 
 <body>
 
-NavBar
-
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TL2S5T9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- /Added by GoogleTagManager integration -->
+        <div class="body-wrapper   hs-content-id-135720774962 hs-site-page page ">
+          <div data-global-resource-path="EuroSystems_Sept2023/templates/partials/header.html"><header class="header">
+      <div class="content-wrapper">
+        <div class="header-left-side">
+          <div class="custom-logo">   
+            <div class="dark-logo">      
+              <div id="hs_cos_wrapper_footer_logo" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-logo" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                <span id="hs_cos_wrapper_footer_logo_hs_logo_widget" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_logo" style="" data-hs-cos-general-type="widget" data-hs-cos-type="logo">
+                  <div class="logo2">
+                    <div class="icon2">
+                        <span>E</span>
+                    </div>
+                    <div class="text2">
+                        <div class="main2">Ellsta International</div>
+                        <div class="tagline2">Iron Doors</div>
+                    </div>
+                </div>
+              </span>
+            </div>
+            </div>
+            <div class="white-logo">         
+              <div id="hs_cos_wrapper_header_logo" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-logo" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">    
+                <span id="hs_cos_wrapper_header_logo_hs_logo_widget" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_logo" style="" data-hs-cos-general-type="widget" data-hs-cos-type="logo"><a href="/?hsLang=en" id="hs-link-header_logo_hs_logo_widget" style="border-width:0px;border:0px;">
+                  <div class="logo">
+                    <div class="icon">
+                        <span>E</span>
+                    </div>
+                    <div class="text">
+                        <div class="main">Ellsta International</div>
+                        <div class="tagline">Iron Doors</div>
+                    </div>
+                </div>
+              </span>
+            </div>
+            </div>
+          </div>
+          <div class="custom-menu-primary">
+            <div class="desktop-menu">
+              <span id="hs_cos_wrapper_navigation-primary" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="menu"><div id="hs_menu_wrapper_navigation-primary" class="hs-menu-wrapper active-branch flyouts hs-menu-flow-horizontal" role="navigation" data-sitemap-name="default" data-menu-id="135731650714" aria-label="Navigation Menu">
+     <ul role="menu" class="active-branch">
+      <li class="hs-menu-item hs-menu-depth-1 active active-branch" role="none"><a href="./home.html" role="menuitem">HOME</a></li>
+      <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="./Products.html" role="menuitem">PRODUCTS</a></li>
+      <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="./projects.html" role="menuitem">PROJECTS</a></li>
+      <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="./news.html" role="menuitem">NEWS</a></li>
+      <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="./contact.html" role="menuitem">CONTACT</a></li>
+      <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="./download.html" role="menuitem">DOWNLOAD CENTRE</a></li>
+     </ul>
+    </div></span>
+            </div>
+            <div class="header-right-side">
+              <div id="hs_cos_wrapper_module_16862153191484" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="header-right-links">
+      <ul>
+        <li>
+        </li>
+        <li>
+          <a href="./contact.html" class="hs-button">
+            <span>
+              GET IN TOUCH
+            </span>
+          </a>
+          
+        </li>    
+      </ul>
+    </div></div>          
+            </div>
+            <div class="desktop-trigger"><span></span></div>
+          </div>      
+        </div>   
+        <div class="desktop-trigger"><span></span></div>
+      </div>
+    </header>
+    <div class="cm-header-mega-menu" style="display:none;">  
+      <div class="top-group">      
+        <div class="content-wrapper">
+          <div id="hs_cos_wrapper_footer_logo" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-logo" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+            <span id="hs_cos_wrapper_footer_logo_hs_logo_widget" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_logo" style="" data-hs-cos-general-type="widget" data-hs-cos-type="logo">
+              <div class="logo2">
+                <div class="icon2">
+                    <span>E</span>
+                </div>
+                <div class="text2">
+                    <div class="main2">Ellsta International</div>
+                    <div class="tagline2">Iron Doors</div>
+                </div>
+            </div>
+          </span>
+        </div>
+          <div class="close-icon">
+            <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.459961" y="23.77" width="33.3701" height="1.3348" transform="rotate(-45 0.459961 23.77)" fill="#A67763" />
+              <rect x="1.12744" y="0.411133" width="33.3701" height="1.3348" transform="rotate(45 1.12744 0.411133)" fill="#A67763" />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-group">
+        <div class="content-wrapper">
+          <div class="left">
+            <span id="hs_cos_wrapper_mega-menu" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="menu"><div id="hs_menu_wrapper_mega-menu" class="hs-menu-wrapper active-branch flyouts hs-menu-flow-horizontal" role="navigation" data-sitemap-name="default" data-menu-id="135927199546" aria-label="Navigation Menu">
+     <ul role="menu" class="active-branch">
+      <li class="hs-menu-item hs-menu-depth-1 active active-branch" role="none"><a href="./home.html" role="menuitem">Home</a></li>
+      <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.eurosystems.com/about" role="menuitem">About Us</a></li>
+      <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children" role="none"><a href="https://www.eurosystems.com/our-products" aria-haspopup="true" aria-expanded="false" role="menuitem">Products</a>
+       <ul role="menu" class="hs-menu-children-wrapper">
+        <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children" role="none"><a href="https://www.eurosystems.com/doors-and-windows" role="menuitem">Doors and Windows</a>
+         <ul role="menu" class="hs-menu-children-wrapper">
+          <li class="hs-menu-item hs-menu-depth-3" role="none"><a href="https://www.eurosystems.com/gracili-minimal-systems" role="menuitem">Gracili Minimal Systems®</a></li>
+          <li class="hs-menu-item hs-menu-depth-3" role="none"><a href="https://www.eurosystems.com/pivot-doors" role="menuitem">Pivot Doors</a></li>
+          <li class="hs-menu-item hs-menu-depth-3" role="none"><a href="https://www.eurosystems.com/hinged-doors" role="menuitem">Hinged Doors</a></li>
+          <li class="hs-menu-item hs-menu-depth-3" role="none"><a href="https://www.eurosystems.com/bi-folddoors" role="menuitem">Bifold Doors</a></li>
+         </ul></li>
+        <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children" role="none"><a href="https://www.eurosystems.com/architectural-glazing" role="menuitem">Architectural Systems</a>
+         <ul role="menu" class="hs-menu-children-wrapper">
+          <li class="hs-menu-item hs-menu-depth-3 hs-item-has-children" role="none"><a href="https://www.eurosystems.com/curtain-wall-glazing" role="menuitem">Curtain Wall</a>
+           <ul role="menu" class="hs-menu-children-wrapper">
+            <li class="hs-menu-item hs-menu-depth-4" role="none"><a href="https://www.eurosystems.com/curtain-wall-es40" role="menuitem">ES40</a></li>
+            <li class="hs-menu-item hs-menu-depth-4" role="none"><a href="https://www.eurosystems.com/curtain-wall-es40-sg" role="menuitem">ES40 SG</a></li>
+            <li class="hs-menu-item hs-menu-depth-4" role="none"><a href="https://www.eurosystems.com/curtain-wall-es50" role="menuitem">ES50</a></li>
+            <li class="hs-menu-item hs-menu-depth-4" role="none"><a href="https://www.eurosystems.com/curtain-wall-es50-sg" role="menuitem">ES50 SG</a></li>
+            <li class="hs-menu-item hs-menu-depth-4" role="none"><a href="https://www.eurosystems.com/curtain-wall-es60" role="menuitem">ES60</a></li>
+            <li class="hs-menu-item hs-menu-depth-4" role="none"><a href="https://www.eurosystems.com/curtain-wall-es60-sg" role="menuitem">ES60 SG</a></li>
+           </ul></li>
+          <li class="hs-menu-item hs-menu-depth-3" role="none"><a href="https://www.eurosystems.com/glass-skylights" role="menuitem">Glass Skylights</a></li>
+          <li class="hs-menu-item hs-menu-depth-3" role="none"><a href="https://www.eurosystems.com/shower-enclosures" role="menuitem">Shower Enclosures</a></li>
+          <li class="hs-menu-item hs-menu-depth-3" role="none"><a href="https://www.eurosystems.com/handrails-glass-balustrades" role="menuitem">Handrails and Balustrades</a></li>
+          <li class="hs-menu-item hs-menu-depth-3" role="none"><a href="https://www.eurosystems.com/architectural-louvers" role="menuitem">Architectural Louvers</a></li>
+         </ul></li>
+        <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children" role="none"><a href="https://www.eurosystems.com/interior-shading" role="menuitem">Interior Shading</a>
+         <ul role="menu" class="hs-menu-children-wrapper">
+          <li class="hs-menu-item hs-menu-depth-3" role="none"><a href="https://www.eurosystems.com/solange-specialty-shades" role="menuitem">Solange® Specialty Shades</a></li>
+          <li class="hs-menu-item hs-menu-depth-3 hs-item-has-children" role="none"><a href="https://www.eurosystems.com/roller-blinds" role="menuitem">Roller Blinds</a>
+           <ul role="menu" class="hs-menu-children-wrapper">
+            <li class="hs-menu-item hs-menu-depth-4" role="none"><a href="https://www.eurosystems.com/serena-motorized-blinds" role="menuitem">Serena® Motorized Blinds</a></li>
+            <li class="hs-menu-item hs-menu-depth-4" role="none"><a href="https://www.eurosystems.com/salire-manual-blinds" role="menuitem">Salire® Manual Blinds</a></li>
+           </ul></li>
+          <li class="hs-menu-item hs-menu-depth-3 hs-item-has-children" role="none"><a href="https://www.eurosystems.com/curtains-draperies" role="menuitem">Curtain and Draperies</a>
+           <ul role="menu" class="hs-menu-children-wrapper">
+            <li class="hs-menu-item hs-menu-depth-4" role="none"><a href="https://www.eurosystems.com/serena95-curtains" role="menuitem">Serena® 95</a></li>
+            <li class="hs-menu-item hs-menu-depth-4" role="none"><a href="https://www.eurosystems.com/cs-curtain-tracks" role="menuitem">Salire® ES Healthcare Curtains</a></li>
+            <li class="hs-menu-item hs-menu-depth-4" role="none"><a href="https://www.eurosystems.com/salire-4100-healthcare-curtains" role="menuitem">Salire® Healthcare Curtains</a></li>
+           </ul></li>
+          <li class="hs-menu-item hs-menu-depth-3" role="none"><a href="https://www.eurosystems.com/roman-blinds" role="menuitem">Roman Blinds</a></li>
+          <li class="hs-menu-item hs-menu-depth-3" role="none"><a href="https://www.eurosystems.com/vertical-blinds" role="menuitem">Vertical Blinds</a></li>
+          <li class="hs-menu-item hs-menu-depth-3" role="none"><a href="https://www.eurosystems.com/vision-blinds" role="menuitem">Vision Blinds</a></li>
+          <li class="hs-menu-item hs-menu-depth-3" role="none"><a href="https://www.eurosystems.com/wooden-blinds" role="menuitem">Wooden Blinds</a></li>
+          <li class="hs-menu-item hs-menu-depth-3" role="none"><a href="https://www.eurosystems.com/venetian-blinds" role="menuitem">Venetian Blinds</a></li>
+          <li class="hs-menu-item hs-menu-depth-3" role="none"><a href="https://www.eurosystems.com/skylight-shading-system" role="menuitem">Skylight Shading System</a></li>
+          <li class="hs-menu-item hs-menu-depth-3" role="none"><a href="https://www.eurosystems.com/salire-4100-healthcare-curtains" role="menuitem">Healthcare Cubical Curtains</a></li>
+         </ul></li>
+        <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children" role="none"><a href="https://www.eurosystems.com/outdoor-shading" role="menuitem">Outdoor Shading</a>
+         <ul role="menu" class="hs-menu-children-wrapper">
+          <li class="hs-menu-item hs-menu-depth-3 hs-item-has-children" role="none"><a href="https://www.eurosystems.com/pergolas" role="menuitem">Pergolas</a>
+           <ul role="menu" class="hs-menu-children-wrapper">
+            <li class="hs-menu-item hs-menu-depth-4" role="none"><a href="https://www.eurosystems.com/pergolas-spire-r" role="menuitem">Spire-R</a></li>
+            <li class="hs-menu-item hs-menu-depth-4" role="none"><a href="https://www.eurosystems.com/pergolas-spire-t" role="menuitem">Spire-T</a></li>
+            <li class="hs-menu-item hs-menu-depth-4" role="none"><a href="https://www.eurosystems.com/pergolas-opus" role="menuitem">Opus</a></li>
+            <li class="hs-menu-item hs-menu-depth-4" role="none"><a href="https://www.eurosystems.com/pergola-azure" role="menuitem">Azure</a></li>
+           </ul></li>
+          <li class="hs-menu-item hs-menu-depth-3" role="none"><a href="https://www.eurosystems.com/awnings" role="menuitem">Awnings</a></li>
+          <li class="hs-menu-item hs-menu-depth-3" role="none"><a href="https://www.eurosystems.com/sun-sail" role="menuitem">Sun Sail</a></li>
+          <li class="hs-menu-item hs-menu-depth-3" role="none"><a href="https://www.eurosystems.com/sail-shades" role="menuitem">Sail Shades</a></li>
+          <li class="hs-menu-item hs-menu-depth-3" role="none"><a href="https://www.eurosystems.com/roller-shutters" role="menuitem">Roller Shutters</a></li>
+          <li class="hs-menu-item hs-menu-depth-3" role="none"><a href="https://www.eurosystems.com/canopies" role="menuitem">Canopies</a></li>
+         </ul></li>
+        <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children" role="none"><a href="https://www.eurosystems.com/acoustic-solutions" role="menuitem">Acoustic Solutions </a>
+         <ul role="menu" class="hs-menu-children-wrapper">
+          <li class="hs-menu-item hs-menu-depth-3" role="none"><a href="https://www.eurosystems.com/baswa-acoustic-ceiling" role="menuitem">Baswa Acoustic Ceilings</a></li>
+          <li class="hs-menu-item hs-menu-depth-3" role="none"><a href="https://www.eurosystems.com/acoustic-fabric-wall-panels" role="menuitem">Acoustic Fabric Wall Panels</a></li>
+          <li class="hs-menu-item hs-menu-depth-3" role="none"><a href="https://www.eurosystems.com/movable-walls" role="menuitem">Movable Wall</a></li>
+         </ul></li>
+       </ul></li>
+      <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.eurosystems.com/projects" role="menuitem"> Projects</a></li>
+      <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.eurosystems.com/download-center" role="menuitem">Download Center</a></li>
+      <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children" role="none"><a href="javascript:;" aria-haspopup="true" aria-expanded="false" role="menuitem">News and Blogs</a>
+       <ul role="menu" class="hs-menu-children-wrapper">
+        <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://www.eurosystems.com/news" role="menuitem">News</a></li>
+        <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://www.eurosystems.com/blog" role="menuitem">Blog</a></li>
+       </ul></li>
+      <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children" role="none"><a href="https://www.eurosystems.com/careers" aria-haspopup="true" aria-expanded="false" role="menuitem">Careers</a>
+       <ul role="menu" class="hs-menu-children-wrapper">
+        <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://www.eurosystems.com/vacancies" role="menuitem">Vacancies</a></li>
+       </ul></li>
+      <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.eurosystems.com/contact" role="menuitem">Contact</a></li>
+     </ul>
+    </div></span>        
+          </div>
+          <div class="right">       
+            <div class="bottom">
+              <div id="hs_cos_wrapper_get-in-touch" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span id="hs_cos_wrapper_get-in-touch_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><h2>Get In Touch</h2>
+    <p><a href="tel:97143807744">+971 4 380 7744</a><br><a href="mailto:info@eurosystems.com;">info@eurosystems.com</a></p></span></div>
+              <div id="hs_cos_wrapper_social_link" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+    <div class="social-links">
+        <a class="social-links__link" href="https://www.facebook.com/eurosystemsgroup/" target="_blank" rel="noopener">
+          <span id="hs_cos_wrapper_social_link_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_icon social-links__icon" style="" data-hs-cos-general-type="widget" data-hs-cos-type="icon"><svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 264 512" aria-labelledby="facebook-f1" role="img"><title id="facebook-f1">Follow us on Facebook</title><g id="facebook-f1_layer"><path d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229" /></g></svg></span>
+        </a>
+         <a class="social-links__link" href="https://www.linkedin.com/company/5316923/" target="_blank" rel="noopener">
+          <span id="hs_cos_wrapper_social_link__2" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_icon social-links__icon" style="" data-hs-cos-general-type="widget" data-hs-cos-type="icon"><svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" aria-labelledby="linkedin-in2" role="img"><title id="linkedin-in2">Follow us on LinkedIn</title><g id="linkedin-in2_layer"><path d="M100.3 480H7.4V180.9h92.9V480zM53.8 140.1C24.1 140.1 0 115.5 0 85.8 0 56.1 24.1 32 53.8 32c29.7 0 53.8 24.1 53.8 53.8 0 29.7-24.1 54.3-53.8 54.3zM448 480h-92.7V334.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V480h-92.8V180.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V480z" /></g></svg></span>
+        </a>
+    <a class="social-links__link" href="https://twitter.com/eurosystemsint" target="_blank" rel="noopener">
+          <span id="hs_cos_wrapper_social_link__3" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_icon social-links__icon" style="" data-hs-cos-general-type="widget" data-hs-cos-type="icon"><svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" aria-labelledby="twitter3" role="img"><title id="twitter3">Follow us on Twitter</title><g id="twitter3_layer"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" /></g></svg></span>
+        </a>
+        <a class="social-links__link" href="https://www.instagram.com/eurosystemsgroup/" target="_blank" rel="noopener">
+          <span id="hs_cos_wrapper_social_link__4" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_icon social-links__icon" style="" data-hs-cos-general-type="widget" data-hs-cos-type="icon"><svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" aria-labelledby="instagram4" role="img"><title id="instagram4">Follow us on Instagram</title><g id="instagram4_layer"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" /></g></svg></span>
+        </a>
+        <a class="social-links__link" href="https://www.youtube.com/channel/UC618eNpo7nOppESRlBwkOpw/" target="_blank" rel="noopener">
+          <span id="hs_cos_wrapper_social_link__5" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_icon social-links__icon" style="" data-hs-cos-general-type="widget" data-hs-cos-type="icon"><svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 576 512" aria-labelledby="youtube5" role="img"><title id="youtube5">Follow us on Facebook</title><g id="youtube5_layer"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" /></g></svg></span>
+        </a>
+    </div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div></div>
 {% block content %}
 
 {% endblock %}
