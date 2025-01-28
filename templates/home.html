@@ -2021,27 +2021,6 @@ var hsVars = {
     is_hubspot_user: false
 }
 </script>
-<script defer src="{% static 'javascript/index.js' %}"></script>
 
-<script>
-   function load(){
-        var userAgent = navigator.userAgent.toLowerCase(); 
-        if (userAgent .indexOf('safari')!=-1){ 
-            if(userAgent .indexOf('chrome')  > -1){
-             //browser is chrome
-            // alert('browser is chrome');
-            const browser = document.querySelector('html');
-            browser.classList.add("custom-chrome");
-           }else{
-                //browser is safari, add css
-            // alert('browser is safari');
-            const browser = document.querySelector('html');
-            browser.classList.add("custom-safari");
-           }
-        }
-    }
-    
-    load();
-</script>
 
 {% endblock %}

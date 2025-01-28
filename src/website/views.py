@@ -7,3 +7,10 @@ class HomeView(TemplateView):
 
 class ProjectsView(TemplateView):
     template_name = "projects.html"
+
+
+class ProductsView(TemplateView):
+    template_name = "products.html"
+
+class NewsView(TemplateView):
+    template_name = "news.html"
