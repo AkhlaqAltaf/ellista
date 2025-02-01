@@ -14,3 +14,6 @@ class ProductsView(TemplateView):
 
 class NewsView(TemplateView):
     template_name = "news.html"
+
+class GallaryView(TemplateView):
+    template_name = "gallary.html"
