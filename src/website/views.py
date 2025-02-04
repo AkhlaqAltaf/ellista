@@ -17,3 +17,9 @@ class NewsView(TemplateView):
 
 class GallaryView(TemplateView):
     template_name = "gallary.html"
+
+class ContactView(TemplateView):
+    template_name = "contact.html"
+
+class DownloadView(TemplateView):
+    template_name = "download.html"

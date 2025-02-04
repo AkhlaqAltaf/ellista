@@ -8,7 +8,6 @@
 }
 
 .cm-hero-banner-wrap h1 {
-    color: #fff;
     font-style: normal;
     font-weight: 700;
     line-height: 1.15;
@@ -43,8 +42,7 @@ body .popup-form h3.form-title {
     font-size: 18px
 }
 
-.cm-hero-banner-wrap.White,.cm-hero-banner-wrap.White *,.cm-hero-banner-wrap.White h1 {
-    color: #fff
+.cm-hero-banner-wrap.White,.cm-hero-banner-wrap.White,.cm-hero-banner-wrap.White h1 {
 }
 
 .cm-hero-banner-wrap.full {

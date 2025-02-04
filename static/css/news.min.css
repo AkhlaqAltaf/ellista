@@ -289,12 +289,6 @@ button#load-more {
     text-align: left
 }
 
-.cm-hero-banner-wrap.White,
-.cm-hero-banner-wrap.White *,
-.cm-hero-banner-wrap.White h1 {
-    color: #fff
-}
-
 .cm-hero-banner-wrap.full {
     min-height: 556px;
     padding-bottom: 40px
