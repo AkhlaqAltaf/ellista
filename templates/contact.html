@@ -1,550 +1,184 @@
 {% extends "base.html" %}
-{% load static%}
-{% block content%}
-<style>
-    @font-face {
-      font-family: "Roboto";
-      font-weight: 500;
-      font-style: normal;
-      font-display: swap;
-      src: url("/_hcms/googlefonts/Roboto/500.woff2") format("woff2"), url("/_hcms/googlefonts/Roboto/500.woff") format("woff");
-    }
-    @font-face {
-      font-family: "Roboto";
-      font-weight: 400;
-      font-style: normal;
-      font-display: swap;
-      src: url("/_hcms/googlefonts/Roboto/regular.woff2") format("woff2"), url("/_hcms/googlefonts/Roboto/regular.woff") format("woff");
-    }
-    @font-face {
-      font-family: "Roboto";
-      font-weight: 700;
-      font-style: normal;
-      font-display: swap;
-      src: url("/_hcms/googlefonts/Roboto/700.woff2") format("woff2"), url("/_hcms/googlefonts/Roboto/700.woff") format("woff");
-    }
-  </style>
-  <style id="hs_editor_style" type="text/css">
-    .dnd_area-row-0-max-width-section-centering > .row-fluid {
-      max-width: 1110px !important;
-      margin-left: auto !important;
-      margin-right: auto !important;
-    }
-    .dnd_area-row-1-max-width-section-centering > .row-fluid {
-      max-width: 1150px !important;
-      margin-left: auto !important;
-      margin-right: auto !important;
-    }
-    /* HubSpot Non-stacked Media Query Styles */
-    @media (min-width:768px) {
-      .dnd_banner_area-row-0-vertical-alignment > .row-fluid {
-        display: -ms-flexbox !important;
-        -ms-flex-direction: row;
-        display: flex !important;
-        flex-direction: row;
-      }
-      .dnd_banner_area-module-1-vertical-alignment {
-        display: -ms-flexbox !important;
-        -ms-flex-direction: column !important;
-        -ms-flex-pack: start !important;
-        display: flex !important;
-        flex-direction: column !important;
-        justify-content: flex-start !important;
-      }
-      .dnd_banner_area-module-1-vertical-alignment > div {
-        flex-shrink: 0 !important;
-      }
-    }
-    /* HubSpot Styles (default) */
-    .dnd_area-row-0-padding {
-      padding-bottom: 0px !important;
-    }
-    .dnd_area-row-1-padding {
-      padding-top: 84px !important;
-    }
-    </style>
-
+{% load static %}
+{% block content %}
     <main id="main-content" class="body-container-wrapper">
-        
 
-        <div class="banner-section">
-          <div class="container-fluid body-container body-container--about">
-        <div class="row-fluid-wrapper">
-        <div class="row-fluid">
-        <div class="span12 widget-span widget-type-cell " style="" data-widget-type="cell" data-x="0" data-w="12">
-        
-        <div class="row-fluid-wrapper row-depth-1 row-number-1 dnd_banner_area-row-0-vertical-alignment dnd-section">
-        <div class="row-fluid ">
-        <div class="span12 widget-span widget-type-custom_widget dnd_banner_area-module-1-vertical-alignment dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
-        <div id="hs_cos_wrapper_dnd_banner_area-module-1" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="cm-hero-banner-wrap     White" style="background-image:url(https://www.eurosystems.com/hubfs/Euro_System_Sept2023/Images/Rectangle%20117.png);background-position:center;">
+      <div class="cm-products-layout">
+        <div class="mx-auto">
+          <div class="relative w-full h-[580px] bg-cover bg-center flex items-center justify-center text-center text-white"
+            style="background-image: url('https://images.unsplash.com/photo-1586449480558-33ae22ffc60d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Z29vZ2xlJTIwbWFwfGVufDB8fDB8fHww');">
+            <div class="max-w-3xl mx-auto">
+              <h1 class="text-6xl font-bold text-white" data-aos="fade-up">Contact Us</h1>
+            </div>
+          </div>
           
-          <div class="content-wrapper ">
-            <div class="banner-content">
-              
-              <h1 data-aos="fade-up">
-                Contact us
-              </h1>
-              
-              
-              <div class="button-group" data-aos="fade-up">
-                
-              </div>
+          <div class="bg-[#FFF0DC] py-6">
+            <div class="max-w-3xl px-12 font-bold">
+              <nav class="text-[#D2916B]">
+                <ul class="flex space-x-2">
+                  <li><a href="/" class="hover:underline">Home</a></li>
+                  <span>/</span>
+                  <li class="">Contact</li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>
-        <div class="cm-hero-banner-breadcrumbs">
-          <div class="inner-container">
-            <span id="hs_cos_wrapper_dnd_banner_area-module-1_breadcrumb" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="menu"><div class="hs-breadcrumb-menu-wrapper" id="hs_menu_wrapper_dnd_banner_area-module-1_breadcrumb" role="navigation" data-sitemap-name="Breadcrumb" data-menu-id="136464879203">
-         <ul class="hs-breadcrumb-menu">
-          <li class="hs-breadcrumb-menu-item first-crumb"><a href="https://www.eurosystems.com?hsLang=en" class="hs-breadcrumb-label">Home</a><span class="hs-breadcrumb-menu-divider"></span></li>
-          <li class="hs-breadcrumb-menu-item last-crumb"><span class="hs-breadcrumb-label">Contact us</span></li>
-         </ul>
-        </div></span>
+      </div>
+
+      <section id="contact" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+          <!-- Tabs Navigation -->
+          <div class="flex justify-center space-x-4 mb-8">
+            <button class="tab-btn active" data-tab="uae">UAE</button>
+            <button class="tab-btn" data-tab="qatar">Qatar</button>
+            <button class="tab-btn" data-tab="ksa">KSA</button>
+            <button class="tab-btn" data-tab="uk">UK</button>
           </div>
-        </div>
-        
-        
-        
-        
-        
-        
-        <script>
-          $(window).load(function(){
-            setTimeout(function(){
-              $('body').removeClass('no-banner').addClass('has-banner');
-              $('body').addClass('White-header');
-            },200)
-          })
-        </script>
-        </div>
-        
-        </div><!--end widget-span -->
-        </div><!--end row-->
-        </div><!--end row-wrapper -->
-        
-        </div><!--end widget-span -->
-        </div>
-        </div>
-        </div>
-        </div>
-        
-        <div class="container-fluid body-container body-container--about">
-        <div class="row-fluid-wrapper">
-        <div class="row-fluid">
-        <div class="span12 widget-span widget-type-cell " style="" data-widget-type="cell" data-x="0" data-w="12">
-        
-        <div class="row-fluid-wrapper row-depth-1 row-number-1 dnd_area-row-0-max-width-section-centering dnd-section dnd_area-row-0-padding">
-        <div class="row-fluid ">
-        <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
-        <div id="hs_cos_wrapper_widget_1695708632125" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="cm-contact-tabs-group">
-          <div class="top-tabs-group">
-            
-            <a class="tab  active " href="javascript:;" data-tab="#widget_1695708632125_uae">
-              UAE
-            </a>
-            
-            <a class="tab " href="javascript:;" data-tab="#widget_1695708632125_qatar">
-              Qatar
-            </a>
-            
-            <a class="tab " href="javascript:;" data-tab="#widget_1695708632125_ksa">
-              KSA
-            </a>
-            
-            <a class="tab " href="javascript:;" data-tab="#widget_1695708632125_uk">
-              UK
-            </a>
-              
-          </div>
-          <div class="bottom-tabs-group">
-            
-            <div class="tab-item" id="widget_1695708632125_uae" style="display:flex;"> 
-              <div class="tab-inner-item">        
-                <div class="tab-col phone-cols">
-                  <h6>PHONE</h6>
-        <p><a href="tel:+97143807744">+971 4 380 7744</a></p>
-        <p><a href="tel:+97148928880">+971 4 892 8880</a></p>
+
+          <!-- Tab Content -->
+          <div class="tab-content">
+            <!-- UAE Tab -->
+            <div class="tab-panel active" id="uae">
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-6">
+                <div class="border border-gray-200 p-4">
+                  <h6 class="text-lg font-semibold">PHONE</h6>
+                  <p><a href="tel:+97143807744" class="text-[#A67763]">+971 4 380 7744</a></p>
+                  <p><a href="tel:+97148928880" class="text-[#A67763]">+971 4 892 8880</a></p>
                 </div>
-                <div class="tab-col address-col">
-                  <h6>ADDRESS</h6>
-        <p>Euro Systems LLC,<br>Suite No: 239, Al Shafar Investment Building,<br>Sheikh Zayed Road, Al Quoz.<br>P.O. Box: 212688, Dubai, UAE</p>
-        <h6>Timing:</h6>
-        <p>Monday to Saturday : 8:30am to 6:00pm<br>Sunday : 8:30am to 2:00pm</p>
+                <div class="border border-gray-200 p-4">
+                  <h6 class="text-lg font-semibold">ADDRESS</h6>
+                  <p>Euro Systems LLC,<br>Suite No: 239, Al Shafar Investment Building,<br>Sheikh Zayed Road, Al Quoz.<br>P.O. Box: 212688, Dubai, UAE</p>
                 </div>
-                <div class="tab-col showroom-col">
-                  <h6>UAE - Showroom</h6>
-        <p>Showroom No. 08, <br>Al Shafar Investment Building, <br>Sheikh Zayed Road, Al Quoz, <br>Dubai</p>
-        <h6>Timing:</h6>
-        <p>Monday to Saturday : 9:00am to 8:00pm<br><br></p>
+                <div class="border border-gray-200 p-4">
+                  <h6 class="text-lg font-semibold">Showroom</h6>
+                  <p>Showroom No. 08,<br>Al Shafar Investment Building,<br>Sheikh Zayed Road, Al Quoz, Dubai</p>
                 </div>
-                <div class="tab-col email-col">
-                  <h6>EMAIL</h6>
-        <p><a href="mailto:info@eurosystems.com">info@eurosystems.com</a></p>
+                <div class="border border-gray-200 p-4">
+                  <h6 class="text-lg font-semibold">EMAIL</h6>
+                  <p><a href="mailto:info@eurosystems.com" class="text-[#A67763]">info@eurosystems.com</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-panel" id="qatar">
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-6">
+                <div class="border border-gray-200 p-4">
+                  <h6 class="text-lg font-semibold">PHONE</h6>
+                  <p><a href="tel:+97444506777" class="text-[#A67763]">+974 4450 6777</a></p>
+                  <p><a href="tel:+97444506778" class="text-[#A67763]">+974 4450 6778</a></p>
+                </div>
+                <div class="border border-gray-200 p-4">
+                  <h6 class="text-lg font-semibold">ADDRESS</h6>
+                  <p>Euro Systems WLL,<br>Building No. 320, Street 250,<br>New Industrial Area, Doha, Qatar</p>
+                </div>
+                <div class="border border-gray-200 p-4">
+                  <h6 class="text-lg font-semibold">Showroom</h6>
+                  <p>Showroom No. 05,<br>Salwa Road, Doha, Qatar</p>
+                </div>
+                <div class="border border-gray-200 p-4">
+                  <h6 class="text-lg font-semibold">EMAIL</h6>
+                  <p><a href="mailto:info@eurosystems.com.qa" class="text-[#A67763]">info@eurosystems.com.qa</a></p>
                 </div>
               </div>
             </div>
             
-            <div class="tab-item" id="widget_1695708632125_qatar"> 
-              <div class="tab-inner-item">        
-                <div class="tab-col phone-cols">
-                  <h6>PHONE</h6>
-        <p><a href="tel:+974%204450%206884" rel="noopener">+974 4450 6884</a></p>
-        <p>&nbsp;</p>
+            <div class="tab-panel" id="ksa">
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-6">
+                <div class="border border-gray-200 p-4">
+                  <h6 class="text-lg font-semibold">PHONE</h6>
+                  <p><a href="tel:+9661122334455" class="text-[#A67763]">+966 11 2233 4455</a></p>
+                  <p><a href="tel:+9661122334466" class="text-[#A67763]">+966 11 2233 4466</a></p>
                 </div>
-                <div class="tab-col address-col">
-                  <h6>ADDRESS</h6>
-        <p>Euro Systems - Factory,<br><span>Birkat Al Awamer, Qatar</span><br><span>Doha, Qatar</span></p>
-        <h6>Timing:</h6>
-        <p>Saturday - Thursday : 8:00am to 5:00pm</p>
+                <div class="border border-gray-200 p-4">
+                  <h6 class="text-lg font-semibold">ADDRESS</h6>
+                  <p>Euro Systems KSA,<br>Al Olaya Street,<br>Riyadh, Saudi Arabia</p>
                 </div>
-                <div class="tab-col showroom-col">
-                  <h6>qatar - Showroom</h6>
-        <p>Euro Systems LLC,<br><span>Salwa Road, P.O. Box 41194</span><br><span>Doha, Qatar</span></p>
-        <h6>Timing:</h6>
-        <p>Saturday - Thursday : 8:00am to 8:00pm</p>
+                <div class="border border-gray-200 p-4">
+                  <h6 class="text-lg font-semibold">Showroom</h6>
+                  <p>Showroom No. 3,<br>King Fahd Road,<br>Riyadh, Saudi Arabia</p>
                 </div>
-                <div class="tab-col email-col">
-                  <h6>EMAIL</h6>
-        <p><a href="mailto:info@eurosystems.com">info@eurosystems.com</a></p>
+                <div class="border border-gray-200 p-4">
+                  <h6 class="text-lg font-semibold">EMAIL</h6>
+                  <p><a href="mailto:info.ksa@eurosystems.com" class="text-[#A67763]">info.ksa@eurosystems.com</a></p>
                 </div>
               </div>
             </div>
             
-            <div class="tab-item" id="widget_1695708632125_ksa"> 
-              <div class="tab-inner-item">        
-                <div class="tab-col phone-cols">
-                  <h6>PHONE</h6>
-        <p><a href="tel:+966112577003" rel="noopener">+966112577003</a></p>
+            <div class="tab-panel" id="uk">
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-6">
+                <div class="border border-gray-200 p-4">
+                  <h6 class="text-lg font-semibold">PHONE</h6>
+                  <p><a href="tel:+442012345678" class="text-[#A67763]">+44 20 1234 5678</a></p>
+                  <p><a href="tel:+442012345679" class="text-[#A67763]">+44 20 1234 5679</a></p>
                 </div>
-                <div class="tab-col address-col">
-                  <h6>ADDRESS</h6>
-        <p>Euro Systems LLC,<br><span>Office no 12, </span><span>First floor, Kayes Tower Salah Al-Din Al-Ayyubi Road, Al-Malaz District, Riyadh, Kingdom of Saudi Arabia.</span></p>
-        <h6>Timing:</h6>
-        <p>Sunday to Thursday : 8:00am to 5:30pm<br>Saturday : 8:00am to 2:00pm</p>
+                <div class="border border-gray-200 p-4">
+                  <h6 class="text-lg font-semibold">ADDRESS</h6>
+                  <p>Euro Systems UK,<br>10 Downing Street,<br>London, United Kingdom</p>
                 </div>
-                <div class="tab-col showroom-col">
-                  
+                <div class="border border-gray-200 p-4">
+                  <h6 class="text-lg font-semibold">Showroom</h6>
+                  <p>Showroom No. 2,<br>Oxford Street,<br>London, United Kingdom</p>
                 </div>
-                <div class="tab-col email-col">
-                  <h6>EMAIL</h6>
-        <p><a href="mailto:info@eurosystems.com">info@eurosystems.com</a></p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="tab-item" id="widget_1695708632125_uk"> 
-              <div class="tab-inner-item">        
-                <div class="tab-col phone-cols">
-                  <h6>PHONE</h6>
-        <p><a href="tel:%20+441902607111" rel="noopener"> +44 190 260 7111</a></p>
-                </div>
-                <div class="tab-col address-col">
-                  <h6>ADDRESS</h6>
-        <p>Euro Systems UK Ltd.<br>Unit 11 Chancel Industrial park,<br>Newhall Street, Willenhall, WV13 1NX,<br>UNITED KINGDOM</p>
-                </div>
-                <div class="tab-col showroom-col">
-                  
-                </div>
-                <div class="tab-col email-col">
-                  <h6>EMAIL</h6>
-        <p><a href="mailto:info@eurosystems.co.uk">info@eurosystems.co.uk</a></p>
+                <div class="border border-gray-200 p-4">
+                  <h6 class="text-lg font-semibold">EMAIL</h6>
+                  <p><a href="mailto:info.uk@eurosystems.com" class="text-[#A67763]">info.uk@eurosystems.com</a></p>
                 </div>
               </div>
             </div>
             
           </div>
-        </div></div>
-        
-        </div><!--end widget-span -->
-        </div><!--end row-->
-        </div><!--end row-wrapper -->
-        
-        <div class="row-fluid-wrapper row-depth-1 row-number-2 dnd_area-row-1-padding dnd_area-row-1-max-width-section-centering dnd-section">
-        <div class="row-fluid ">
-        <div class="span12 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell" data-x="0" data-w="12">
-        
-        <div class="row-fluid-wrapper row-depth-1 row-number-3 dnd-row">
-        <div class="row-fluid ">
-        <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
-        <div id="hs_cos_wrapper_widget_1695710638279" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div id="" class="cm-form-box-group">
-          <div class="cm-form-box-left" data-aos="fade-left">      
-            <div class="bg-box"></div>
-            <div class="cm-form-box-inner-left">
-              <svg xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewbox="0 0 53 53" fill="none">
-                <path d="M19.875 24.2915H39.75V28.7082H19.875V24.2915ZM39.75 15.4582H13.25V19.8748H39.75V15.4582ZM48.5833 8.83317V48.5832L39.75 39.7498H8.83329C7.66192 39.7498 6.53852 39.2845 5.71024 38.4562C4.88195 37.6279 4.41663 36.5045 4.41663 35.3332V8.83317C4.41663 6.404 6.40413 4.4165 8.83329 4.4165H44.1666C45.338 4.4165 46.4614 4.88183 47.2897 5.71012C48.118 6.5384 48.5833 7.6618 48.5833 8.83317ZM44.1666 8.83317H8.83329V35.3332H41.5829L44.1666 37.9169V8.83317Z" fill="#A67763" />
-              </svg>
-              <h3>Would you like to discuss?</h3>
-              <p>Are you interested in Collaborating and working with us?<br> Please don’t hesitate to contact us.</p>
-            </div>  
-          </div>
-          <div class="cm-form-box-right" data-aos="fade-right">
-            <h6></h6>
-            <span id="hs_cos_wrapper_widget_1695710638279_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_form" style="" data-hs-cos-general-type="widget" data-hs-cos-type="form"><h3 id="hs_cos_wrapper_form_690156600_title" class="hs_cos_wrapper form-title" data-hs-cos-general-type="widget_field" data-hs-cos-type="text"></h3>
-        
-        <div id="hs_form_target_form_690156600"></div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        </span>
-          </div>
-        </div></div>
-        
-        </div><!--end widget-span -->
-        </div><!--end row-->
-        </div><!--end row-wrapper -->
-        
-        </div><!--end widget-span -->
-        </div><!--end row-->
-        </div><!--end row-wrapper -->
-        
-        </div><!--end widget-span -->
         </div>
-        </div>
-        </div>
-        
-              </main>
-              <script defer src="{% static 'javascript/embed.js' %}"></script>
-<script src="{% static 'javascript/main.min.js' %}"></script>
-<script src="{% static 'javascript/Slick.min.js' %}"></script>
-<script src="{% static 'javascript/jquery.matchHeight-min.js' %}"></script>
-<script>
-var hsVars = hsVars || {}; hsVars['language'] = 'en';
-</script>
+      </section>
 
-<script src="{% static 'javascript/project.js' %}"></script>
-<script src="{% static 'javascript/project2.js' %}"></script>
-<script src="{% static 'javascript/Slick.min.js' %}"></script>
-<script src="{% static 'javascript/module_135732161381_Hero_Banner.min.js' %}"></script>
-<script src="{% static 'javascript/module_135731583080_Contact_Details_Tabs.min.js' %}"></script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const buttons = document.querySelectorAll(".tab-btn");
+          const panels = document.querySelectorAll(".tab-panel");
 
-<script data-hs-allowed="true" src="{% static 'javascript/v2.js' %}"></script>
+          buttons.forEach((btn) => {
+            btn.addEventListener("click", function () {
+              // Remove active state from all buttons
+              buttons.forEach((b) => b.classList.remove("active"));
+              this.classList.add("active");
 
-    <script data-hs-allowed="true">
-        var options = {
-            portalId: '3017451',
-            formId: 'f0b30f53-8fe8-4fa3-ad0c-7676e764bb61',
-            formInstanceId: '5101',
-            
-            pageId: '136475212985',
-            
-            region: 'na1',
-            
-            
-            
-            
-            pageName: "Contact Us",
-            
-            
-            
-            inlineMessage: "<p>Thanks for submitting your inquiry. We will get back to you withing 24 hours.<\/p>",
-            
-            
-            rawInlineMessage: "<p>Thanks for submitting your inquiry. We will get back to you withing 24 hours.<\/p>",
-            
-            
-            hsFormKey: "09df0e3447c0425a0e08f8f1c55cc2ea",
-            
-            
-            css: '',
-            target: '#hs_form_target_form_690156600',
-            
-            
-            
-            
-            
-            
-            
-            contentType: "standard-page",
-            
-            
-            
-            formsBaseUrl: '/_hcms/forms/',
-            
-            
-            
-            formData: {
-                cssClass: 'hs-form stacked hs-custom-form'
-            }
-        };
+              // Hide all panels
+              panels.forEach((p) => {
+                p.style.display = "none";
+              });
 
-        options.getExtraMetaDataBeforeSubmit = function() {
-            var metadata = {};
-            
+              // Show the selected panel
+              const activePanel = document.getElementById(this.dataset.tab);
+              activePanel.style.display = "block";
+            });
+          });
+        });
+      </script>
 
-            if (hbspt.targetedContentMetadata) {
-                var count = hbspt.targetedContentMetadata.length;
-                var targetedContentData = [];
-                for (var i = 0; i < count; i++) {
-                    var tc = hbspt.targetedContentMetadata[i];
-                     if ( tc.length !== 3) {
-                        continue;
-                     }
-                     targetedContentData.push({
-                        definitionId: tc[0],
-                        criterionId: tc[1],
-                        smartTypeId: tc[2]
-                     });
-                }
-                metadata["targetedContentMetadata"] = JSON.stringify(targetedContentData);
-            }
-
-            return metadata;
-        };
-
-        hbspt.forms.create(options);
-    </script>
-
-
-    <script data-hs-allowed="true">
-        var options = {
-            portalId: '3017451',
-            formId: '457b9ae0-cd79-478a-a5c0-7fb3b9826264',
-            formInstanceId: '2943',
-            
-            pageId: '136475212985',
-            
-            region: 'na1',
-            
-            
-            
-            
-            pageName: "Contact Us",
-            
-            
-            redirectUrl: "http:\/\/www.google.com",
-            
-            
-            
-            
-            
-            css: '',
-            target: '#hs_form_target_Newsletter-form',
-            
-            
-            
-            
-            
-            
-            
-            contentType: "standard-page",
-            
-            
-            
-            formsBaseUrl: '/_hcms/forms/',
-            
-            
-            
-            formData: {
-                cssClass: 'hs-form stacked hs-custom-form'
-            }
-        };
-
-        options.getExtraMetaDataBeforeSubmit = function() {
-            var metadata = {};
-            
-
-            if (hbspt.targetedContentMetadata) {
-                var count = hbspt.targetedContentMetadata.length;
-                var targetedContentData = [];
-                for (var i = 0; i < count; i++) {
-                    var tc = hbspt.targetedContentMetadata[i];
-                     if ( tc.length !== 3) {
-                        continue;
-                     }
-                     targetedContentData.push({
-                        definitionId: tc[0],
-                        criterionId: tc[1],
-                        smartTypeId: tc[2]
-                     });
-                }
-                metadata["targetedContentMetadata"] = JSON.stringify(targetedContentData);
-            }
-
-            return metadata;
-        };
-
-        hbspt.forms.create(options);
-    </script>
-
-
-<!-- Start of HubSpot Analytics Code -->
-<script type="text/javascript">
-var _hsq = _hsq || [];
-_hsq.push(["setContentType", "standard-page"]);
-_hsq.push(["setCanonicalUrl", "https:\/\/www.eurosystems.com\/contact"]);
-_hsq.push(["setPageId", "136475212985"]);
-_hsq.push(["setContentMetadata", {
-    "contentPageId": 136475212985,
-    "legacyPageId": "136475212985",
-    "contentFolderId": null,
-    "contentGroupId": null,
-    "abTestId": null,
-    "languageVariantId": 136475212985,
-    "languageCode": "en",
-    
-    
-}]);
-</script>
-
-<script type="text/javascript">
-var hbspt = hbspt || {};
-(hbspt.targetedContentMetadata = hbspt.targetedContentMetadata || []).push(...[]);
-
-var _hsq = _hsq || [];
-_hsq.push(["setTargetedContentMetadata", hbspt.targetedContentMetadata]);
-</script>
-<script type="text/javascript" id="hs-script-loader" async defer src="{% static 'javascript/3017451.js' %}"></script>
-<!-- End of HubSpot Analytics Code -->
-
-
-<script type="text/javascript">
-var hsVars = {
-    render_id: "e17e5903-24de-4e6f-8b00-e1e42973eb39",
-    ticks: 1735616161635,
-    page_id: 136475212985,
-    
-    content_group_id: 0,
-    portal_id: 3017451,
-    app_hs_base_url: "https://app.hubspot.com",
-    cp_hs_base_url: "https://cp.hubspot.com",
-    language: "en",
-    analytics_page_type: "standard-page",
-    scp_content_type: "",
-    analytics_page_id: "136475212985",
-    category_id: 1,
-    folder_id: 0,
-    is_hubspot_user: false
-}
-</script>
-
-
-<script defer src="{% static 'javascript/index.js' %}"></script>
-
-<script>
-   function load(){
-        var userAgent = navigator.userAgent.toLowerCase(); 
-        if (userAgent .indexOf('safari')!=-1){ 
-            if(userAgent .indexOf('chrome')  > -1){
-             //browser is chrome
-            // alert('browser is chrome');
-            const browser = document.querySelector('html');
-            browser.classList.add("custom-chrome");
-           }else{
-                //browser is safari, add css
-            // alert('browser is safari');
-            const browser = document.querySelector('html');
-            browser.classList.add("custom-safari");
-           }
+      <style>
+        .tab-btn {
+          padding: 0.5rem 1rem;
+          border: 2px solid transparent;
+          border-radius: 6px;
+          font-weight: 600;
+          cursor: pointer;
+          transition: all 0.3s;
         }
-    }
-    
-    load();
-</script>
+        .tab-btn.active {
+          border-color: #825B32;
+          background-color: #825B32;
+          color: white;
+        }
+        .tab-panel {
+          display: none; /* Ensures hidden panels do not take up space */
+        }
+        .tab-panel.active {
+          display: block;
+        }
+        .tab-content {
+          min-height: 300px; /* Prevents page shift when switching tabs */
+        }
+      </style>
 
+    </main>
 {% endblock %}

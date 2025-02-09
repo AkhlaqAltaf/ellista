@@ -2,64 +2,52 @@
 {% load static%}
 {% block content %}
 
-<link rel="stylesheet" href="{% static 'css/gallary.css' %}">
-<section id="gallary" class="ftco-section ftco-no-pt ftco-no-pb">
-    <div id="hs_cos_wrapper_module_17326227044691" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="hero-banner-blogs" style="background-image:url('https://www.eurosystems.com/hubfs/Mask%20group-1.png')">
-        <div class="inner-container">
-          <h1>Gallary</h1>
-        </div>
-      </div>
-      <script>
-        $(window).load(function(){
-          setTimeout(function(){
-            $('body').removeClass('no-banner').addClass('has-banner');
-            $('body').addClass('White-header');
-          },200)
-        })
-      </script></div>
-      <div class="cm-blog-banner-breadcrumbs">
-        <div class="inner-container">
-          <ul class="hs-breadcrumb-menu">
-            <li class="hs-breadcrumb-menu-item first-crumb"><a href="/" class="hs-breadcrumb-label">Home</a><span class="hs-breadcrumb-menu-divider"></span></li>
-            <li class="hs-breadcrumb-menu-item last-crumb"><span class="hs-breadcrumb-label">Gallary</span></li>
-          </ul>
-        </div>
-      </div>
-
-    <div class="container-fluid p-0">
-    <div class="row no-gutters">
-        <div class="col-md-6 col-lg-3 ftco-animate">
-
-        {% comment %} Images are displayed here {% endcomment %}
-            <div class="project">
-                <img src="{% static 'images/work-1.jpg' %}" class="img-fluid" alt="Colorlib Template">
-                <div class="text">
-                    <span>Stylist</span>
-                    <h3><a href="project.html">Beard</a></h3>
-                </div>
-                <a href="{% static 'images/work-1.jpg' %}" class="icon image-popup d-flex justify-content-center align-items-center">
-                    <span class="icon-expand"></span>
-                </a>
-            </div>
-        
-        
-        
-        
-        
-        </div>
-
+  <section class="relative w-full h-[580px] bg-cover bg-center flex items-center justify-center text-center" style="background-image: url('https://www.shutterstock.com/shutterstock/videos/3509859073/thumb/1.jpg?ip=x480');">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative z-10">
+        <h1 class="text-4xl font-bold text-white" data-aos="fade-up">Gallary</h1>
+        <nav class="mt-4">
+            <ul class="flex justify-center space-x-4 text-sm uppercase font-semibold text-[#B47F65]">
+                <li><a href="/" class="hover:text-white">Home</a></li>
+                <li>/</li>
+                <li class="">Gallary</li>
+            </ul>
+        </nav>
     </div>
-</div>
+  </section>
+  <section id="gallery" class="pt-16 pb-12 bg-gray-100">
+  <!-- Gallery Grid -->
+  <div class="container mx-auto px-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <!-- Gallery Item -->
+      <div class="relative group overflow-hidden rounded-lg shadow-lg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbhIZcZjClVoe6OTpAHqayhvk3h3nuqZTpmg&s" class="w-full h-64 object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <span class="text-white font-semibold">Industrial Design</span>
+        </div>
+      </div>
+
+      <div class="relative group overflow-hidden rounded-lg shadow-lg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5-kcfOpEyO11rO7zSqDmhEjqRLngyNOP1EQ&s" class="w-full h-64 object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <span class="text-white font-semibold">Manufacturing Process</span>
+        </div>
+      </div>
+
+      <div class="relative group overflow-hidden rounded-lg shadow-lg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb6YowaYj_-mouKJ-RZaAr2cTb60OwDsp_wA&s" class="w-full h-64 object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <span class="text-white font-semibold">Metal Works</span>
+        </div>
+      </div>
+      <div class="relative group overflow-hidden rounded-lg shadow-lg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJYZ9lBJQ0YWK2gylgqUxg74F6yKzEYCFBjg&s" class="w-full h-64 object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <span class="text-white font-semibold">Glass Structures</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-<script src="{% static 'javascript/jquery.min.js' %}"></script>
-<script src="{% static 'javascript/jquery-migrate-3.0.1.min.js' %}"></script>
-<script src="{% static 'javascript/popper.min.js' %}"></script>
-<script src="{% static 'javascript/jquery.waypoints.min.js' %}"></script>
-<script src="{% static 'javascript/jquery.stellar.min.js' %}"></script>
-<script src="{% static 'javascript/owl.carousel.min.js' %}"></script>
-<script src="{% static 'javascript/jquery.magnific-popup.min.js' %}"></script>
-<script src="{% static 'javascript/aos.js' %}"></script>
-<script src="{% static 'javascript/jquery.animateNumber.min.js' %}"></script>
-<script src="{% static 'javascript/scrollax.min.js' %}"></script>
-<script src="{% static 'javascript/main.js' %}"></script>
+
 {% endblock %}

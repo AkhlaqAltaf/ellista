@@ -14,7 +14,7 @@
     <div class="relative w-full h-screen flex items-center bg-black">
   <!-- Background Video -->
   <video class="absolute top-0 left-0 w-full h-full object-cover" loop autoplay muted playsinline>
-    <source src="https://3017451.fs1.hubspotusercontent-na1.net/hubfs/3017451/WEBSITE%202024/WEBSITE%20VIDEOS/4th%20Banner%20Video.mp4" type="video/mp4">
+    <source src="https://cdn.pixabay.com/video/2020/05/24/40054-424371552_large.mp4" type="video/mp4">
   </video>
   
   <!-- Overlay -->
@@ -23,13 +23,12 @@
   <!-- Content Wrapper -->
   <div class="relative z-10 px-6 md:px-10 lg:px-30 text-white w-2/3 text-left">
 
-  <h1 class="text-4xl md:text-8xl font-bold leading-tight uppercase text-white">
-      The leading choice of architects and 
-      <span class="bg-[#FFF0DC] text-[#8D5C45] px-2">designers.</span>
+    <h1 class="text-4xl md:text-8xl font-bold leading-tight uppercase text-white">
+      The Preferred Partner for Innovative
+      <span class="bg-[#FFF0DC] text-[#8D5C45] px-2 inline-block">Designs</span>
     </h1>
-    
     <div class="mt-12">
-      <a href="https://www.eurosystems.com/projects?hsLang=en" 
+      <a href="/projects" 
          class="bg-brown text-white px-6 py-5 font-semibold uppercase text-sm tracking-widest hover:bg-opacity-80 transition">
           View All Projects
       </a>
@@ -40,49 +39,59 @@
 
 
 <div class="text-center text-gray-700 mt-10 mb-10 w-5/6 mx-auto font-roboto text-md font-semibold uppercase leading-relaxed tracking-widest">
-  Ellista International® specializes in
-  <a href="/doors-and-windows-category-list?hsLang=en" class="text-[#8D5C45] hover:underline">Doors and Windows</a>,
-  <a href="/architectural-glazing?hsLang=en" class="text-[#8D5C45] hover:underline">Architectural Systems</a>,
-  <a href="/interior-shading?hsLang=en" class="text-[#8D5C45] hover:underline">Interior Shading</a>,
-  <a href="/outdoor-shading?hsLang=en" class="text-[#8D5C45] hover:underline">Outdoor Shading</a>,
-  along with
-  <a href="/acoustic-solutions?hsLang=en" class="text-[#8D5C45] hover:underline">Acoustic Solutions</a>.
+  Ellista International® specializes in  
+  <a href="/aluminium?hsLang=en" class="text-[#8D5C45] hover:underline">Aluminium</a>,  
+  <a href="/steel-structure?hsLang=en" class="text-[#8D5C45] hover:underline">Steel Structure</a>,  
+  <a href="/iron?hsLang=en" class="text-[#8D5C45] hover:underline">Iron</a>,  
+  <a href="/glass-works?hsLang=en" class="text-[#8D5C45] hover:underline">Glass Works</a>,  
+  <a href="/stainless-steel?hsLang=en" class="text-[#8D5C45] hover:underline">Stainless Steel</a>,  
+  <a href="/kitchen-accessories?hsLang=en" class="text-[#8D5C45] hover:underline">Kitchen Accessories</a>,  
+  <a href="/wooden?hsLang=en" class="text-[#8D5C45] hover:underline">Wooden</a>,  
+  along with  
+  <a href="/hand-railing?hsLang=en" class="text-[#8D5C45] hover:underline">Hand Railing</a>.
 </div>
+
 
     <div class="flex flex-col mx-20 lg:flex-row items-center gap-8 lg:gap-12 px-6 lg:px-16 py-10  bg-[#FFF0DC]">
   
   <!-- Left: Image -->
   <div class="w-full lg:w-1/2">
-    <div class="bg-cover bg-center h-64 lg:h-80" 
-         style="background-image: url('https://www.eurosystems.com/hubfs/WEBSITE%202024/WEBSITE%20IMAGES/Website%20Other%20Pages/Home%20page-1.jpg');">
-    </div>
+    <img src="{% static 'images/company.jpg' %}" alt="Company Image" class="w-full h-80">
   </div>
     
   <!-- Right: Content -->
   <div class="w-full lg:w-1/2 text-left space-y-4">
     <h6 class="text-sm font-semibold uppercase text-gray-700">About Ellista International</h6>
     <h2 class="text-xl lg:text-2xl font-bold text-gray-900 leading-snug">
-      Founded in 2007 by Mr. Mohamed Fiaz Khazi. Ellista International is a systems solution provider in the Doors and windows, Architectural systems, Outdoor shading, Interior shades, Acoustic solutions, and aluminum and glazing industry.
+      Established to Redefine Excellence in Metal & Glass Works
     </h2>
     <p class="text-gray-700 text-base">
-      With a strong diverse and multicultural team of 600 employees in 4 countries, Ellista International delivers high-quality products and services.
+      Ellista International is a trusted provider of high-quality solutions in aluminum, steel structures, ironwork, glass fabrication, stainless steel, kitchen accessories, wooden craftsmanship, and hand railings.  
     </p>
+    <p class="text-gray-700 text-base">
+      With a skilled team operating across multiple regions, we bring innovation, durability, and precision to every project, ensuring customer satisfaction through exceptional craftsmanship and cutting-edge technology.
+    </p>
+    
     
     <!-- Button -->
     <div class="mt-4">
-      <a href="https://www.eurosystems.com/about?hsLang=en" 
-         class="inline-flex items-center gap-2 text-brown font-semibold text-lg hover:text-opacity-80 transition">
+      <a href="/products" 
+         class="inline-flex items-center gap-2 text-[#8D5C45] font-semibold text-lg hover:text-opacity-80 transition">
         More About Ellista International
-        <img src="https://www.eurosystems.com/hubfs/Euro_System_Sept2023/Images/arrow-right%20(1).svg" 
-             alt="Arrow Right" class="w-6 h-6">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" 
+             class="w-6 h-6 text-[#8D5C45]">
+          <path fill-rule="evenodd" d="M2.25 12a.75.75 0 0 1 .75-.75h16.19l-5.22-5.22a.75.75 0 1 1 1.06-1.06l6.5 6.5a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06-1.06l5.22-5.22H3a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+        </svg>
       </a>
     </div>
+    
+    
   </div>
 
 </div>
 
-    
-    <div class="mx-20 mt-10 py-10 px-4">
+
+<div class="mx-20 mt-10 py-10 px-4">
   <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
     
     <!-- Card 1 -->
@@ -98,7 +107,7 @@
         >  
       </div>
       <h4 class="text-2xl font-semibold mb-2 text-[#8D5C45] group-hover:text-white">Putting Customers First</h4>
-      <p class="text-lg text-start px-8">Our employees consider your point of view and deliver high quality products and services. We frequently interact with our customers and measure their satisfaction. We aim to build and promote gain-sharing, long term and mutually beneficial relationships with you.</p>
+      <p class="text-lg text-center px-8">We prioritize our clients' needs by offering personalized solutions, ensuring quality, and fostering long-term relationships through trust and commitment.</p>
     </div>
 
     <!-- Card 2 -->
@@ -114,7 +123,7 @@
       >
       </div>
       <h4 class="text-2xl font-semibold mb-2 text-[#8D5C45] group-hover:text-white">Creativity</h4>
-      <p class="text-lg text-start px-8">We always look for new ways to solve problems and approach challenges as opportunities. With your inputs, we move the organization forward with a unique perspective</p>
+      <p class="text-lg text-center px-8">We bring innovative designs and engineering solutions to reality, ensuring uniqueness in every project while maintaining functionality and elegance.</p>
     </div>
     <!-- Card 3 -->
     <div class=" shadow-md p-6 text-center h-85 hover:bg-[#A67763] hover:text-white group">
@@ -129,7 +138,7 @@
       >
       </div>
       <h4 class="text-2xl font-semibold mb-2 text-[#8D5C45] group-hover:text-white">Simplicity</h4>
-      <p class="text-lg text-start px-8">We believe in breaking down a problem to the sum of its components and efficiently solving it. For you, we prioritize and focus on a small number of the most significant issues.</p>
+      <p class="text-lg text-center px-8">We design streamlined, easy-to-integrate solutions, ensuring that our customers get effective, efficient, and elegant outcomes with minimal complexity.</p>
     </div>
 
     <!-- Card 4 -->
@@ -145,7 +154,7 @@
       >
       </div>
       <h4 class="text-2xl font-semibold mb-2 text-[#8D5C45] group-hover:text-white">Openness</h4>
-      <p class="text-lg text-start px-8">We believe to maintain an honest relation with our client. Our passionate employees will always give you their expertise opinion. We always intend to listen and constantly try to learn from our clients.</p>
+      <p class="text-lg text-center px-8">Transparency is key to our work. We communicate openly, embrace feedback, and continuously improve our services to meet evolving industry demands.</p>
     </div>
 
     <!-- Card 5 -->
@@ -159,7 +168,7 @@
       >
       </div>
       <h4 class="text-2xl font-semibold mb-2 text-[#8D5C45] group-hover:text-white">Sharing Knowledge</h4>
-      <p class="text-lg text-start px-8">Not everyone knows everything, but someone always does it. Together we know more than as compared to individuals. We believe in sharing knowledge within the organization and providing you the finest possible solution.</p>
+      <p class="text-lg text-center px-8">We believe in collaboration and knowledge exchange, empowering our clients and team with the latest advancements in architectural solutions.</p>
     </div>
 
     <!-- Card 6 -->
@@ -173,43 +182,63 @@
       >
       </div>
       <h4 class="text-2xl font-semibold mb-2 text-[#8D5C45] group-hover:text-white">Mission and Vision</h4>
-      <p class="text-lg text-start px-8">Ellista International® has always had a clear sight on where we want to be and where we aim to be. Our mission and vision is to be recognized as a reliable and innovative partner for architectural solutions in the GCC region.</p>
+      <p class="text-lg text-center px-8">Our mission is to be the most trusted partner in architectural solutions, delivering excellence, innovation, and sustainability in every project we undertake.</p>
     
   </div>
 </div>
-
-
-     <!-- Include Fancybox -->
-<script src="{% static 'javascript/jquery.fancybox.min.js' %}"></script>
-<link rel="stylesheet" href="./css/jquery.fancybox.css">
-
-<!-- Section Container -->
-<div class="relative bg-cover bg-center mx-10 mt-10 h-[400px] flex justify-center items-center px-6"
-     style="background-image: url('https://www.eurosystems.com/hubfs/WEBSITE%202024/WEBSITE%20IMAGES/Website%20Other%20Pages/Dubai%20Office.jpg');">
-  
-  <!-- Content Box -->
-  <div class="bg-white bg-opacity-80 backdrop-blur-md p-6 md:p-8 rounded-lg shadow-lg max-w-3xl w-full flex flex-col md:flex-row items-center gap-6">
     
-    <!-- Heading -->
-    <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800 text-center md:text-left flex-1">
-      Innovative Partner for Architectural Solutions
-    </h2>
-
-    <!-- Play Button -->
-    <a href="https://youtu.be/OMh7PyT3MKs?si=sPtTji4kdojDxIkE" data-fancybox class="group">
-      <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
-           class="transition-transform transform group-hover:scale-110">
-        <circle cx="50" cy="50" r="50" fill="#A67763" />
-        <path d="M39.5918 27.8516L67.887 50.4436L39.5918 73.0356L39.5918 50.4436V27.8516Z" 
-              fill="white" class="transition-opacity group-hover:opacity-80"/>
-      </svg>
-      <span class="block text-center text-sm font-medium text-gray-800 mt-2">Play Video</span>
-    </a>
-    
-  </div>
-
+<div class="mt-10 text-center max-w-lg mx-auto mb-10">
+  <h6 class="text-gray-700 mb-5 text-lg font-bold" data-aos="fade-up">Our Projects</h6>
+  <h2 class="text-3xl md:text-4xl font-bold text-[#251C17]" data-aos="fade-up">
+    Passionate to deliver high-quality products.
+  </h2>
 </div>
 
+<div class="grid mt-10 grid-cols-1 md:grid-cols-2 gap-4 w-full mx-auto">
+  <!-- Item 1 -->
+  <div class="relative group">
+      <img src="https://www.eurosystems.com/hubfs/DMCCCC.jpg" alt="Uptown Tower" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-50 transition-all"></div>
+      <div class="absolute bottom-4 left-4 text-white">
+          <p class="text-sm uppercase tracking-wide">Commercial</p>
+          <h2 class="text-lg font-semibold text-white">Uptown Tower</h2>
+          <p class="text-sm">Dubai</p>
+      </div>
+  </div>
+
+  <!-- Item 2 -->
+  <div class="relative group">
+      <img src="https://www.eurosystems.com/hubfs/beea.jpg" alt="Beeah Group" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-50 transition-all"></div>
+      <div class="absolute bottom-4 left-4 text-white">
+          <p class="text-sm uppercase tracking-wide">Sustainable</p>
+          <h2 class="text-lg font-semibold text-white">Beeah Group</h2>
+          <p class="text-sm">Sharjah</p>
+      </div>
+  </div>
+
+  <!-- Item 3 -->
+  <div class="relative group">
+      <img src="https://www.eurosystems.com/hubfs/palm-1.jpg" alt="Private Villa" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-50 transition-all"></div>
+      <div class="absolute bottom-4 left-4 text-white">
+          <p class="text-sm uppercase tracking-wide">Residential</p>
+          <h2 class="text-lg font-semibold text-white">Private Villa, Palm Jumeirah</h2>
+          <p class="text-sm">Dubai</p>
+      </div>
+  </div>
+
+  <!-- Item 4 -->
+  <div class="relative group">
+      <img src="https://www.eurosystems.com/hubfs/allured-framed-2.jpg" alt="Private Villa 2" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-50 transition-all"></div>
+      <div class="absolute bottom-4 left-4 text-white">
+          <p class="text-sm uppercase tracking-wide">Residential</p>
+          <h2 class="text-lg font-semibold text-white">Private Villa, Palm Jumeirah</h2>
+          <p class="text-sm">Dubai</p>
+      </div>
+  </div>
+</div>
 
 
 <div class="max-w-7xl mx-auto px-6 mt-10 py-10 grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -218,36 +247,68 @@
       <h2 class="text-lg font-semibold uppercase tracking-wider text-gray-700 mb-6">Our Solutions</h2>
       <div class="space-y-4">
           <a href="#" class="solution-link flex items-center justify-between border-b pb-3 text-2xl font-semibold text-gray-800 hover:text-[#8D5C45]"
-             data-image="https://www.eurosystems.com/hs-fs/hubfs/WEBSITE%202024/WEBSITE%20IMAGES/Website%20Other%20Pages/Home%20page%20product%20collage-01.jpg?width=1000&amp;height=1000&amp;name=Home%20page%20product%20collage-01.jpg">
-              Doors and Windows
-              <span class="text-xl">↗</span>
+             data-image="https://i.pinimg.com/736x/9b/1d/17/9b1d17c57f9522933f7c961c1fd2b068.jpg">
+             Aluminium
+             <svg class="w-6 h-6 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5h10M19 5v10M19 5L5 19"></path>
+           </svg>
           </a>
           <a href="#" class="solution-link flex items-center justify-between border-b pb-3 text-2xl font-semibold text-gray-800 hover:text-[#8D5C45]"
-             data-image="https://www.eurosystems.com/hs-fs/hubfs/WEBSITE%202024/WEBSITE%20IMAGES/Website%20Other%20Pages/Home%20page%20product%20collage-02.jpg?width=1000&amp;height=1000&amp;name=Home%20page%20product%20collage-02.jpg">
-              Architectural Systems
-              <span class="text-xl">↗</span>
+             data-image="https://i.pinimg.com/736x/d2/95/98/d29598a59752a6ead8be87bc3cc428d9.jpg">
+             Steel Structure
+              <svg class="w-6 h-6 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5h10M19 5v10M19 5L5 19"></path>
+   </svg>
           </a>
           <a href="#" class="solution-link flex items-center justify-between border-b pb-3 text-2xl font-semibold text-gray-800 hover:text-[#8D5C45]"
-             data-image="https://www.eurosystems.com/hs-fs/hubfs/WEBSITE%202024/WEBSITE%20IMAGES/Website%20Other%20Pages/Home%20page%20product%20collage-04.jpg?width=1000&amp;height=1000&amp;name=Home%20page%20product%20collage-04.jpg">
-              Interior Shading
-              <span class="text-xl">↗</span>
+             data-image="https://i.pinimg.com/736x/8d/38/cb/8d38cbcd666ce0dded9b4679e280bdf8.jpg">
+             Iron
+              <svg class="w-6 h-6 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5h10M19 5v10M19 5L5 19"></path>
+   </svg>
           </a>
           <a href="#" class="solution-link flex items-center justify-between border-b pb-3 text-2xl font-semibold text-gray-800 hover:text-[#8D5C45]"
-             data-image="https://www.eurosystems.com/hs-fs/hubfs/WEBSITE%202024/WEBSITE%20IMAGES/Website%20Other%20Pages/Home%20page%20product%20collage-03.jpg?width=1000&amp;height=1000&amp;name=Home%20page%20product%20collage-03.jpg">
-              Outdoors Shading
-              <span class="text-xl">↗</span>
+             data-image="https://i.pinimg.com/736x/23/6b/8f/236b8fc3ae322cde94e0e1fb3b7a5912.jpg">
+             Glass Works
+              <svg class="w-6 h-6 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5h10M19 5v10M19 5L5 19"></path>
+   </svg>
           </a>
           <a href="#" class="solution-link flex items-center justify-between border-b pb-3 text-2xl font-semibold text-gray-800 hover:text-[#8D5C45]"
-             data-image="https://www.eurosystems.com/hs-fs/hubfs/WEBSITE%202024/WEBSITE%20IMAGES/Website%20Other%20Pages/Home%20page%20product%20collage.jpg?width=1000&amp;height=1000&amp;name=Home%20page%20product%20collage.jpg">
-              Acoustic Solutions
-              <span class="text-xl">↗</span>
+             data-image="https://i.pinimg.com/736x/e5/00/a9/e500a9ba4e74d77d42aaf9946f52b436.jpg">
+             Stainless Steel
+              <svg class="w-6 h-6 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5h10M19 5v10M19 5L5 19"></path>
+   </svg>
+          </a>
+          <a href="#" class="solution-link flex items-center justify-between border-b pb-3 text-2xl font-semibold text-gray-800 hover:text-[#8D5C45]"
+             data-image="https://i.pinimg.com/736x/56/ac/6c/56ac6c671119c1bcbf2b52d609d8cd59.jpg">
+             Kitchen Accessories
+              <svg class="w-6 h-6 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5h10M19 5v10M19 5L5 19"></path>
+   </svg>
+          </a>
+          <a href="#" class="solution-link flex items-center justify-between border-b pb-3 text-2xl font-semibold text-gray-800 hover:text-[#8D5C45]"
+             data-image="https://i.pinimg.com/736x/9b/b9/63/9bb963377b2ce8040c94cd66f6c90d72.jpg">
+             Wooden
+              <svg class="w-6 h-6 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5h10M19 5v10M19 5L5 19"></path>
+   </svg>
+          </a>
+
+          <a href="#" class="solution-link flex items-center justify-between border-b pb-3 text-2xl font-semibold text-gray-800 hover:text-[#8D5C45]"
+          data-image="https://i.pinimg.com/736x/ca/26/08/ca2608288075093d806b234f5add348e.jpg">
+          Hand Railing
+           <svg class="w-6 h-6 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5h10M19 5v10M19 5L5 19"></path>
+   </svg>
           </a>
       </div>
   </div>
 
   <!-- Right Side - Changing Image -->
   <div class="flex justify-center">
-      <img id="displayImage" src="https://www.eurosystems.com/hs-fs/hubfs/WEBSITE%202024/WEBSITE%20IMAGES/Website%20Other%20Pages/Home%20page%20product%20collage-01.jpg?width=1000&amp;height=1000&amp;name=Home%20page%20product%20collage-01.jpg" 
+      <img id="displayImage" src="https://i.pinimg.com/736x/9b/1d/17/9b1d17c57f9522933f7c961c1fd2b068.jpg" 
            alt="Solution Image" class="w-full max-w-md rounded-lg shadow-lg transition-all duration-300">
   </div>
 </div>
@@ -263,57 +324,6 @@
       });
   });
 </script>
-    
-<div id="hs_cos_wrapper_widget_1695379740210" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="cm-section-header widget_1695379740210 Center  no-letter-spacing  " style="text-align:Center;margin-bottom:40px;max-width:470px;">
-  <h6 data-aos="fade-up" style="margin-bottom:45px;color: rgba(63, 65, 67,1.0)">Our Projects</h6>
-  <h2 data-aos="fade-up" style="font-size:px;"><span style="color: #251C17;">Passionate to deliver high quality products.</span></h2>
-</div>
-<div class="grid mt-10 grid-cols-1 md:grid-cols-2 gap-4 w-full mx-auto">
-  <!-- Item 1 -->
-  <div class="relative group">
-      <img src="https://www.eurosystems.com/hubfs/DMCCCC.jpg" alt="Uptown Tower" class="w-full h-full object-cover">
-      <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-50 transition-all"></div>
-      <div class="absolute bottom-4 left-4 text-white">
-          <p class="text-sm uppercase tracking-wide">Commercial</p>
-          <h2 class="text-lg font-semibold">Uptown Tower</h2>
-          <p class="text-sm">Dubai</p>
-      </div>
-  </div>
-
-  <!-- Item 2 -->
-  <div class="relative group">
-      <img src="https://www.eurosystems.com/hubfs/beea.jpg" alt="Beeah Group" class="w-full h-full object-cover">
-      <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-50 transition-all"></div>
-      <div class="absolute bottom-4 left-4 text-white">
-          <p class="text-sm uppercase tracking-wide">Sustainable</p>
-          <h2 class="text-lg font-semibold">Beeah Group</h2>
-          <p class="text-sm">Sharjah</p>
-      </div>
-  </div>
-
-  <!-- Item 3 -->
-  <div class="relative group">
-      <img src="https://www.eurosystems.com/hubfs/palm-1.jpg" alt="Private Villa" class="w-full h-full object-cover">
-      <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-50 transition-all"></div>
-      <div class="absolute bottom-4 left-4 text-white">
-          <p class="text-sm uppercase tracking-wide">Residential</p>
-          <h2 class="text-lg font-semibold">Private Villa, Palm Jumeirah</h2>
-          <p class="text-sm">Dubai</p>
-      </div>
-  </div>
-
-  <!-- Item 4 -->
-  <div class="relative group">
-      <img src="https://www.eurosystems.com/hubfs/allured-framed-2.jpg" alt="Private Villa 2" class="w-full h-full object-cover">
-      <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-50 transition-all"></div>
-      <div class="absolute bottom-4 left-4 text-white">
-          <p class="text-sm uppercase tracking-wide">Residential</p>
-          <h2 class="text-lg font-semibold">Private Villa, Palm Jumeirah</h2>
-          <p class="text-sm">Dubai</p>
-      </div>
-  </div>
-</div>
-
 
 
 
@@ -372,10 +382,9 @@
           </div>
       </div>
       <p class="text-gray-600 text-xl mt-4 md:mt-0 md:ml-6 text-center md:text-left max-w-2xl">
-          Our innovative and passionate engineers are always striving to come up with new products in 
-          accordance with the latest market trends while our experienced sales and installation teams 
-          execute jobs to the highest standards achievable.
-      </p>
+        Our skilled and dedicated engineers continuously innovate to deliver high-quality products that align with modern industry standards, while our expert sales and installation teams ensure flawless execution with precision and excellence.
+    </p>
+    
   </div>
 </div>
 
@@ -456,7 +465,6 @@ document.addEventListener("DOMContentLoaded", () => {
       <img src="https://3017451.fs1.hubspotusercontent-na1.net/hub/3017451/hubfs/WEBSITE%202024/WEBSITE%20IMAGES/Systems%20Icon/Serge.png?width=350&amp;height=90&amp;name=Serge.png" alt="Logo 4">
       <img src="https://3017451.fs1.hubspotusercontent-na1.net/hub/3017451/hubfs/WEBSITE%202024/WEBSITE%20IMAGES/Systems%20Icon/RK.png?width=350&amp;height=90&amp;name=RK.png" alt="Logo 5">
       <img src="https://3017451.fs1.hubspotusercontent-na1.net/hub/3017451/hubfs/WEBSITE%202024/WEBSITE%20IMAGES/Systems%20Icon/RK.png?width=350&amp;height=90&amp;name=RK.png" alt="Logo 6">
-
       <img src="https://3017451.fs1.hubspotusercontent-na1.net/hub/3017451/hubfs/kvadrat-1-2.png?width=250&amp;height=58&amp;name=kvadrat-1-2.png" alt="Logo 1">
       <img src="https://www.eurosystems.com/hs-fs/hubfs/kvadrat-1.png?width=372&amp;height=86&amp;name=kvadrat-1.png" alt="Logo 2">
       <img src="https://3017451.fs1.hubspotusercontent-na1.net/hub/3017451/hubfs/Forest-Drapery-Hardware-n.webp?width=250&amp;height=69&amp;name=Forest-Drapery-Hardware-n.webp" alt="Logo 3">
@@ -468,310 +476,128 @@ document.addEventListener("DOMContentLoaded", () => {
 </div>
 
 
-<h6 data-aos="fade-up" class="text-sm font-bold underline text-center mb-10" style="margin-bottom:px;color: rgba(63, 65, 67,1.0)">BLOG &amp; NEWS</h6>
-    <div class="row-fluid-wrapper row-depth-1 row-number-9 dnd-section dnd_area-bottom_container-row-4-padding dnd_area-bottom_container-row-4-force-full-width-section">
-    <div class="row-fluid ">
-    <div class="span12 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell" data-x="0" data-w="12">
-    
-    <div class="row-fluid-wrapper row-depth-1 row-number-10 dnd-row">
-    <div class="row-fluid ">
-    <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
-    <div id="hs_cos_wrapper_widget_1695380266643" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="cm-latest-blog-wrap">
-      <div class="widget_1695380266643">
-        <div class="cm-latest-blog-item">
-          <div class="cm-latest-blog-inner-item">
-            <div class="inner-item matchHeight">
-              <div class="img-wrap " style="background-image:url(https://www.eurosystems.com/hubfs/Solange%20copy-1.jpg)">
-                <div class="card-tag">News</div>
-                <div class="content">
-                  <div class="byline">
-                    
-                    <span class="tag">          
-                      Solange specialty shade,interior shading solution,interior shades,skylights shading
-                    </span>
-                    <span class="reading-minutes">
-                      1 min. read
-                    </span>                
-                  </div>
-                  <h4 style="font-size:27.65px"><a href="https://www.eurosystems.com/blog/specialty-shading-solution-uae-qatar-and-kuwait?hsLang=en" style="color: #FFF0DC">Specialty Shading Solution for Skylights and large windows</a></h4>      
-                  <div class="read-more">
-                    <a href="https://www.eurosystems.com/blog/specialty-shading-solution-uae-qatar-and-kuwait?hsLang=en" style="color: rgba(255, 255, 255,1.0)"><strong>Read More</strong></a>
-                  </div>
-                </div>
-              </div>          
-            </div>
+<h6 data-aos="fade-up" class="text-sm font-bold underline text-center mb-10" style="margin-bottom:px;color: rgba(63, 65, 67,1.0)">LATEST UPDATES</h6>
+
+<div class="container mx-auto p-4">
+  <div id="blog-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  
+  <!-- Pagination Controls -->
+  <div class="flex justify-center mt-6">
+      <button id="prevPage" class="px-4 py-2 bg-[#8D5C45] text-white rounded-md mr-2">Previous</button>
+      <span id="pageNumber" class="px-4 py-2 bg-gray-300 rounded-md">1</span>
+      <button id="nextPage" class="px-4 py-2 bg-[#8D5C45] text-white rounded-md ml-2">Next</button>
+  </div>
+</div>
+
+<script>
+  const blogs = [
+      { title: "Why Aluminium is the Preferred Choice for Modern Architecture", image: "https://i.pinimg.com/736x/e6/02/83/e60283b2174d20e737ee0809bb5c9f06.jpg", tag: "Aluminium, Durable Metal, Construction", time: "2 min read" },
+      { title: "The Benefits of Steel Structures in Construction", image: "https://i.pinimg.com/736x/d4/49/08/d4490880720ebba26b39f3f183d9c1b0.jpg", tag: "Steel Structures, Engineering, Strength", time: "3 min read" },
+      { title: "Iron Works: The Backbone of Modern Construction", image: "https://i.pinimg.com/236x/f9/94/48/f99448b76bcaf8edb0618a93066a73ea.jpg", tag: "Iron Craftsmanship, Strength, Durability", time: "1 min read" },
+      { title: "Innovative Glass Works for Contemporary Architecture", image: "https://i.pinimg.com/236x/0e/bc/48/0ebc4870f8ba1522b7f6619ac54fd61a.jpg", tag: "Glass Designs, Modern Aesthetics, Clarity", time: "2 min read" },
+      { title: "Why Stainless Steel is a Timeless Choice", image: "https://i.pinimg.com/236x/2a/ef/57/2aef5711dc799a431683a63002442f31.jpg", tag: "Stainless Steel, Rust-Free, Modern Finish", time: "1 min read" },
+      { title: "Enhance Your Kitchen with Smart Accessories", image: "https://i.pinimg.com/236x/2a/98/0d/2a980d4c1ff1f39e0ed3383854fae7e9.jpg", tag: "Kitchen Accessories, Smart Storage, Modern Living", time: "2 min read" },
+      { title: "The Beauty and Elegance of Wooden Finishes", image: "https://i.pinimg.com/736x/5b/2d/b7/5b2db7644492e291a37599a3dd45dae1.jpg", tag: "Wooden Interiors, Natural Aesthetics, Craftsmanship", time: "1 min read" },
+      { title: "Modern Hand Railings for Safety and Style", image: "https://i.pinimg.com/236x/b8/3d/2e/b83d2efe2ddac8aa0bd96341fe8e5b0c.jpg", tag: "Hand Railings, Safety, Modern Designs", time: "2 min read" }
+  ];
+
+  let currentPage = 1;
+  const blogsPerPage = 3;
+
+  function renderBlogs() {
+      const start = (currentPage - 1) * blogsPerPage;
+      const end = start + blogsPerPage;
+      const blogsToShow = blogs.slice(start, end);
+
+      document.getElementById("blog-container").innerHTML = blogsToShow.map(blog => `
+          <div class="relative h-80 bg-cover bg-center rounded-lg shadow-md" style="background-image: url('${blog.image}')">
+              <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4 rounded-lg">
+                  <span class="text-gray-300 text-sm">${blog.tag}</span>
+                  <h2 class="text-white text-lg font-bold">${blog.title}</h2>
+                  <p class="text-gray-300 text-md">${blog.time}</p>
+              </div>
           </div>
-        </div>
-        
-        <div class="cm-latest-blog-item">
-          <div class="cm-latest-blog-inner-item">
-            <div class="inner-item matchHeight">
-              <div class="img-wrap " style="background-image:url(https://www.eurosystems.com/hubfs/LL_2022_Roller_Botany_Eucalyptus_70mm_Dine_Main.jpg)">
-                <div class="card-tag">News</div>
-                <div class="content">
-                  <div class="byline">
-                    
-                    <span class="tag">          
-                       roller blinds uae,Venetian blinds, interior shading solution,interior shades, battery operated blinds,vision blinds</span>
-                    <span class="reading-minutes">
-                       1 min. read
-                    </span>                
-                  </div>
-                  <h4 style="font-size:27.65px"><a href="https://www.eurosystems.com/blog/benefits-of-battery-operated-blinds-uae-qatar-and-kuwait?hsLang=en" style="color: #FFF0DC">Benefits of battery operated blinds</a></h4>      
-                  <div class="read-more">
-                    <a href="https://www.eurosystems.com/blog/benefits-of-battery-operated-blinds-uae-qatar-and-kuwait?hsLang=en" style="color: rgba(255, 255, 255,1.0)"><strong>Read More</strong></a>
-                  </div>
-                </div>
-              </div>          
-            </div>
-          </div>
-        </div>
-        
-        <div class="cm-latest-blog-item">
-          <div class="cm-latest-blog-inner-item">
-            <div class="inner-item matchHeight">
-              <div class="img-wrap " style="background-image:url(https://www.eurosystems.com/hubfs/Sun%20Sail%20Image.jpg)">
-                <div class="card-tag">News</div>
-                <div class="content">
-                  <div class="byline">
-                    
-                    <span class="tag">          
-                      outdoorliving, outdoorshades,outdoor shading, sail shade, sun sail  
-                    </span>
-                    <span class="reading-minutes">
-                      1 min. read
-                    </span>                
-                  </div>
-                  <h4 style="font-size:27.65px"><a href="https://www.eurosystems.com/blog/sun-sail-vs-sail-shade-uae-qatar-and-kuwait?hsLang=en" style="color: #FFF0DC">Sun Sail Vs. Sail Shade</a></h4>      
-                  <div class="read-more">
-                    <a href="https://www.eurosystems.com/blog/sun-sail-vs-sail-shade-uae-qatar-and-kuwait?hsLang=en" style="color: rgba(255, 255, 255,1.0)"><strong>Read More</strong></a>
-                  </div>
-                </div>
-              </div>          
-            </div>
-          </div>
-        </div>
-        
-        <div class="cm-latest-blog-item">
-          <div class="cm-latest-blog-inner-item">
-            <div class="inner-item matchHeight">
-              <div class="img-wrap " style="background-image:url(https://www.eurosystems.com/hubfs/DSC_1939.jpg)">
-                <div class="card-tag">News</div>
-                <div class="content">
-                  <div class="byline">
-                    
-                    <span class="tag">          
-                       commercial curtains
-                      ,curtains,interior shading solution,interior shades ,draperies and curtains,residential curtains
-                    </span>
-                    <span class="reading-minutes">
-                      2 min. read
-                    </span>                
-                  </div>
-                  <h4 style="font-size:27.65px"><a href="https://www.eurosystems.com/blog/best-natural-fiber-fabric-curtains-for-your-home-in-uae-qatar-and-kuwait-0?hsLang=en" style="color: #FFF0DC">Best natural fiber fabric curtains for your home</a></h4>      
-                  <div class="read-more">
-                    <a href="https://www.eurosystems.com/blog/best-natural-fiber-fabric-curtains-for-your-home-in-uae-qatar-and-kuwait-0?hsLang=en" style="color: rgba(255, 255, 255,1.0)"><strong>Read More</strong></a>
-                  </div>
-                </div>
-              </div>          
-            </div>
-          </div>
-        </div>
-        <div class="cm-latest-blog-item">
-          <div class="cm-latest-blog-inner-item">
-            <div class="inner-item matchHeight">
-              <div class="img-wrap " style="background-image:url(https://www.eurosystems.com/hubfs/WhatsApp%20Image%202022-07-04%20at%205.20.15%20PM.jpeg)">
-                <div class="card-tag">News</div>
-                <div class="content">
-                  <div class="byline">
-                    <span class="tag">          
-                       Minimal System ,minimal sliding door, panoramic view,gracili minimal systems
-                    </span>
-                    <span class="reading-minutes">
-                      1 min. read
-                    </span>                
-                  </div>
-                  <h4 style="font-size:27.65px"><a href="https://www.eurosystems.com/blog/why-minimal-frame-sliding-doors-windows-are-perfect-for-a-panoramic-view-in-uae-qatar-and-kuwait?hsLang=en" style="color: #FFF0DC">Why minimal sliding doors &amp; windows are perfect for a panoramic view</a></h4>      
-                  <div class="read-more">
-                    <a href="https://www.eurosystems.com/blog/why-minimal-frame-sliding-doors-windows-are-perfect-for-a-panoramic-view-in-uae-qatar-and-kuwait?hsLang=en" style="color: rgba(255, 255, 255,1.0)"><strong>Read More</strong></a>
-                  </div>
-                </div>
-              </div>          
-            </div>
-          </div>
-        </div>
-        
-        <div class="cm-latest-blog-item">
-          <div class="cm-latest-blog-inner-item">
-            <div class="inner-item matchHeight">
-              <div class="img-wrap " style="background-image:url(https://www.eurosystems.com/hubfs/Euro%20Systems%C2%AE%20Pergola%20types-1.jpg)">
-                <div class="card-tag">News</div>
-                <div class="content">
-                  <div class="byline">
-                    
-                    <span class="tag">pergola,retractablepergola,pergolasystems, pergolas,bioclimaticpergola, outdoor shading
-                    </span>
-                    <span class="reading-minutes">
-                      2 min. read
-                    </span>                
-                  </div>
-                  <h4 style="font-size:27.65px"><a href="https://www.eurosystems.com/blog/5-reasons-to-buy-a-pergola-for-outdoor-living-in-uae-qatar-and-kuwait?hsLang=en" style="color: #FFF0DC">5 reasons to buy a pergola for outdoor living</a></h4>      
-                  <div class="read-more">
-                    <a href="https://www.eurosystems.com/blog/5-reasons-to-buy-a-pergola-for-outdoor-living-in-uae-qatar-and-kuwait?hsLang=en" style="color: rgba(255, 255, 255,1.0)"><strong>Read More</strong></a>
-                  </div>
-                </div>
-              </div>          
-            </div>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    <script>
-      $(document).ready(function(){
-        $('.widget_1695380266643').slick({
-          dots: true,
-          autoplay:true,
-          autoplayspeed:4000,
-          infinite: true,     
-          speed:800,
-          prevArrow:'<div class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.268531 5.09515C0.277184 5.14207 0.304313 5.21424 0.328824 5.25555C0.353336 5.29685 1.40172 6.36051 2.65855 7.61924C4.52105 9.48451 4.96177 9.91631 5.04136 9.95375C5.3638 10.1054 5.73863 9.859 5.73863 9.49531C5.73863 9.26211 5.84757 9.38223 3.56127 7.0948L1.46757 5.00008L3.56127 2.90535C5.84757 0.617928 5.73863 0.738045 5.73863 0.504842C5.73863 0.29828 5.60041 0.0935136 5.42275 0.0368539C5.38486 0.0247832 5.34552 0.00716788 5.33531 -0.0022859C5.31423 -0.021778 5.09638 -0.0262908 5.11584 -0.00681776C5.12279 0.000115453 5.08691 0.0253106 5.03609 0.0491391C4.89828 0.113768 0.396539 4.62137 0.321266 4.77012C0.260621 4.88994 0.246617 4.97627 0.268531 5.09515ZM5.23668 9.99402C5.30113 9.99392 5.32513 9.99027 5.29004 9.98592C5.25494 9.98158 5.2022 9.98166 5.17285 9.98611C5.14349 9.99058 5.17222 9.99414 5.23668 9.99402Z" fill="black"/></svg></div>',
-          nextArrow:'<div class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.268531 5.09515C0.277184 5.14207 0.304313 5.21424 0.328824 5.25555C0.353336 5.29685 1.40172 6.36051 2.65855 7.61924C4.52105 9.48451 4.96177 9.91631 5.04136 9.95375C5.3638 10.1054 5.73863 9.859 5.73863 9.49531C5.73863 9.26211 5.84757 9.38223 3.56127 7.0948L1.46757 5.00008L3.56127 2.90535C5.84757 0.617928 5.73863 0.738045 5.73863 0.504842C5.73863 0.29828 5.60041 0.0935136 5.42275 0.0368539C5.38486 0.0247832 5.34552 0.00716788 5.33531 -0.0022859C5.31423 -0.021778 5.09638 -0.0262908 5.11584 -0.00681776C5.12279 0.000115453 5.08691 0.0253106 5.03609 0.0491391C4.89828 0.113768 0.396539 4.62137 0.321266 4.77012C0.260621 4.88994 0.246617 4.97627 0.268531 5.09515ZM5.23668 9.99402C5.30113 9.99392 5.32513 9.99027 5.29004 9.98592C5.25494 9.98158 5.2022 9.98166 5.17285 9.98611C5.14349 9.99058 5.17222 9.99414 5.23668 9.99402Z" fill="black"/></svg></div>',
-          slidesToShow:3,
-          responsive: [
-          {
-          breakpoint: 1200,
-          settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-          }
-                        },
-                        {
-                        breakpoint: 1024,
-                        settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-                        }
-      },
-        {
-          breakpoint: 575,
-            settings: {
-              slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        },
-          {
-            breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                  slidesToScroll: 1
-              }
-          }
-      ]
-      });
-      })
-    </script>
-    <style>
-      .cm-latest-blog-slider .img-wrap{
-        background-size:;
+      `).join("");
+      document.getElementById("pageNumber").textContent = currentPage;
+  }
+
+  document.getElementById("prevPage").addEventListener("click", () => {
+      if (currentPage > 1) {
+          currentPage--;
+          renderBlogs();
       }
-    </style></div>
-    
-    </div><!--end widget-span -->
-    </div><!--end row-->
-    </div><!--end row-wrapper -->
-    
-    </div><!--end widget-span -->
-    </div><!--end row-->
-    </div><!--end row-wrapper -->
-    
-    <div class="row-fluid-wrapper row-depth-1 row-number-11 dnd-section dnd_area-bottom_container-row-5-force-full-width-section dnd_area-bottom_container-row-5-padding">
-    <div class="row-fluid ">
-    <div class="span12 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell" data-x="0" data-w="12">
-    
-    <div class="row-fluid-wrapper row-depth-1 row-number-12 dnd-row">
-    <div class="row-fluid ">
-    <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
-    <div id="hs_cos_wrapper_widget_1732518495563" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div id="" class="cm-connect-us-group">
-      <div class="content-wrapper">
-        <div class="cm-connect-us-left" data-aos="fade-left">      
-          <div class="cm-connect-us-inner-left">
-            <h6>Contact Us</h6>
-    <h3>UAE - Showroom</h3>
-    <p>Ellista International - Showroom</p>
-    <p>Showroom No. SR08, Al Shafar Investment Building, Sheikh Zayed Road, Al Quoz, Dubai</p>
-    <p><strong>Timing:</strong><br>Monday to Saturday&nbsp; &nbsp; : 9:00am to 8:00pm<br><br></p>
-    <ul>
-    <li><a href="tel:+97148928880"> +971 4 892 8880</a></li>
-    <li><a href="mailto:info@eurosystems.com">info@ellsta.com</a></li>
-    </ul>  
-            
-            
-            
-            <a href="https://maps.app.goo.gl/P8CqZvP5Ygq8cSwx5" class="hs-button" target="_blank" rel="noopener">
-              Visit Our Showroom
+  });
+
+  document.getElementById("nextPage").addEventListener("click", () => {
+      if (currentPage < Math.ceil(blogs.length / blogsPerPage)) {
+          currentPage++;
+          renderBlogs();
+      }
+  });
+
+  renderBlogs();
+</script>
+  <section class="w-full py-12">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <!-- Contact Details -->
+        <div class="space-y-6" data-aos="fade-left">
+            <h6 class="text-lg font-semibold text-gray-800">Contact Us</h6>
+            <h3 class="text-2xl font-bold text-gray-900">UAE - Showroom</h3>
+            <p class="text-gray-700">Ellista International - Showroom</p>
+            <p class="text-gray-700">Showroom Investment Dubai</p>
+            <p class="text-gray-700">
+                <strong>Timing:</strong><br>
+                Monday to Saturday: 9:00 AM - 8:00 PM
+            </p>
+            <ul class="space-y-2">
+                <li><a href="tel:+97148928880" class="text-[#A67763] hover:underline">+9000000880</a></li>
+                <li><a href="mailto:info@ellsta.com" class="text-[#A67763] hover:underline">info@ellsta.com</a></li>
+            </ul>
+            <a href="#" class="inline-block bg-[#A67763] text-white px-6 py-2 rounded-lg hover:bg-[#B38B7A] transition">
+                Visit Our Showroom
             </a>
-            
-            
-            <div class="bottom-left-content">
-              <img src="https://www.eurosystems.com/hs-fs/hubfs/3L7A2967%20copy%202.jpg?width=301&amp;height=173&amp;name=3L7A2967%20copy%202.jpg" width="301" height="173" loading="lazy" alt="3L7A2967 copy 2" style="height: auto; max-width: 100%; width: 301px; margin: 30px 0px 0px;" srcset="https://www.eurosystems.com/hs-fs/hubfs/3L7A2967%20copy%202.jpg?width=151&amp;height=87&amp;name=3L7A2967%20copy%202.jpg 151w, https://www.eurosystems.com/hs-fs/hubfs/3L7A2967%20copy%202.jpg?width=301&amp;height=173&amp;name=3L7A2967%20copy%202.jpg 301w, https://www.eurosystems.com/hs-fs/hubfs/3L7A2967%20copy%202.jpg?width=452&amp;height=260&amp;name=3L7A2967%20copy%202.jpg 452w, https://www.eurosystems.com/hs-fs/hubfs/3L7A2967%20copy%202.jpg?width=602&amp;height=346&amp;name=3L7A2967%20copy%202.jpg 602w, https://www.eurosystems.com/hs-fs/hubfs/3L7A2967%20copy%202.jpg?width=753&amp;height=433&amp;name=3L7A2967%20copy%202.jpg 753w, https://www.eurosystems.com/hs-fs/hubfs/3L7A2967%20copy%202.jpg?width=903&amp;height=519&amp;name=3L7A2967%20copy%202.jpg 903w" sizes="(max-width: 301px) 100vw, 301px">
-    <h6><a href="https://maps.app.goo.gl/P8CqZvP5Ygq8cSwx5" rel="noopener" target="_blank">view in map</a></h6>
-            </div>
-            
-          </div>  
+            <h6>
+                <a href="#" class="text-[#A67763] hover:underline" target="_blank">View in map</a>
+            </h6>
         </div>
 
+        <!-- Contact Form -->
+        <section class=" p-8 rounded-lg shadow-md bg-[#FFF0DC]" data-aos="fade-right">
+            <h6 class="text-lg font-semibold text-gray-800 mb-4">Send a Message</h6>
+            <form action="#" method="POST" class="space-y-6">
+                <!-- Name Field -->
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe"
+                        class="mt-1 w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none shadow-sm">
+                </div>
 
-        <section class="max-w-2xl w-full mx-auto p-8 bg-[#FFF0DC] rounded-lg shadow-md" data-aos="fade-right">
-          <h6 class="text-lg font-semibold text-gray-800 mb-2">Send a Message</h6>
-      
-          <form action="#" method="POST" class="space-y-6">
-              <!-- Name Field -->
-              <div>
-                  <label for="name" class="block text-sm font-medium text-gray-700">Your Name</label>
-                  <input type="text" id="name" name="name" placeholder="John Doe"
-                      class="mt-1 block w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none shadow-sm">
-              </div>
-      
-              <!-- Email Field -->
-              <div>
-                  <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
-                  <input type="email" id="email" name="email" placeholder="you@example.com"
-                      class="mt-1 block w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none shadow-sm">
-              </div>
-      
-              <!-- Message Field -->
-              <div>
-                  <label for="message" class="block text-sm font-medium text-gray-700">Your Message</label>
-                  <textarea id="message" name="message" rows="5" placeholder="Type your message here..."
-                      class="mt-1 block w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none shadow-sm"></textarea>
-              </div>
-      
-              <!-- Submit Button -->
-              <div>
-                  <button type="submit"
-                      class="w-full bg-[#A67763] text-white font-semibold py-3 hover:bg-[#B38B7A] transition duration-300">
-                      Send Message
-                  </button>
-              </div>
-          </form>
-      </section>
-      
-      
-    
-    </div><!--end widget-span -->
-    </div><!--end row-->
-    </div><!--end row-wrapper -->
-    
-    </div><!--end widget-span -->
-    </div><!--end row-->
-    </div><!--end row-wrapper -->
-    
-    </div><!--end widget-span -->
+                <!-- Email Field -->
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com"
+                        class="mt-1 w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none shadow-sm">
+                </div>
+
+                <!-- Message Field -->
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700">Your Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Type your message here..."
+                        class="mt-1 w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none shadow-sm"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div>
+                    <button type="submit"
+                        class="w-full bg-[#A67763] text-white font-semibold py-3 hover:bg-[#B38B7A] transition duration-300">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </section>
     </div>
-    </div>
-    </div>
-    </div>
+</section>
+
     
           </main>
 <script src="https://www.eurosystems.com/hs-fs/hub/3017451/hub_generated/template_assets/135732161375/1731304180408/EuroSystems_Sept2023/js/main.min.js"></script>

@@ -1,594 +1,127 @@
 {% extends 'base.html' %}
 {% load static%}
 {% block content %}
-<style>
 
-    ul.hs-breadcrumb-menu {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  
-    .pf-hb {
-      position: relative;
-      padding: 339px 0 178px;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      text-align: center;
-    }
-  
-    .pf-hb h1 {
-      color: #FFFFFF;
-      margin-bottom: 21px;
-    }
-  
-    .pf-hb ul {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-  
-    .pf-hb ul li:not(:last-child):after {
-      content: '/';
-      color: #D1B099;
-      font-size: 14px;
-      line-height: 16px;
-      margin: 0 7px;
-    }
-  
-    .pf-hb ul li a {
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      font-weight: 700;
-      line-height: 16px;
-    }
-  
-  
-  
-    @media(max-width:1024px){
-      .pf-hb{
-        padding:180px 0 120px;
-      }
-    }
-  
-    .pf-hb-form-main {
-      background: #fff;
-      padding: 45px 43px;
-      max-width: 1116px;
-      margin: 56px auto 0;
-    }
-  
-    .pf-hb-form-main .form {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-    }
-  
-    .pf-hb-form-main .form select.filter-product {
-      width: 33.7%;
-    }
-  
-    .pf-hb-form-main .form select.filter-industry {
-      width: 22%;
-    }
-  
-    .pf-hb-form-main .form select.filter-country {
-      width: 23%;
-    }
-  
-    .pf-hb-form-main .form button {
-      width: 16%;
-      margin-top:0px;
-      height:53px
-    }
-  
-    .pf-hb-form-main .form select {
-      padding: 15px 17px;
-      font-size: 16px;
-      font-weight: 600;
-      border: 1px solid #DDE1EA;
-      -webkit-appearance: none;
-      background-image: url(https://www.eurosystems.com/hubfs/Euro_System_Sept2023/Images/arrow-icon.svg);
-      background-repeat: no-repeat;
-      background-position: calc(100% - 10px) 50%;
-    }
-  
-    .filter-list {
-      display: flex;
-      flex-wrap: wrap;
-      margin-left: -12px;
-      margin-right: -12px;
-    }
-  
-    .filter-item {flex-basis: calc(33.33% - 24px);margin: 0 12px;background: #FFF0DC;margin-bottom: 29px;
-      position:relative;
-    }
-    .filter-item > a{position:absolute;left:0px;top:0px;width:100%;height:100%;}
-  
-    .filter-image {
-      height: 225px;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-  
-    .filter-content {
-      padding: 24px;
-    }
-  
-    .filter-content p {
-      margin-bottom: 0;
-      font-size: 14px;
-      color: #3E2A1E;
-      font-weight: 400;
-    }
-  
-    .filter-content h4 {
-      margin-bottom: 17px;
-      color: #3E2A1E;
-      font-size: 18.04px;
-    }
-  
-    .filter-main-wrapper {
-      margin-top: 50px;
-    }
-  
-  
-    .filter-checked div {
-      display: flex;
-      flex-wrap: wrap;
-    }
-  
-    .filter-checked p {
-      text-decoration: underline;
-      color: #3E2A1E;
-      text-transform: uppercase;
-      font-weight: 600;
-      padding: 10px 14px;
-      margin-bottom: 0;
-    }
-  
-    ul.checked-list {
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-    }
-  
-    ul.checked-list li {
-      padding: 10px 15px;
-      background: #FFF0DC;
-      margin-right: 20px;
-      text-decoration: auto;
-      text-transform: capitalize;
-      color: #3F4143;
-      font-weight: 600;
-    }
-  
-    .filter-checked {
-      margin-bottom: 58px;
-    }
-  
-    .filter-item:hover {
-      background: #A67763;
-    }
-  
-    .filter-item:hover * {color: #fff;}
-  
-    @media (min-width:768px) and (max-width:991px){
-      .pf-hb-form-main .form select.filter-product, 
-      .pf-hb-form-main .form select.filter-industry, 
-      .pf-hb-form-main .form select.filter-country {
-        width: calc(50% - 10px);
-        margin-bottom: 19px;
-      }
-      .pf-hb-form-main .form button {
-        width: 50%;
-        margin-bottom: 19px;
-      }
-    }
-    @media(max-width:767px){
-      .filter-item{flex-basis:calc(50% - 24px)}
-      .pf-hb-form-main .form select.filter-product, .pf-hb-form-main .form select.filter-industry, .pf-hb-form-main .form select.filter-country {
-        width: 100%;
-        margin-bottom: 20px;
-      }
-      .pf-hb-form-main .form button {
-        width: 100%;
-      }
-      ul.checked-list {
-        padding-left: 0;
-      }
-  
-    }
-    @media(max-width:640px){
-      .filter-item{flex-basis:calc(100% - 24px)}
-    }
-  
-  </style>
+<section class="relative w-full h-[580px] bg-cover bg-center flex items-center justify-center text-center" style="background-image: url('https://wallpaperaccess.com/full/3184128.jpg');">
+  <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+  <div class="relative z-10">
+      <h1 class="text-4xl font-bold text-white" data-aos="fade-up">Projects</h1>
+      <nav class="mt-4">
+          <ul class="flex justify-center space-x-4 text-sm uppercase font-semibold text-[#B47F65]">
+              <li><a href="/" class="hover:text-white">Home</a></li>
+              <li>/</li>
+              <li class="">Projects</li>
+          </ul>
+      </nav>
+  </div>
+</section>
 
-  <style id="hs_editor_style" type="text/css">
-    .dnd_area-row-0-force-full-width-section > .row-fluid {
-      max-width: none !important;
-    }
-    /* HubSpot Non-stacked Media Query Styles */
-    @media (min-width:768px) {
-      .dnd_banner_area-row-0-vertical-alignment > .row-fluid {
-        display: -ms-flexbox !important;
-        -ms-flex-direction: row;
-        display: flex !important;
-        flex-direction: row;
-      }
-      .dnd_banner_area-module-1-vertical-alignment {
-        display: -ms-flexbox !important;
-        -ms-flex-direction: column !important;
-        -ms-flex-pack: start !important;
-        display: flex !important;
-        flex-direction: column !important;
-        justify-content: flex-start !important;
-      }
-      .dnd_banner_area-module-1-vertical-alignment > div {
-        flex-shrink: 0 !important;
-      }
-    }
-    /* HubSpot Styles (default) */
-    .dnd_banner_area-row-0-margin {
-      margin-bottom: 200px !important;
-    }
-    .dnd_banner_area-row-0-padding {
-      padding-bottom: 0px !important;
-    }
-    .dnd_area-row-0-padding {
-      padding-top: 0px !important;
-      padding-bottom: 0px !important;
-    }
-    /* HubSpot Styles (mobile) */
-    @media (max-width: 767px) {
-      .dnd_area-row-0-padding {
-        padding-top: 0px !important;
-      }
-      .module_17296861634285-padding > #hs_cos_wrapper_module_17296861634285 {
-        padding-top: 0px !important;
-      }
-    }
-    </style>
-    <script>
-      tailwind.config = {
-          theme: {
-              extend: {
-                  colors: {
-                      primary: '#8B5E3C',
-                      secondary: '#D2B48C',
-                      dark: '#A67763',
-                      light: '#FFF0DC'
-                  }
+
+<!-- Projects Grid -->
+<div id="projectsContainer" class="container mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  <!-- Project Card -->
+  <div class="project group bg-light rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-2 hover:shadow-xl" data-category="city">
+      <img src="https://3017451.fs1.hubspotusercontent-na1.net/hubfs/3017451/WEBSITE%202024/WEBSITE%20PROJECTS/Acoustic%20Solution/One%20Zaabeel%2c%20Dubai/one-zabeel.jpg" class="w-full h-60 object-cover">
+      <div class="p-5 text-primary group-hover:bg-dark group-hover:text-white transition">
+          <h3 class="text-xl font-bold">Project One</h3>
+          <p>Description of the project.</p>
+      </div>
+  </div>
+
+  <div class="project group bg-light rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-2 hover:shadow-xl" data-category="building">
+      <img src="https://3017451.fs1.hubspotusercontent-na1.net/hubfs/3017451/WEBSITE%202024/WEBSITE%20PROJECTS/Acoustic%20Solution/One%20Zaabeel%2c%20Dubai/one-zabeel.jpg" class="w-full h-60 object-cover">
+      <div class="p-5 text-primary group-hover:bg-dark group-hover:text-white transition">
+          <h3 class="text-xl font-bold">Project Two</h3>
+          <p>Description of the project.</p>
+      </div>
+  </div>
+
+  <div class="project group bg-light rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-2 hover:shadow-xl" data-category="architecture">
+      <img src="https://3017451.fs1.hubspotusercontent-na1.net/hubfs/3017451/WEBSITE%202024/WEBSITE%20PROJECTS/Acoustic%20Solution/One%20Zaabeel%2c%20Dubai/one-zabeel.jpg" class="w-full h-60 object-cover">
+      <div class="p-5 text-primary group-hover:bg-dark group-hover:text-white transition">
+          <h3 class="text-xl font-bold">Project Three</h3>
+          <p>Description of the project.</p>
+      </div>
+  </div>
+</div>
+
+<script>
+  tailwind.config = {
+      theme: {
+          extend: {
+              colors: {
+                  primary: '#8B5E3C',
+                  secondary: '#D2B48C',
+                  dark: '#A67763',
+                  light: '#FFF0DC'
               }
           }
       }
-  </script>
-<script src="{% static 'javascript/lazyload.min.js' %}"></script>
-<main id="main-content" class="body-container-wrapper">
-    <div class="banner-section">
-      <div class="container-fluid body-container body-container--about">
-    <div class="row-fluid-wrapper">
-    <div class="row-fluid">
-    <div class="span12 widget-span widget-type-cell " style="" data-widget-type="cell" data-x="0" data-w="12">
+  }
+</script>
+
     
-    <div class="row-fluid-wrapper row-depth-1 row-number-1 dnd_banner_area-row-0-padding dnd_banner_area-row-0-vertical-alignment dnd-section dnd_banner_area-row-0-margin">
-    <div class="row-fluid ">
-    <div class="span12 widget-span widget-type-custom_widget dnd_banner_area-module-1-vertical-alignment dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
-    <div id="hs_cos_wrapper_dnd_banner_area-module-1" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="cm-hero-banner-wrap     no-content White" style="background-image:url(https://www.eurosystems.com/hubfs/WEBSITE%202024/WEBSITE%20PROJECTS/Euro-Systems%C2%AE-Gracili%C2%AE-PALM-JUMEIRAH-completed-.jpg)">
-      
-      <div class="overlay-bg" style="background:rgba(0, 0, 0,0.5);">
-      </div>
-      
-      <div class="content-wrapper ">
-        <div class="banner-content">
-          
-          <h1 data-aos="fade-up">
-            Projects
-          </h1>
-          
-          
-          <span id="hs_cos_wrapper_dnd_banner_area-module-1_breadcrumb" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="menu"><div class="hs-breadcrumb-menu-wrapper" id="hs_menu_wrapper_dnd_banner_area-module-1_breadcrumb" role="navigation" data-sitemap-name="Breadcrumb" data-menu-id="136464879203">
-     <ul class="hs-breadcrumb-menu">
-      <li class="hs-breadcrumb-menu-item first-crumb"><a href="https://www.eurosystems.com?hsLang=en" class="hs-breadcrumb-label">Home</a><span class="hs-breadcrumb-menu-divider"></span></li>
-      <li class="hs-breadcrumb-menu-item last-crumb"><span class="hs-breadcrumb-label">Projects</span></li>
-     </ul>
-    </div></span>
-    <div class="bg-secondary mx-auto p-6 rounded shadow-md w-full max-w-2xl">
-      <div class="grid grid-cols-3 gap-4">
-          <input type="text" id="searchInput" placeholder="Search Projects" class="p-2 border rounded w-full">
-          <select id="categoryFilter" class="p-2 border rounded w-full text-black">
-              <option value="">All Categories</option>
-              <option value="architecture">Architecture</option>
-              <option value="city">City</option>
-              <option value="building">Building</option>
-          </select>
-          <button onclick="searchProjects()" class="bg-primary text-white p-2 rounded">Search</button>
-      </div>
-  </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    
-    <div id="projectsContainer" class="containe mx-auto px-10  py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div class="project text-primary hover:text-white hover:bg-dark bg-light rounded shadow-md overflow-hidden" data-category="city">
-          <img src="https://3017451.fs1.hubspotusercontent-na1.net/hubfs/3017451/WEBSITE%202024/WEBSITE%20PROJECTS/Acoustic%20Solution/One%20Zaabeel%2c%20Dubai/one-zabeel.jpg" class="w-full h-60 object-cover">
-          <div class="p-4">
-              <h3 class="text-xl font-bold">Project One</h3>
-              <p>Description of the project.</p>
-          </div>
-      </div>
-      <div class="project rounded text-primary hover:text-white hover:bg-dark bg-light shadow-md overflow-hidden" data-category="building">
-          <img src="https://3017451.fs1.hubspotusercontent-na1.net/hubfs/3017451/WEBSITE%202024/WEBSITE%20PROJECTS/Acoustic%20Solution/One%20Zaabeel%2c%20Dubai/one-zabeel.jpg" class="w-full h-60 object-cover">
-          <div class="p-4">
-              <h3 class="text-xl font-bold">Project Two</h3>
-              <p>Description of the project.</p>
-          </div>
-      </div>
-      <div class="project rounded text-primary hover:text-white hover:bg-dark bg-light shadow-md overflow-hidden" data-category="architecture">
-          <img src="https://3017451.fs1.hubspotusercontent-na1.net/hubfs/3017451/WEBSITE%202024/WEBSITE%20PROJECTS/Acoustic%20Solution/One%20Zaabeel%2c%20Dubai/one-zabeel.jpg" class="w-full h-60 object-cover">
-          <div class="p-4">
-              <h3 class="text-xl font-bold">Project Three</h3>
-              <p>Description of the project.</p>
-          </div>
-      </div>
-  </div>
-    
-    </div>
-    
-    </div><!--end widget-span -->
-    </div><!--end row-->
-    </div><!--end row-wrapper -->
-    
-    </div><!--end widget-span -->
-    </div>
-    </div>
-    </div>
-    </div>
-    
-    <div class="container-fluid body-container body-container--about">
-    <div class="row-fluid-wrapper">
-    <div class="row-fluid">
-    <div class="span12 widget-span widget-type-cell " style="" data-widget-type="cell" data-x="0" data-w="12">
-    
-    <div class="row-fluid-wrapper row-depth-1 row-number-1 dnd_area-row-0-force-full-width-section dnd-section dnd_area-row-0-padding">
-    <div class="row-fluid ">
-    <div class="span12 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell" data-x="0" data-w="12">
-    
-    <div class="row-fluid-wrapper row-depth-1 row-number-2 dnd-row">
-    <div class="row-fluid ">
-    <div class="span12 widget-span widget-type-custom_widget module_17296861634285-padding dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
-    <div id="hs_cos_wrapper_module_17296861634285" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="cm-schedule-visit-wrap module_17296861634285" id="" style="background-image:url(https://www.eurosystems.com/hubfs/showr%20footer.jpg)">
-      <div class="content-wrapper">
-        <div class="cm-schedule-visit-left">
-          <div class="cm-connect-us-group">
-            <div class="cm-content-wrapper">
-              <div class="cm-connect-us-right" data-aos="fade-right">
-                <h6>Schedule a Visit</h6>
-                <span id="hs_cos_wrapper_module_17296861634285_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_form" style="" data-hs-cos-general-type="widget" data-hs-cos-type="form"><h3 id="hs_cos_wrapper_form_61686328_title" class="hs_cos_wrapper form-title" data-hs-cos-general-type="widget_field" data-hs-cos-type="text"></h3>
-    
-    <div id="hs_form_target_form_61686328"></div>
-    </span>
-              </div>
-            </div>  
-          </div>
-        </div>
-        
-        <div class="cm-schedule-visit-right">
-          <a href="?hsLang=en">
-            For more details  visit our showroom today
+<section class="w-full py-12">
+  <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <!-- Contact Details -->
+      <div class="space-y-6" data-aos="fade-left">
+          <h6 class="text-lg font-semibold text-gray-800">Contact Us</h6>
+          <h3 class="text-2xl font-bold text-gray-900">UAE - Showroom</h3>
+          <p class="text-gray-700">Ellista International - Showroom</p>
+          <p class="text-gray-700">Showroom Investment Dubai</p>
+          <p class="text-gray-700">
+              <strong>Timing:</strong><br>
+              Monday to Saturday: 9:00 AM - 8:00 PM
+          </p>
+          <ul class="space-y-2">
+              <li><a href="tel:+97148928880" class="text-[#A67763] hover:underline">+9000000880</a></li>
+              <li><a href="mailto:info@ellsta.com" class="text-[#A67763] hover:underline">info@ellsta.com</a></li>
+          </ul>
+          <a href="#" class="inline-block bg-[#A67763] text-white px-6 py-2 rounded-lg hover:bg-[#B38B7A] transition">
+              Visit Our Showroom
           </a>
-        </div>
+          <h6>
+              <a href="#" class="text-[#A67763] hover:underline" target="_blank">View in map</a>
+          </h6>
       </div>
-    </div>
-    </div>
-    </div><!--end widget-span -->
-    </div><!--end row-->
-    </div><!--end row-wrapper -->
-    
-    </div><!--end widget-span -->
-    </div><!--end row-->
-    </div><!--end row-wrapper -->
-    
-    </div><!--end widget-span -->
-    </div>
-    </div>
-    </div>
-          </main>
-          <script>
-            function searchProjects() {
-                let input = document.getElementById("searchInput").value.toLowerCase();
-                let category = document.getElementById("categoryFilter").value;
-                let projects = document.querySelectorAll(".project");
-                
-                projects.forEach(project => {
-                    let title = project.querySelector("h3").textContent.toLowerCase();
-                    let projectCategory = project.getAttribute("data-category");
-                    
-                    if ((title.includes(input) || input === "") && (projectCategory === category || category === "")) {
-                        project.style.display = "block";
-                    } else {
-                        project.style.display = "none";
-                    }
-                });
-            }
-        </script>
-          <script defer src="{% static 'javascript/embed.js' %}"></script>
-          <script src="{% static 'javascript/main.min.js' %}"></script>
-          <script src="{% static 'javascript/Slick.min.js' %}"></script>
-          <script src="{% static 'javascript/jquery.matchHeight-min.js' %}"></script>
-          <script>
-          var hsVars = hsVars || {}; hsVars['language'] = 'en';
-          </script>
-          
-          <script src="{% static 'javascript/project.js' %}"></script>
-          <script src="{% static 'javascript/project2.js' %}"></script>
-          <script data-hs-allowed="true" src="{% static 'javascript/v2.js' %}"></script>
-                      <script data-hs-allowed="true">
-                  var options = {
-                      portalId: '3017451',
-                      formId: 'bb01ff5b-91ed-49bd-b12b-05955229fe8e',
-                      formInstanceId: '5634',
-                      pageId: '137633180166',
-                      region: 'na1',
-                      pageName: "Projects",
-                      inlineMessage: "Thanks for submitting the form.",
-                      rawInlineMessage: "Thanks for submitting the form.",
-                      hsFormKey: "7be9bc997b8144c25c74b66196449705", 
-                      css: '',
-                      target: '#hs_form_target_form_61686328',
-                      contentType: "standard-page",  
-                      formsBaseUrl: './javascript/',
-                      formData: {
-                          cssClass: 'hs-form stacked hs-custom-form'
-                      }
-                  };
-          
-                  options.getExtraMetaDataBeforeSubmit = function() {
-                      var metadata = {};
-                      
-          
-                      if (hbspt.targetedContentMetadata) {
-                          var count = hbspt.targetedContentMetadata.length;
-                          var targetedContentData = [];
-                          for (var i = 0; i < count; i++) {
-                              var tc = hbspt.targetedContentMetadata[i];
-                               if ( tc.length !== 3) {
-                                  continue;
-                               }
-                               targetedContentData.push({
-                                  definitionId: tc[0],
-                                  criterionId: tc[1],
-                                  smartTypeId: tc[2]
-                               });
-                          }
-                          metadata["targetedContentMetadata"] = JSON.stringify(targetedContentData);
-                      }
-          
-                      return metadata;
-                  };
-          
-                  hbspt.forms.create(options);
-              </script>
-          
-          
-              <script data-hs-allowed="true">
-                  var options = {
-                      portalId: '3017451',
-                      formId: '457b9ae0-cd79-478a-a5c0-7fb3b9826264',
-                      formInstanceId: '4616',
-                      pageId: '137633180166',
-                      region: 'na1',
-                      pageName: "Projects",
-                      redirectUrl: "http:\/\/www.google.com",
-                      css: '',
-                      target: '#hs_form_target_Newsletter-form',
-                      contentType: "standard-page",
-                      formsBaseUrl: './javascript/',
-                      formData: {
-                          cssClass: 'hs-form stacked hs-custom-form'
-                      }
-                  };
-          
-                  options.getExtraMetaDataBeforeSubmit = function() {
-                      var metadata = {};
-                      
-          
-                      if (hbspt.targetedContentMetadata) {
-                          var count = hbspt.targetedContentMetadata.length;
-                          var targetedContentData = [];
-                          for (var i = 0; i < count; i++) {
-                              var tc = hbspt.targetedContentMetadata[i];
-                               if ( tc.length !== 3) {
-                                  continue;
-                               }
-                               targetedContentData.push({
-                                  definitionId: tc[0],
-                                  criterionId: tc[1],
-                                  smartTypeId: tc[2]
-                               });
-                          }
-                          metadata["targetedContentMetadata"] = JSON.stringify(targetedContentData);
-                      }
-          
-                      return metadata;
-                  };
-          
-                  hbspt.forms.create(options);
-              </script>
-          
-          
-          <!-- Start of HubSpot Analytics Code -->
-          <script type="text/javascript">
-          var _hsq = _hsq || [];
-          _hsq.push(["setContentType", "standard-page"]);
-          _hsq.push(["setCanonicalUrl", "https:\/\/www.eurosystems.com\/projects"]);
-          _hsq.push(["setPageId", "137633180166"]);
-          _hsq.push(["setContentMetadata", {
-              "contentPageId": 137633180166,
-              "legacyPageId": "137633180166",
-              "contentFolderId": null,
-              "contentGroupId": null,
-              "abTestId": null,
-              "languageVariantId": 137633180166,
-              "languageCode": "en",
-              
-              
-          }]);
-          </script>
-          
-          <script type="text/javascript">
-          var hbspt = hbspt || {};
-          (hbspt.targetedContentMetadata = hbspt.targetedContentMetadata || []).push(...[]);
-          
-          var _hsq = _hsq || [];
-          _hsq.push(["setTargetedContentMetadata", hbspt.targetedContentMetadata]);
-          </script>
-          <script type="text/javascript" id="hs-script-loader" async defer src="{% static 'javascript/3017451.js' %}"></script>
-          <script type="text/javascript">
-          var hsVars = {
-              render_id: "e6ddc09c-d483-4f7f-b301-eeca5583527b",
-              ticks: 1735616162922,
-              page_id: 137633180166,
-              
-              content_group_id: 0,
-              portal_id: 3017451,
-              app_hs_base_url: "https://app.hubspot.com",
-              cp_hs_base_url: "https://cp.hubspot.com",
-              language: "en",
-              analytics_page_type: "standard-page",
-              scp_content_type: "",
-              analytics_page_id: "137633180166",
-              category_id: 1,
-              folder_id: 0,
-              is_hubspot_user: false
-          }
-          </script>
-          <script defer src="{% static 'javascript/index.js' %}"></script>
-          <script>
-             function load(){
-                  var userAgent = navigator.userAgent.toLowerCase(); 
-                  if (userAgent .indexOf('safari')!=-1){ 
-                      if(userAgent .indexOf('chrome')  > -1){
-                      const browser = document.querySelector('html');
-                      browser.classList.add("custom-chrome");
-                     }else{
-                      const browser = document.querySelector('html');
-                      browser.classList.add("custom-safari");
-                     }
-                  }
-              }
-              
-              load();
-          </script>
+
+      <!-- Contact Form -->
+      <section class=" p-8 rounded-lg shadow-md bg-[#FFF0DC]" data-aos="fade-right">
+          <h6 class="text-lg font-semibold text-gray-800 mb-4">Send a Message</h6>
+          <form action="#" method="POST" class="space-y-6">
+              <!-- Name Field -->
+              <div>
+                  <label for="name" class="block text-sm font-medium text-gray-700">Your Name</label>
+                  <input type="text" id="name" name="name" placeholder="John Doe"
+                      class="mt-1 w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none shadow-sm">
+              </div>
+
+              <!-- Email Field -->
+              <div>
+                  <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="you@example.com"
+                      class="mt-1 w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none shadow-sm">
+              </div>
+
+              <!-- Message Field -->
+              <div>
+                  <label for="message" class="block text-sm font-medium text-gray-700">Your Message</label>
+                  <textarea id="message" name="message" rows="5" placeholder="Type your message here..."
+                      class="mt-1 w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none shadow-sm"></textarea>
+              </div>
+
+              <!-- Submit Button -->
+              <div>
+                  <button type="submit"
+                      class="w-full bg-[#A67763] text-white font-semibold py-3 hover:bg-[#B38B7A] transition duration-300">
+                      Send Message
+                  </button>
+              </div>
+          </form>
+      </section>
+  </div>
+</section>
+
+
           
 {% endblock %}
