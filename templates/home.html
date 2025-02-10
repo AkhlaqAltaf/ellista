@@ -1,8 +1,6 @@
-
 {% extends 'base.html' %}
 
-
-
+{% block title %} HOME {% endblock %}
 
 {% load static %}
 {% block content %}
@@ -10,32 +8,49 @@
 <style>
   .bg-beige { background-color: #F5E5DA; }
   .bg-brown { background-color: #8D5C45; }
+  .more-projects-button {
+      display: inline-flex;
+      align-items: center;
+      background-color: #8D5C45; /* Button background color */
+      color: white; /* Button text color */
+      padding: 10px 20px; /* Button padding */
+      border-radius: 5px; /* Rounded corners */
+      text-decoration: none; /* Remove underline */
+      font-weight: bold; /* Bold text */
+      transition: background-color 0.3s; /* Smooth background color transition */
+      margin-top: 20px; /* Space above the button */
+  }
+  .more-projects-button:hover {
+      background-color: #B38B7A; /* Darker shade on hover */
+  }
+  .arrow-icon {
+      margin-left: 8px; /* Space between text and icon */
+  }
 </style>
-
 
 <main id="main-content" class="body-container-wrapper">
 
-{% include 'home/hero.html' %}
+    {% include 'home/hero.html' %}
+    {% include 'home/links.html' %}
+    {% include 'services.html' %}
+    {% include 'home/about.html' %}
+    {% include 'home/motivations.html' %}
 
-{% include 'home/links.html' %}
+    {% include 'projects/project_grid.html' %}
 
-{% include 'home/about.html' %}
+    <!-- More Projects Button -->
+    <div class="text-center">
+        <a href="/projects" class="more-projects-button">
+            More Projects
+            <svg xmlns="http://www.w3.org/2000/svg" class="arrow-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="20" height="20">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5-5 5M6 12h12" />
+            </svg>
+        </a>
+    </div>
 
+    {% include 'home/contact.html' %}
+</main>
 
-      {% include 'home/motivations.html' %}
-{% include 'projects/project_grid.html' %}
-{#{% include 'home/solutions.html' %}#}
-
-{% include 'home/contact.html' %}
-
-
-
-
-
-
-
-    
-          </main>
 <script src="https://www.eurosystems.com/hs-fs/hub/3017451/hub_generated/template_assets/135732161375/1731304180408/EuroSystems_Sept2023/js/main.min.js"></script>
 <script src="{% static 'javascript/cdnjs.cloudflare.com_ajax_libs_slick-carousel_1.8.1_slick.min.js' %}"></script>
 {% endblock %}

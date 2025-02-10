@@ -1,5 +1,10 @@
-from django.views.generic import TemplateView
 from src.website.models import Project, GalleryMedia
+from django.views.generic import TemplateView
+from django.core.mail import send_mail
+from django.http import HttpResponseRedirect
+from django.urls import reverse
+from django.conf import settings
+from django.template.loader import render_to_string
 
 class HomeView(TemplateView):
     template_name = "home.html"
@@ -37,5 +42,28 @@ class NewsView(TemplateView):
 class ContactView(TemplateView):
     template_name = "contact.html"
 
+    def post(self, request, *args, **kwargs):
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        message = request.POST.get('message')
+
+        # Prepare the email
+        subject = f"New message from {name}"
+        body = render_to_string('mail.html', {
+            'name': name,
+            'email': email,
+            'message': message,
+        })
+        recipient_list = ['ellista-@hotmail.com']
+        send_mail(
+            subject,
+            body,
+            settings.EMAIL_HOST_USER,
+            recipient_list,
+            fail_silently=False,
+            html_message=body
+        )
+
+        return HttpResponseRedirect(reverse('website:contact'))
 class DownloadView(TemplateView):
     template_name = "download.html"
