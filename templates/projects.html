@@ -17,48 +17,7 @@
 </section>
 
 
-<!-- Projects Grid -->
-<div id="projectsContainer" class="container mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-  <!-- Project Card -->
-  <div class="project group bg-light rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-2 hover:shadow-xl" data-category="city">
-      <img src="https://3017451.fs1.hubspotusercontent-na1.net/hubfs/3017451/WEBSITE%202024/WEBSITE%20PROJECTS/Acoustic%20Solution/One%20Zaabeel%2c%20Dubai/one-zabeel.jpg" class="w-full h-60 object-cover">
-      <div class="p-5 text-primary group-hover:bg-dark group-hover:text-white transition">
-          <h3 class="text-xl font-bold">Project One</h3>
-          <p>Description of the project.</p>
-      </div>
-  </div>
-
-  <div class="project group bg-light rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-2 hover:shadow-xl" data-category="building">
-      <img src="https://3017451.fs1.hubspotusercontent-na1.net/hubfs/3017451/WEBSITE%202024/WEBSITE%20PROJECTS/Acoustic%20Solution/One%20Zaabeel%2c%20Dubai/one-zabeel.jpg" class="w-full h-60 object-cover">
-      <div class="p-5 text-primary group-hover:bg-dark group-hover:text-white transition">
-          <h3 class="text-xl font-bold">Project Two</h3>
-          <p>Description of the project.</p>
-      </div>
-  </div>
-
-  <div class="project group bg-light rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-2 hover:shadow-xl" data-category="architecture">
-      <img src="https://3017451.fs1.hubspotusercontent-na1.net/hubfs/3017451/WEBSITE%202024/WEBSITE%20PROJECTS/Acoustic%20Solution/One%20Zaabeel%2c%20Dubai/one-zabeel.jpg" class="w-full h-60 object-cover">
-      <div class="p-5 text-primary group-hover:bg-dark group-hover:text-white transition">
-          <h3 class="text-xl font-bold">Project Three</h3>
-          <p>Description of the project.</p>
-      </div>
-  </div>
-</div>
-
-<script>
-  tailwind.config = {
-      theme: {
-          extend: {
-              colors: {
-                  primary: '#8B5E3C',
-                  secondary: '#D2B48C',
-                  dark: '#A67763',
-                  light: '#FFF0DC'
-              }
-          }
-      }
-  }
-</script>
+    {% include 'projects/project_grid.html' %}
 
     
 
