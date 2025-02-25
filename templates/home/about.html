@@ -1,0 +1,35 @@
+{% load static %}
+
+<div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 px-6 lg:px-16 py-10 bg-[#FFF0DC]">
+  
+  <!-- Left: Image -->
+  <div class="w-full lg:w-1/2">
+    <img src="{% static 'images/company.jpg' %}" alt="Company Image" class="w-full h-80 object-cover rounded-lg shadow-lg">
+  </div>
+    
+  <!-- Right: Content -->
+  <div class="w-full lg:w-1/2 text-left space-y-6">
+    <h6 class="text-sm font-semibold uppercase text-gray-700">About Ellista International</h6>
+    <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 leading-snug">
+      Redefining Excellence in Metal & Glass Works
+    </h2>
+    <p class="text-gray-700 text-base">
+      At Ellista International, we are committed to providing high-quality solutions in aluminum, steel structures, ironwork, glass fabrication, stainless steel, kitchen accessories, wooden craftsmanship, and hand railings.
+    </p>
+    <p class="text-gray-700 text-base">
+      Our skilled team operates across multiple regions, bringing innovation, durability, and precision to every project. We ensure customer satisfaction through exceptional craftsmanship and cutting-edge technology.
+    </p>
+    
+    <!-- Button -->
+    <div class="mt-6">
+      <a href="/products" 
+         class="inline-flex items-center gap-2 bg-[#8D5C45] text-white font-semibold text-lg px-4 py-2 rounded-lg shadow-md hover:bg-opacity-80 transition">
+        More About Ellista International
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" 
+             class="w-6 h-6">
+          <path fill-rule="evenodd" d="M2.25 12a.75.75 0 0 1 .75-.75h16.19l-5.22-5.22a.75.75 0 1 1 1.06-1.06l6.5 6.5a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06-1.06l5.22-5.22H3a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>

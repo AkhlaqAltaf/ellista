@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<section class="relative w-full h-[580px] bg-cover bg-center flex items-center justify-center text-center" style="background-image: url('https://www.shutterstock.com/shutterstock/videos/3509859073/thumb/1.jpg?ip=x480');">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative z-10">
+        <h1 class="text-4xl font-bold text-white" data-aos="fade-up">Gallery</h1>
+        <nav class="mt-4">
+            <ul class="flex justify-center space-x-4 text-sm uppercase font-semibold text-[#B47F65]">
+                <li><a href="/" class="hover:text-white">Home</a></li>
+                <li>/</li>
+                <li class="">Gallery</li>
+            </ul>
+        </nav>
+    </div>
+</section>
+
+<section id="gallery" class="pt-16 pb-12 bg-gray-100">
+    <!-- Gallery Grid -->
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Loop through the gallery media context -->
+            {% for media in gallery_media %}
+            <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                <img src="{{ media.file.url }}" class="w-full h-64 object-cover" alt="{{ media.title }}">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="text-white font-semibold">{{ media.title }}</span>
+                </div>
+            </div>
+            {% empty %}
+            <p class="text-center text-gray-500">No media available in the gallery.</p>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% endblock %}

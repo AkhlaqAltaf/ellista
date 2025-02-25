@@ -1,0 +1,123 @@
+
+
+<h6 data-aos="fade-up" class="text-sm font-bold underline text-center mb-10" style="margin-bottom:px;color: rgba(63, 65, 67,1.0)">LATEST UPDATES</h6>
+
+<div class="container mx-auto p-4">
+  <div id="blog-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  
+  <!-- Pagination Controls -->
+  <div class="flex justify-center mt-6">
+      <button id="prevPage" class="px-4 py-2 bg-[#8D5C45] text-white rounded-md mr-2">Previous</button>
+      <span id="pageNumber" class="px-4 py-2 bg-gray-300 rounded-md">1</span>
+      <button id="nextPage" class="px-4 py-2 bg-[#8D5C45] text-white rounded-md ml-2">Next</button>
+  </div>
+</div>
+
+<script>
+  const blogs = [
+      { title: "Why Aluminium is the Preferred Choice for Modern Architecture", image: "https://i.pinimg.com/736x/e6/02/83/e60283b2174d20e737ee0809bb5c9f06.jpg", tag: "Aluminium, Durable Metal, Construction", time: "2 min read" },
+      { title: "The Benefits of Steel Structures in Construction", image: "https://i.pinimg.com/736x/d4/49/08/d4490880720ebba26b39f3f183d9c1b0.jpg", tag: "Steel Structures, Engineering, Strength", time: "3 min read" },
+      { title: "Iron Works: The Backbone of Modern Construction", image: "https://i.pinimg.com/236x/f9/94/48/f99448b76bcaf8edb0618a93066a73ea.jpg", tag: "Iron Craftsmanship, Strength, Durability", time: "1 min read" },
+      { title: "Innovative Glass Works for Contemporary Architecture", image: "https://i.pinimg.com/236x/0e/bc/48/0ebc4870f8ba1522b7f6619ac54fd61a.jpg", tag: "Glass Designs, Modern Aesthetics, Clarity", time: "2 min read" },
+      { title: "Why Stainless Steel is a Timeless Choice", image: "https://i.pinimg.com/236x/2a/ef/57/2aef5711dc799a431683a63002442f31.jpg", tag: "Stainless Steel, Rust-Free, Modern Finish", time: "1 min read" },
+      { title: "Enhance Your Kitchen with Smart Accessories", image: "https://i.pinimg.com/236x/2a/98/0d/2a980d4c1ff1f39e0ed3383854fae7e9.jpg", tag: "Kitchen Accessories, Smart Storage, Modern Living", time: "2 min read" },
+      { title: "The Beauty and Elegance of Wooden Finishes", image: "https://i.pinimg.com/736x/5b/2d/b7/5b2db7644492e291a37599a3dd45dae1.jpg", tag: "Wooden Interiors, Natural Aesthetics, Craftsmanship", time: "1 min read" },
+      { title: "Modern Hand Railings for Safety and Style", image: "https://i.pinimg.com/236x/b8/3d/2e/b83d2efe2ddac8aa0bd96341fe8e5b0c.jpg", tag: "Hand Railings, Safety, Modern Designs", time: "2 min read" }
+  ];
+
+  let currentPage = 1;
+  const blogsPerPage = 3;
+
+  function renderBlogs() {
+      const start = (currentPage - 1) * blogsPerPage;
+      const end = start + blogsPerPage;
+      const blogsToShow = blogs.slice(start, end);
+
+      document.getElementById("blog-container").innerHTML = blogsToShow.map(blog => `
+          <div class="relative h-80 bg-cover bg-center rounded-lg shadow-md" style="background-image: url('${blog.image}')">
+              <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4 rounded-lg">
+                  <span class="text-gray-300 text-sm">${blog.tag}</span>
+                  <h2 class="text-white text-lg font-bold">${blog.title}</h2>
+                  <p class="text-gray-300 text-md">${blog.time}</p>
+              </div>
+          </div>
+      `).join("");
+      document.getElementById("pageNumber").textContent = currentPage;
+  }
+
+  document.getElementById("prevPage").addEventListener("click", () => {
+      if (currentPage > 1) {
+          currentPage--;
+          renderBlogs();
+      }
+  });
+
+  document.getElementById("nextPage").addEventListener("click", () => {
+      if (currentPage < Math.ceil(blogs.length / blogsPerPage)) {
+          currentPage++;
+          renderBlogs();
+      }
+  });
+
+  renderBlogs();
+</script>
+  <section class="w-full py-12">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <!-- Contact Details -->
+        <div class="space-y-6" data-aos="fade-left">
+            <h6 class="text-lg font-semibold text-gray-800">Contact Us</h6>
+            <h3 class="text-2xl font-bold text-gray-900">UAE - Showroom</h3>
+            <p class="text-gray-700">Ellista International - Showroom</p>
+            <p class="text-gray-700">Showroom Investment Dubai</p>
+            <p class="text-gray-700">
+                <strong>Timing:</strong><br>
+                Monday to Saturday: 9:00 AM - 8:00 PM
+            </p>
+            <ul class="space-y-2">
+                <li><a href="tel:+97148928880" class="text-[#A67763] hover:underline">+9000000880</a></li>
+                <li><a href="mailto:info@ellsta.com" class="text-[#A67763] hover:underline">info@ellsta.com</a></li>
+            </ul>
+            <a href="#" class="inline-block bg-[#A67763] text-white px-6 py-2 rounded-lg hover:bg-[#B38B7A] transition">
+                Visit Our Showroom
+            </a>
+            <h6>
+                <a href="#" class="text-[#A67763] hover:underline" target="_blank">View in map</a>
+            </h6>
+        </div>
+
+        <!-- Contact Form -->
+        <section class=" p-8 rounded-lg shadow-md bg-[#FFF0DC]" data-aos="fade-right">
+            <h6 class="text-lg font-semibold text-gray-800 mb-4">Send a Message</h6>
+            <form action="#" method="POST" class="space-y-6">
+                <!-- Name Field -->
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe"
+                        class="mt-1 w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none shadow-sm">
+                </div>
+
+                <!-- Email Field -->
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com"
+                        class="mt-1 w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none shadow-sm">
+                </div>
+
+                <!-- Message Field -->
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700">Your Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Type your message here..."
+                        class="mt-1 w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none shadow-sm"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div>
+                    <button type="submit"
+                        class="w-full bg-[#A67763] text-white font-semibold py-3 hover:bg-[#B38B7A] transition duration-300">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </section>
+    </div>
+</section>

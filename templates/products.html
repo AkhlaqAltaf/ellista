@@ -1,228 +1,126 @@
 {% extends "base.html" %}
-{% load static%}
+{% load static %}
 {% block content %}
-            <main id="main-content" class="body-container-wrapper">
-      
-              <div class="cm-products-layout">
-                <div class="mx-auto">
-                  <div class="relative w-full h-[580px] bg-cover bg-center flex items-center justify-center text-center text-white"
-                    style="background-image: url('https://www.safe-door.co.uk/images/products/soundslide-home.jpg');">
-                    <div class="max-w-3xl mx-auto">
-                      <h1 class="text-6xl font-bold text-white" data-aos="fade-up">Our Products</h1>
-                    </div>
-                  </div>
-                  
-                  <div class="bg-[#FFF0DC] py-6">
-                    <div class="max-w-3xl px-12 font-bold">
-                      <nav class="text-[#D2916B]">
+<main id="main-content" class="body-container-wrapper">
+
+    <div class="cm-products-layout">
+        <div class="mx-auto">
+            <!-- Background Image Section -->
+            <div class="relative w-full h-[580px] bg-cover bg-center flex items-center justify-center text-center text-white"
+                 style="background-image: url('https://www.safe-door.co.uk/images/products/soundslide-home.jpg');">
+                <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div> <!-- Overlay -->
+                <div class="max-w-3xl mx-auto">
+                    <h1 class="text-6xl font-bold" data-aos="fade-up">Our Categories</h1>
+                </div>
+            </div>
+
+            <div class="bg-[#FFF0DC] py-6">
+                <div class="max-w-3xl px-12 font-bold">
+                    <nav class="text-[#D2916B]">
                         <ul class="flex space-x-2">
-                          <li><a href="/" class="hover:underline">Home</a></li>
-                          <span>/</span>
-                          <li class="">Products</li>
+                            <li><a href="/" class="hover:underline">Home</a></li>
+                            <span>/</span>
+                            <li class="">Products</li>
                         </ul>
-                      </nav>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-                
-              <div class="mx-auto px-10 py-10">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
-                    <button class="tab-button p-4 bg-white shadow rounded-lg text-lg font-semibold" data-tab="aluminium">Aluminium</button>
-                    <button class="tab-button p-4 bg-white shadow rounded-lg text-lg font-semibold" data-tab="steel">Steel Structure</button>
-                    <button class="tab-button p-4 bg-white shadow rounded-lg text-lg font-semibold" data-tab="iron">Iron</button>
-                    <button class="tab-button p-4 bg-white shadow rounded-lg text-lg font-semibold" data-tab="glass">Glass Works</button>
-                    <button class="tab-button p-4 bg-white shadow rounded-lg text-lg font-semibold" data-tab="stainless">Stainless Steel</button>
-                    <button class="tab-button p-4 bg-white shadow rounded-lg text-lg font-semibold" data-tab="kitchen">Kitchen Accessories</button>
-                    <button class="tab-button p-4 bg-white shadow rounded-lg text-lg font-semibold" data-tab="wooden">Wooden</button>
-                    <button class="tab-button p-4 bg-white shadow rounded-lg text-lg font-semibold" data-tab="handrailing">Hand Railing</button>
+                    </nav>
                 </div>
             </div>
-        
-            <!-- Product Details -->
-          <div class="px-10 py-10 mx-10 bg-[#FFF0DC] shadow-md rounded-lg">
-            <div class="px-10 mx-auto rounded-lg">
-              <div id="aluminium" class="tab-content hidden flex flex-col md:flex-row-reverse">
-                  <div class="w-full md:w-1/2 space-y-3 bg-[#FFF0DC] p-5">
-                      <h2 class="text-3xl font-extrabold text-gray-900 border-b-4 border-[#AE8371] pb-2">Aluminium</h2>
-                      <p class="text-gray-700 text-lg leading-relaxed">We provide high-quality aluminium solutions for industrial and architectural applications. 
-                          Our aluminium products are lightweight, corrosion-resistant, and perfect for modern 
-                          construction projects, windows, doors, and structural frameworks.</p>
-                      <p class="text-gray-600 text-base leading-relaxed">Whether you need aluminium sheets, extrusions, or customized profiles, 
-                          we ensure top-grade materials that meet industry standards.</p>
-                  </div>
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoDaAFvRhihUt5Y4juojMZx7TCnfDTcrBxrw&s" class="w-full md:w-1/2 h-80 object-cover">
-              </div>
-          </div>
+        </div>
+    </div>
 
-          <div class="px-10 mx-auto rounded-lg">
-            <div id="steel" class="tab-content hidden flex flex-col md:flex-row-reverse">
-                <div class="w-full md:w-1/2 space-y-3 bg-[#FFF0DC] p-5">
-                    <h2 class="text-3xl font-extrabold text-gray-900 border-b-4 border-[#AE8371] pb-2">Steel Structure</h2>
-                    <p class="text-gray-700 text-lg leading-relaxed">Our durable and reliable steel structures are engineered for strength and versatility. 
-                      We offer custom steel fabrication for warehouses, bridges, and high-rise buildings.</p>
-                  <p class="text-gray-600 text-base leading-relaxed">With cutting-edge technology, we manufacture beams, columns, and panels 
-                      that ensure stability and long-term performance in industrial projects.</p>
+    <div class="mx-auto px-10 py-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+            <!-- Category 1: Aluminium -->
+            <div class="category-card relative overflow-hidden rounded-lg shadow-lg">
+                <img src="{% static 'images/alum.jpg' %}" alt="Aluminium" class="w-full h-48 object-cover filter blur-sm transition duration-300">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white p-4">
+                    <h2 class="text-2xl font-semibold">Aluminium</h2>
+                    <p class="mt-2">Lightweight and durable options for modern designs.</p>
                 </div>
-                <img src="https://overheadcranesmanufacturer.com/wp-content/uploads/2019/04/excellent-steel-structure-1280x720.jpg" class=" w-full md:w-1/2 h-80 object-cover">
             </div>
-          </div>
-            <div class="px-10 mx-auto rounded-lg">
-              <div id="iron" class="tab-content hidden flex flex-col md:flex-row-reverse">
-                  <div class="w-full md:w-1/2 space-y-3 bg-[#FFF0DC] p-5">
-                      <h2 class="text-3xl font-extrabold text-gray-900 border-b-4 border-[#AE8371] pb-2">Iron</h2>
-                      <p class="text-gray-700 text-lg leading-relaxed">Our premium iron products are crafted for both industrial and construction purposes. 
-                        We supply high-quality iron rods, bars, and plates, suitable for manufacturing, 
-                        heavy machinery, and reinforcement projects.</p></p>
-                  </div>
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYTU47WEaExsIVBQ3m-_54SyzGCT04aj8DaQ&s" class=" w-full md:w-1/2 h-80 object-cover">
-              </div>
+
+            <!-- Category 2: Steel Structure -->
+            <div class="category-card relative overflow-hidden rounded-lg shadow-lg">
+                <img src="{% static 'images/steel.jpg' %}" alt="Steel Structure" class="w-full h-48 object-cover filter blur-sm transition duration-300">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white p-4">
+                    <h2 class="text-2xl font-semibold">Steel Structure</h2>
+                    <p class="mt-2">Robust solutions for safety and longevity.</p>
+                </div>
             </div>
-              <div class="px-10 mx-auto rounded-lg">
-                <div id="glass" class="tab-content hidden flex flex-col md:flex-row-reverse">
-                    <div class="w-full md:w-1/2 space-y-3 bg-[#FFF0DC] p-5">
-                        <h2 class="text-3xl font-extrabold text-gray-900 border-b-4 border-[#AE8371] pb-2">Glass Works</h2>
-                        <p class="text-gray-700 text-lg leading-relaxed">We specialize in innovative glass solutions for residential, commercial, and industrial spaces. 
-                          Our glass works include tempered glass, laminated glass, and energy-efficient glazing solutions.</p>
-                      <p class="text-gray-600 text-base leading-relaxed">From glass partitions to custom-cut designs, we offer high-end glass 
-                          finishing with clarity, strength, and aesthetic appeal.</p></p>
-                    </div>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKyr6XjzTdiMsI730xxUpiJcJwLCie0m8OcA&s" class=" w-full md:w-1/2 h-80 object-cover">
-                </div>
-              </div>
-                <div class="px-10 mx-auto rounded-lg">
-                  <div id="stainless" class="tab-content hidden flex flex-col md:flex-row-reverse">
-                      <div class="w-full md:w-1/2 space-y-3 bg-[#FFF0DC] p-5">
-                          <h2 class="text-3xl font-extrabold text-gray-900 border-b-4 border-[#AE8371] pb-2">Stainless Steel Solutions</h2>
-                          <p class="text-gray-700 text-lg leading-relaxed">Our stainless steel products are known for their durability, 
-                            corrosion resistance, and sleek finish. We provide high-quality stainless steel sheets, pipes, and 
-                            custom fabrications for commercial, industrial, and residential applications.</p>
-                        <p class="text-gray-600 text-base leading-relaxed">Whether you need stainless steel for kitchen fittings, 
-                            structural components, or decorative elements, we offer premium solutions that ensure longevity 
-                            and aesthetic appeal.</p></p>
-                      </div>
-                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_0Hem4Qb2s9PiQLGHgj5anrsoRAHObJQ_WA&s" class=" w-full md:w-1/2 h-80 object-cover">
-                  </div>
-                </div>
 
-                  <div class="px-10 mx-auto rounded-lg">
-                    <div id="kitchen" class="tab-content hidden flex flex-col md:flex-row-reverse">
-                        <div class="w-full md:w-1/2 space-y-3 bg-[#FFF0DC] p-5">
-                            <h2 class="text-3xl font-extrabold text-gray-900 border-b-4 border-[#AE8371] pb-2">Premium Kitchen Accessories</h2>
-                            <p class="text-gray-700 text-lg leading-relaxed">Enhance your kitchen space with our high-quality kitchen 
-                              accessories, designed for functionality and style. We offer a wide range of stainless steel sinks, cabinets, 
-                              shelves, and modular fittings tailored to meet your needs.</p>
-                          <p class="text-gray-600 text-base leading-relaxed">From modern designs to space-saving solutions, our kitchen 
-                              accessories are crafted with precision to bring efficiency and elegance to your home.</p></p>
-                        </div>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS4XVe4gqP0W2iwIqu3k6MR3hZBhRe6rXkMQ&s" class=" w-full md:w-1/2 h-80 object-cover">
-                    </div>
-                  </div>
-                    <div class="px-10 mx-auto rounded-lg">
-                      <div id="wooden" class="tab-content hidden flex flex-col md:flex-row-reverse">
-                          <div class="w-full md:w-1/2 space-y-3 bg-[#FFF0DC] p-5">
-                              <h2 class="text-3xl font-extrabold text-gray-900 border-b-4 border-[#AE8371] pb-2">Elegant Wooden Solutions</h2>
-                              <p class="text-gray-700 text-lg leading-relaxed">Our wooden products bring warmth and sophistication to any space. 
-                                We offer finely crafted wooden doors, panels, furniture, and decorative elements designed for durability and timeless appeal.</p>
-                            <p class="text-gray-600 text-base leading-relaxed">Whether for home interiors, office spaces, or custom furniture, 
-                                our wooden materials are sourced from premium-quality wood, ensuring both strength and beauty.</p></p>
-                          </div>
-                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdS2PlfgVVv88mMGk5zIry3a76tb9Sc-rTIQ&s" class=" w-full md:w-1/2 h-80 object-cover">
-                      </div>
-                    </div>
-                      <div class="px-10 mx-auto rounded-lg">
-                        <div id="handrailing" class="tab-content hidden flex flex-col md:flex-row-reverse">
-                            <div class="w-full md:w-1/2 space-y-3 bg-[#FFF0DC] p-5">
-                                <h2 class="text-3xl font-extrabold text-gray-900 border-b-4 border-[#AE8371] pb-2">Stylish & Durable Hand Railings</h2>
-                                <p class="text-gray-700 text-lg leading-relaxed">We provide high-quality hand railings for staircases, balconies, 
-                                  and walkways. Our range includes stainless steel, glass, and wooden handrail designs that offer both safety and elegance.</p>
-                              <p class="text-gray-600 text-base leading-relaxed">Designed to meet industry standards, our hand railings add a touch 
-                                  of modern aesthetics while ensuring stability and durability in both residential and commercial settings.</p></p>
-                            </div>
-                            <img src="https://betterhomeapp.com/cdn/shop/files/dde6cb8b-c575-4a37-a1cc-53408a20fbc1_sr-14-500x500.jpg?v=1695413515" class=" w-full md:w-1/2 h-80 object-cover">
-                        </div>
-                      </div>
-                    </div>
+            <!-- Category 3: Iron -->
+            <div class="category-card relative overflow-hidden rounded-lg shadow-lg">
+                <img src="{% static 'images/irondoor.jpg' %}" alt="Iron" class="w-full h-48 object-cover filter blur-sm transition duration-300">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white p-4">
+                    <h2 class="text-2xl font-semibold">Iron</h2>
+                    <p class="mt-2">Combining craftsmanship with modern techniques.</p>
+                </div>
+            </div>
 
-                    <script>
-                      document.addEventListener("DOMContentLoaded", function() {
-                          const buttons = document.querySelectorAll(".tab-button");
-                          const contents = document.querySelectorAll(".tab-content");
-                  
-                          // Show the Aluminium tab by default
-                          document.getElementById("aluminium").classList.remove("hidden");
-                  
-                          buttons.forEach(button => {
-                              button.addEventListener("click", function() {
-                                  contents.forEach(content => content.classList.add("hidden"));
-                                  document.getElementById(button.dataset.tab).classList.remove("hidden");
-                              });
-                          });
-                      });
-                  </script>
-                  
-                
-                  <section class="w-full py-12">
-                    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-                        <!-- Contact Details -->
-                        <div class="space-y-6" data-aos="fade-left">
-                            <h6 class="text-lg font-semibold text-gray-800">Contact Us</h6>
-                            <h3 class="text-2xl font-bold text-gray-900">UAE - Showroom</h3>
-                            <p class="text-gray-700">Ellista International - Showroom</p>
-                            <p class="text-gray-700">Showroom Investment Dubai</p>
-                            <p class="text-gray-700">
-                                <strong>Timing:</strong><br>
-                                Monday to Saturday: 9:00 AM - 8:00 PM
-                            </p>
-                            <ul class="space-y-2">
-                                <li><a href="tel:+97148928880" class="text-[#A67763] hover:underline">+9000000880</a></li>
-                                <li><a href="mailto:info@ellsta.com" class="text-[#A67763] hover:underline">info@ellsta.com</a></li>
-                            </ul>
-                            <a href="#" class="inline-block bg-[#A67763] text-white px-6 py-2 rounded-lg hover:bg-[#B38B7A] transition">
-                                Visit Our Showroom
-                            </a>
-                            <h6>
-                                <a href="#" class="text-[#A67763] hover:underline" target="_blank">View in map</a>
-                            </h6>
-                        </div>
-                
-                        <!-- Contact Form -->
-                        <section class=" p-8 rounded-lg shadow-md bg-[#FFF0DC]" data-aos="fade-right">
-                            <h6 class="text-lg font-semibold text-gray-800 mb-4">Send a Message</h6>
-                            <form action="#" method="POST" class="space-y-6">
-                                <!-- Name Field -->
-                                <div>
-                                    <label for="name" class="block text-sm font-medium text-gray-700">Your Name</label>
-                                    <input type="text" id="name" name="name" placeholder="John Doe"
-                                        class="mt-1 w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none shadow-sm">
-                                </div>
-                
-                                <!-- Email Field -->
-                                <div>
-                                    <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
-                                    <input type="email" id="email" name="email" placeholder="you@example.com"
-                                        class="mt-1 w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none shadow-sm">
-                                </div>
-                
-                                <!-- Message Field -->
-                                <div>
-                                    <label for="message" class="block text-sm font-medium text-gray-700">Your Message</label>
-                                    <textarea id="message" name="message" rows="5" placeholder="Type your message here..."
-                                        class="mt-1 w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none shadow-sm"></textarea>
-                                </div>
-                
-                                <!-- Submit Button -->
-                                <div>
-                                    <button type="submit"
-                                        class="w-full bg-[#A67763] text-white font-semibold py-3 hover:bg-[#B38B7A] transition duration-300">
-                                        Send Message
-                                    </button>
-                                </div>
-                            </form>
-                        </section>
-                    </div>
-                </section>
-                
-           </main>
+            <!-- Category 4: Glass Works -->
+            <div class="category-card relative overflow-hidden rounded-lg shadow-lg">
+                <img src="{% static 'images/glass.jpg' %}" alt="Glass Works" class="w-full h-48 object-cover filter blur-sm transition duration-300">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white p-4">
+                    <h2 class="text-2xl font-semibold">Glass Works</h2>
+                    <p class="mt-2">Enhancing spaces with high-quality glass installations.</p>
+                </div>
+            </div>
+
+            <!-- Category 5: Stainless Steel -->
+            <div class="category-card relative overflow-hidden rounded-lg shadow-lg">
+                <img src="{% static 'images/stainless.jpg' %}" alt="Stainless Steel" class="w-full h-48 object-cover filter blur-sm transition duration-300">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white p-4">
+                    <h2 class="text-2xl font-semibold">Stainless Steel</h2>
+                    <p class="mt-2">Durable and stylish solutions for various applications.</p>
+                </div>
+            </div>
+
+            <!-- Category 6: Kitchen Accessories -->
+            <div class="category-card relative overflow-hidden rounded-lg shadow-lg">
+                <img src="{% static 'images/kitchen.jpg' %}" alt="Kitchen Accessories" class="w-full h-48 object-cover filter blur-sm transition duration-300">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white p-4">
+                    <h2 class="text-2xl font-semibold">Kitchen Accessories</h2>
+                    <p class="mt-2">Functional and modern designs for your kitchen.</p>
+                </div>
+            </div>
+
+            <!-- Category 7: Wooden -->
+            <div class="category-card relative overflow-hidden rounded-lg shadow-lg">
+                <img src="{% static 'images/wooden.jpg' %}" alt="Wooden" class="w-full h-48 object-cover filter blur-sm transition duration-300">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white p-4">
+                    <h2 class="text-2xl font-semibold">Wooden</h2>
+                    <p class="mt-2">Crafted with precision for warmth and character.</p>
+                </div>
+            </div>
+
+            <!-- Category 8: Hand Railing -->
+            <div class="category-card relative overflow-hidden rounded-lg shadow-lg">
+                <img src="{% static 'images/hand_railings.jpg' %}" alt="Hand Railing" class="w-full h-48 object-cover filter blur-sm transition duration-300">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white p-4">
+                    <h2 class="text-2xl font-semibold">Hand Railing</h2>
+                    <p class="mt-2">Stylish and safe solutions for your spaces.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const buttons = document.querySelectorAll(".tab-button");
+            const contents = document.querySelectorAll(".tab-content");
+
+            // Show the Aluminium tab by default
+            document.getElementById("aluminium").classList.remove("hidden");
+
+            buttons.forEach(button => {
+                button.addEventListener("click", function() {
+                    contents.forEach(content => content.classList.add("hidden"));
+                    document.getElementById(button.dataset.tab).classList.remove("hidden");
+                });
+            });
+        });
+    </script>
+
+{% include 'home/contact.html' %}
+</main>
 {% endblock %}
