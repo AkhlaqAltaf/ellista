@@ -26,25 +26,33 @@
             </div>
 
             <!-- Mobile Menu Button -->
-            <div class="md:hidden">
-                <button id="menu-btn" class="text-white focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </div>
+           <!-- Mobile Menu Button -->
+<button id="menu-toggle" class="md:hidden text-white focus:outline-none p-2">
+    <svg id="menu-icon" class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+    </svg>
+</button>
 
 <!-- Mobile Menu -->
-<div id="mobile-menu" class="hidden md:hidden bg-[#333] z-50">
-    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-        <a href="/" class="block text-white hover:text-[#8D5C45]">Home</a>
-        <a href="/projects" class="block text-white hover:text-[#8D5C45]">Projects</a>
-
-        <a href="/gallary" class="block text-white hover:text-[#8D5C45]">Gallary</a>
-
-        <a href="/contact" class="block text-white hover:text-[#8D5C45]">Contact</a>
-    </div>
+<div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-[#8D5C45] bg-opacity-90 hidden flex flex-col items-center justify-center z-50">
+    <button id="menu-close" class="absolute top-5 right-5 text-white text-3xl">&times;</button>
+    
+    <nav class="flex flex-col space-y-6 text-center">
+        <a href="/" class="text-white text-lg hover:text-[#8D5C45]">Home</a>
+        <a href="/projects" class="text-white text-lg hover:text-[#8D5C45]">Projects</a>
+        <a href="/gallary" class="text-white text-lg hover:text-[#8D5C45]">Gallery</a>
+        <a href="/contact" class="text-white text-lg hover:text-[#8D5C45]">Contact</a>
+    </nav>
 </div>
+
+<script>
+document.getElementById("menu-toggle").addEventListener("click", function() {
+    document.getElementById("mobile-menu").classList.remove("hidden");
+});
+
+document.getElementById("menu-close").addEventListener("click", function() {
+    document.getElementById("mobile-menu").classList.add("hidden");
+});
+</script>
+
 </nav>

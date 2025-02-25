@@ -70,77 +70,80 @@
   <a  class="text-[#8D5C45] hover:underline">Hand Railing</a>.
 </div>
 
-        <div class="categories-container">
-            <!-- Category 1: Aluminium -->
-            <div class="category-card">
-                <img src="{% static 'images/alum.jpg' %}" alt="Aluminium">
-                <div class="category-content">
-                    <h2>Aluminium</h2>
-                    <p>Our aluminium solutions offer lightweight yet durable options for doors and windows. With a sleek finish and excellent thermal performance, our aluminium products are perfect for modern architectural designs.</p>
-                </div>
-            </div>
-
-            <!-- Category 2: Steel Structure -->
-            <div class="category-card">
-                <img src="{% static 'images/steel.jpg' %}" alt="Steel Structure">
-                <div class="category-content">
-                    <h2>Steel Structure</h2>
-                    <p>We provide robust steel structures that ensure safety and longevity. Ideal for both residential and commercial projects, our steel solutions are designed to withstand the test of time while maintaining aesthetic appeal.</p>
-                </div>
-            </div>
-
-            <!-- Category 3: Iron -->
-            <div class="category-card">
-                <img src="{% static 'images/irondoor.jpg' %}" alt="Iron">
-                <div class="category-content">
-                    <h2>Iron</h2>
-                    <p>Our ironwork combines traditional craftsmanship with modern techniques. From decorative gates to sturdy railings, our iron solutions add elegance and security to any property.</p>
-                </div>
-            </div>
-
-            <!-- Category 4: Glass Works -->
-            <div class="category-card">
-                <img src="{% static 'images/glass.jpg' %}" alt="Glass Works">
-                <div class="category-content">
-                    <h2>Glass Works</h2>
- <p>We specialize in high-quality glass installations that enhance natural light and create open spaces. Our glass works are perfect for contemporary designs, offering both beauty and functionality.</p>
-                </div>
-            </div>
-
-            <!-- Category 5: Stainless Steel -->
-            <div class="category-card">
-                <img src="{% static 'images/stainless.jpg' %}" alt="Stainless Steel">
-                <div class="category-content">
-                    <h2>Stainless Steel</h2>
-                    <p>Our stainless steel products are designed for durability and style. Ideal for kitchens and outdoor spaces, our stainless steel solutions are resistant to corrosion and easy to maintain.</p>
-                </div>
-            </div>
-
-            <!-- Category 6: Kitchen Accessories -->
-            <div class="category-card">
-                <img src="{% static 'images/kitchen.jpg' %}" alt="Kitchen Accessories">
-                <div class="category-content">
-                    <h2>Kitchen Accessories</h2>
-                    <p>We offer a range of kitchen accessories that blend functionality with modern design. From cabinets to countertops, our solutions are tailored to enhance your culinary experience.</p>
-                </div>
-            </div>
-
-            <!-- Category 7: Wooden -->
-            <div class="category-card">
-                <img src="{% static 'images/wood.jpg' %}" alt="Wooden">
-                <div class="category-content">
-                    <h2>Wooden</h2>
-                    <p>Our wooden products are crafted with precision and care. From doors to decorative elements, our wooden solutions bring warmth and character to any space, making them perfect for traditional and modern designs alike.</p>
-                </div>
-            </div>
-
-            <!-- Category 8: Hand Railing -->
-            <div class="category-card">
-                <img src="{% static 'images/hand.jpg' %}" alt="Hand Railing">
-                <div class="category-content">
-                    <h2>Hand Railing</h2>
-                    <p>We design and install hand railings that ensure safety without compromising on style. Our hand railing solutions are available in various materials, including wood, metal, and glass, tailored to fit your architectural vision.</p>
-                </div>
+<div class="container mx-auto px-4 py-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <!-- Category Card -->
+        <div class="relative bg-cover bg-center h-64 rounded-xl overflow-hidden flex items-center justify-center text-white p-6" style="background-image: url('{% static 'images/alum.jpg' %}');">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="relative z-10 text-center">
+                <h2 class="text-xl font-bold">Aluminium</h2>
+                <p class="text-sm mt-2">Our aluminium solutions offer lightweight yet durable options for doors and windows. With a sleek finish and excellent thermal performance, our aluminium products are perfect for modern architectural designs.</p>
             </div>
         </div>
+
+        <!-- Category Card -->
+        <div class="relative bg-cover bg-center h-64 rounded-xl overflow-hidden flex items-center justify-center text-white p-6" style="background-image: url('{% static 'images/steel.jpg' %}');">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="relative z-10 text-center">
+                <h2 class="text-xl font-bold">Steel Structure</h2>
+                <p class="text-sm mt-2">We provide robust steel structures that ensure safety and longevity. Ideal for both residential and commercial projects, our steel solutions are designed to withstand the test of time while maintaining aesthetic appeal.</p>
+            </div>
+        </div>
+
+        <!-- Category Card -->
+        <div class="relative bg-cover bg-center h-64 rounded-xl overflow-hidden flex items-center justify-center text-white p-6" style="background-image: url('{% static 'images/irondoor.jpg' %}');">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="relative z-10 text-center">
+                <h2 class="text-xl font-bold">Iron</h2>
+                <p class="text-sm mt-2">Our ironwork combines traditional craftsmanship with modern techniques. From decorative gates to sturdy railings, our iron solutions add elegance and security to any property.</p>
+            </div>
+        </div>
+
+        <!-- Category Card -->
+        <div class="relative bg-cover bg-center h-64 rounded-xl overflow-hidden flex items-center justify-center text-white p-6" style="background-image: url('{% static 'images/glass.jpg' %}');">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="relative z-10 text-center">
+                <h2 class="text-xl font-bold">Glass Works</h2>
+                <p class="text-sm mt-2">We specialize in high-quality glass installations that enhance natural light and create open spaces. Our glass works are perfect for contemporary designs, offering both beauty and functionality.</p>
+            </div>
+        </div>
+
+        <!-- Category Card -->
+        <div class="relative bg-cover bg-center h-64 rounded-xl overflow-hidden flex items-center justify-center text-white p-6" style="background-image: url('{% static 'images/stainless.jpg' %}');">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="relative z-10 text-center">
+                <h2 class="text-xl font-bold">Stainless Steel</h2>
+                <p class="text-sm mt-2">Our stainless steel products are designed for durability and style. Ideal for kitchens and outdoor spaces, our stainless steel solutions are resistant to corrosion and easy to maintain.</p>
+            </div>
+        </div>
+
+        <!-- Category Card -->
+        <div class="relative bg-cover bg-center h-64 rounded-xl overflow-hidden flex items-center justify-center text-white p-6" style="background-image: url('{% static 'images/kitchen.jpg' %}');">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="relative z-10 text-center">
+                <h2 class="text-xl font-bold">Kitchen Accessories</h2>
+                <p class="text-sm mt-2">We offer a range of kitchen accessories that blend functionality with modern design. From cabinets to countertops, our solutions are tailored to enhance your culinary experience.</p>
+            </div>
+        </div>
+
+        <!-- Category Card -->
+        <div class="relative bg-cover bg-center h-64 rounded-xl overflow-hidden flex items-center justify-center text-white p-6" style="background-image: url('{% static 'images/wood.jpg' %}');">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="relative z-10 text-center">
+                <h2 class="text-xl font-bold">Wooden</h2>
+                <p class="text-sm mt-2">Our wooden products are crafted with precision and care. From doors to decorative elements, our wooden solutions bring warmth and character to any space, making them perfect for traditional and modern designs alike.</p>
+            </div>
+        </div>
+
+        <!-- Category Card -->
+        <div class="relative bg-cover bg-center h-64 rounded-xl overflow-hidden flex items-center justify-center text-white p-6" style="background-image: url('{% static 'images/hand.jpg' %}');">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="relative z-10 text-center">
+                <h2 class="text-xl font-bold">Hand Railing</h2>
+                <p class="text-sm mt-2">We design and install hand railings that ensure safety without compromising on style. Our hand railing solutions are available in various materials, including wood, metal, and glass, tailored to fit your architectural vision.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
     </main>
