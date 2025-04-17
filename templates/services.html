@@ -56,94 +56,117 @@
         }
     </style>
 
-    <main class="container mx-auto px-6 py-12">
- <div class="text-center text-gray-700 mt-10 mb-10 w-5/6 mx-auto font-roboto text-md font-semibold uppercase leading-relaxed tracking-widest">
+    <main class="container mx-auto px-6 py-6">
+ <div class="text-center text-gray-700 mt-17 md:mt-10 mb-10 w-5/6 mx-auto font-roboto text-md font-semibold uppercase leading-relaxed tracking-widest">
   Ellista International® specializes in
-  <a  class="text-[#8D5C45] hover:underline">Aluminium</a>,
-  <a class="text-[#8D5C45] hover:underline">Steel Structure</a>,
-  <a class="text-[#8D5C45] hover:underline">Iron</a>,
-  <a  class="text-[#8D5C45] hover:underline">Glass Works</a>,
-  <a  class="text-[#8D5C45] hover:underline">Stainless Steel</a>,
-  <a class="text-[#8D5C45] hover:underline">Kitchen Accessories</a>,
-  <a  class="text-[#8D5C45] hover:underline">Wooden</a>,
+  <a  class="text-[#09321C] hover:underline">Aluminium</a>,
+  <a class="text-[#09321C] hover:underline">Steel Structure</a>,
+  <a class="text-[#09321C] hover:underline">Iron</a>,
+  <a  class="text-[#09321C] hover:underline">Glass Works</a>,
+  <a  class="text-[#09321C] hover:underline">Stainless Steel</a>,
+  <a class="text-[#09321C] hover:underline">Kitchen Accessories</a>,
+  <a  class="text-[#09321C] hover:underline">Wooden</a>,
   along with
-  <a  class="text-[#8D5C45] hover:underline">Hand Railing</a>.
+  <a  class="text-[#09321C] hover:underline">Hand Railing</a>.
 </div>
+
+<div class="text-center px-6">
+    <h2 class="text-3xl font-bold text-gray-900 uppercase">Our Projects</h2>
+    <div class="w-16 h-0.5 bg-[#D5BB45] mt-2 mx-auto"></div>
+</div>
+
 
 <div class="container mx-auto px-4 py-8">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         <!-- Category Card -->
-        <div class="relative bg-cover bg-center h-64 rounded-xl overflow-hidden flex items-center justify-center text-white p-6" style="background-image: url('{% static 'images/alum.jpg' %}');">
-            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-            <div class="relative z-10 text-center">
-                <h2 class="text-xl font-bold">Aluminium</h2>
-                <p class="text-sm mt-2">Our aluminium solutions offer lightweight yet durable options for doors and windows. With a sleek finish and excellent thermal performance, our aluminium products are perfect for modern architectural designs.</p>
+        <a href="/ourproducts" class="block">
+            <div class="relative bg-cover bg-center h-64 rounded-xl overflow-hidden flex items-center justify-center text-white p-6 group" 
+                 style="background-image: url('{% static 'images/alum.jpg' %}');">
+                <div class="absolute inset-0 bg-black bg-opacity-50 transition-all duration-300 group-hover:bg-opacity-70"></div>
+                <div class="relative z-10 text-center">
+                    <h2 class="text-xl font-bold text-[#F6D24C]">Aluminium</h2>
+                    <p class="text-sm mt-2">Our aluminium solutions offer lightweight yet durable options for doors and windows.</p>
+                </div>
             </div>
-        </div>
-
-        <!-- Category Card -->
-        <div class="relative bg-cover bg-center h-64 rounded-xl overflow-hidden flex items-center justify-center text-white p-6" style="background-image: url('{% static 'images/steel.jpg' %}');">
-            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-            <div class="relative z-10 text-center">
-                <h2 class="text-xl font-bold">Steel Structure</h2>
-                <p class="text-sm mt-2">We provide robust steel structures that ensure safety and longevity. Ideal for both residential and commercial projects, our steel solutions are designed to withstand the test of time while maintaining aesthetic appeal.</p>
+        </a>
+        
+        <a href="/ourproducts" class="block">
+            <div class="relative bg-cover bg-center h-64 rounded-xl overflow-hidden flex items-center justify-center text-white p-6 group" 
+                 style="background-image: url('{% static 'images/steel.jpg' %}');">
+                <div class="absolute inset-0 bg-black bg-opacity-50 transition-all duration-300 group-hover:bg-opacity-70"></div>
+                <div class="relative z-10 text-center">
+                    <h2 class="text-xl font-bold text-[#F6D24C]">Steel Structure</h2>
+                    <p class="text-sm mt-2">We provide robust steel structures that ensure safety and longevity.</p>
+                </div>
             </div>
-        </div>
-
-        <!-- Category Card -->
-        <div class="relative bg-cover bg-center h-64 rounded-xl overflow-hidden flex items-center justify-center text-white p-6" style="background-image: url('{% static 'images/irondoor.jpg' %}');">
-            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-            <div class="relative z-10 text-center">
-                <h2 class="text-xl font-bold">Iron</h2>
-                <p class="text-sm mt-2">Our ironwork combines traditional craftsmanship with modern techniques. From decorative gates to sturdy railings, our iron solutions add elegance and security to any property.</p>
+        </a>
+        
+        <a href="/ourproducts" class="block">
+            <div class="relative bg-cover bg-center h-64 rounded-xl overflow-hidden flex items-center justify-center text-white p-6 group" 
+                 style="background-image: url('{% static 'images/irondoor.jpg' %}');">
+                <div class="absolute inset-0 bg-black bg-opacity-50 transition-all duration-300 group-hover:bg-opacity-70"></div>
+                <div class="relative z-10 text-center">
+                    <h2 class="text-xl font-bold text-[#F6D24C]">Iron</h2>
+                    <p class="text-sm mt-2">Our ironwork combines traditional craftsmanship with modern techniques.</p>
+                </div>
             </div>
-        </div>
-
-        <!-- Category Card -->
-        <div class="relative bg-cover bg-center h-64 rounded-xl overflow-hidden flex items-center justify-center text-white p-6" style="background-image: url('{% static 'images/glass.jpg' %}');">
-            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-            <div class="relative z-10 text-center">
-                <h2 class="text-xl font-bold">Glass Works</h2>
-                <p class="text-sm mt-2">We specialize in high-quality glass installations that enhance natural light and create open spaces. Our glass works are perfect for contemporary designs, offering both beauty and functionality.</p>
+        </a>
+        
+        <a href="/ourproducts" class="block">
+            <div class="relative bg-cover bg-center h-64 rounded-xl overflow-hidden flex items-center justify-center text-white p-6 group" 
+                 style="background-image: url('{% static 'images/glass.jpg' %}');">
+                <div class="absolute inset-0 bg-black bg-opacity-50 transition-all duration-300 group-hover:bg-opacity-70"></div>
+                <div class="relative z-10 text-center">
+                    <h2 class="text-xl font-bold text-[#F6D24C]">Glass Works</h2>
+                    <p class="text-sm mt-2">We specialize in high-quality glass installations that enhance natural light.</p>
+                </div>
             </div>
-        </div>
-
-        <!-- Category Card -->
-        <div class="relative bg-cover bg-center h-64 rounded-xl overflow-hidden flex items-center justify-center text-white p-6" style="background-image: url('{% static 'images/stainless.jpg' %}');">
-            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-            <div class="relative z-10 text-center">
-                <h2 class="text-xl font-bold">Stainless Steel</h2>
-                <p class="text-sm mt-2">Our stainless steel products are designed for durability and style. Ideal for kitchens and outdoor spaces, our stainless steel solutions are resistant to corrosion and easy to maintain.</p>
+        </a>
+        
+        <a href="/ourproducts" class="block">
+            <div class="relative bg-cover bg-center h-64 rounded-xl overflow-hidden flex items-center justify-center text-white p-6 group" 
+                 style="background-image: url('{% static 'images/stainless.jpg' %}');">
+                <div class="absolute inset-0 bg-black bg-opacity-50 transition-all duration-300 group-hover:bg-opacity-70"></div>
+                <div class="relative z-10 text-center">
+                    <h2 class="text-xl font-bold text-[#F6D24C]">Stainless Steel</h2>
+                    <p class="text-sm mt-2">Our stainless steel products are designed for durability and style.</p>
+                </div>
             </div>
-        </div>
-
-        <!-- Category Card -->
-        <div class="relative bg-cover bg-center h-64 rounded-xl overflow-hidden flex items-center justify-center text-white p-6" style="background-image: url('{% static 'images/kitchen.jpg' %}');">
-            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-            <div class="relative z-10 text-center">
-                <h2 class="text-xl font-bold">Kitchen Accessories</h2>
-                <p class="text-sm mt-2">We offer a range of kitchen accessories that blend functionality with modern design. From cabinets to countertops, our solutions are tailored to enhance your culinary experience.</p>
+        </a>
+        
+        <a href="/ourproducts" class="block">
+            <div class="relative bg-cover bg-center h-64 rounded-xl overflow-hidden flex items-center justify-center text-white p-6 group" 
+                 style="background-image: url('{% static 'images/kitchen.jpg' %}');">
+                <div class="absolute inset-0 bg-black bg-opacity-50 transition-all duration-300 group-hover:bg-opacity-70"></div>
+                <div class="relative z-10 text-center">
+                    <h2 class="text-xl font-bold text-[#F6D24C]">Kitchen Accessories</h2>
+                    <p class="text-sm mt-2">We offer a range of kitchen accessories blending functionality with modern design.</p>
+                </div>
             </div>
-        </div>
-
-        <!-- Category Card -->
-        <div class="relative bg-cover bg-center h-64 rounded-xl overflow-hidden flex items-center justify-center text-white p-6" style="background-image: url('{% static 'images/wood.jpg' %}');">
-            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-            <div class="relative z-10 text-center">
-                <h2 class="text-xl font-bold">Wooden</h2>
-                <p class="text-sm mt-2">Our wooden products are crafted with precision and care. From doors to decorative elements, our wooden solutions bring warmth and character to any space, making them perfect for traditional and modern designs alike.</p>
+        </a>
+        
+        <a href="/ourproducts" class="block">
+            <div class="relative bg-cover bg-center h-64 rounded-xl overflow-hidden flex items-center justify-center text-white p-6 group" 
+                 style="background-image: url('{% static 'images/wood.jpg' %}');">
+                <div class="absolute inset-0 bg-black bg-opacity-50 transition-all duration-300 group-hover:bg-opacity-70"></div>
+                <div class="relative z-10 text-center">
+                    <h2 class="text-xl font-bold text-[#F6D24C]">Wooden</h2>
+                    <p class="text-sm mt-2">Our wooden products bring warmth and character to any space.</p>
+                </div>
             </div>
-        </div>
-
-        <!-- Category Card -->
-        <div class="relative bg-cover bg-center h-64 rounded-xl overflow-hidden flex items-center justify-center text-white p-6" style="background-image: url('{% static 'images/hand.jpg' %}');">
-            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-            <div class="relative z-10 text-center">
-                <h2 class="text-xl font-bold">Hand Railing</h2>
-                <p class="text-sm mt-2">We design and install hand railings that ensure safety without compromising on style. Our hand railing solutions are available in various materials, including wood, metal, and glass, tailored to fit your architectural vision.</p>
+        </a>
+        
+        <a href="/ourproducts" class="block">
+            <div class="relative bg-cover bg-center h-64 rounded-xl overflow-hidden flex items-center justify-center text-white p-6 group" 
+                 style="background-image: url('{% static 'images/hand.jpg' %}');">
+                <div class="absolute inset-0 bg-black bg-opacity-50 transition-all duration-300 group-hover:bg-opacity-70"></div>
+                <div class="relative z-10 text-center">
+                    <h2 class="text-xl font-bold text-[#F6D24C]">Hand Railing</h2>
+                    <p class="text-sm mt-2">We design and install hand railings ensuring safety without compromising style.</p>
+                </div>
             </div>
-        </div>
-    </div>
+        </a>
+        
 </div>
 
     </main>

@@ -38,6 +38,9 @@ class ProductsView(TemplateView):
 
 class NewsView(TemplateView):
     template_name = "news.html"
+    
+class ourproductsView(TemplateView):
+    template_name = "ourproducts.html"
 
 class ContactView(TemplateView):
     template_name = "contact.html"

@@ -12,7 +12,8 @@ urlpatterns = [
     path('news/',views.NewsView.as_view(),name='news'),
     path('gallary/',views.GalleryView.as_view(),name='gallary'),
     path('contact/',views.ContactView.as_view(),name='contact'),
-    path('download/',views.DownloadView.as_view(),name='download')
+    path('download/',views.DownloadView.as_view(),name='download'),
+    path('ourproducts/',views.ourproductsView.as_view(),name='ourproducts'),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
