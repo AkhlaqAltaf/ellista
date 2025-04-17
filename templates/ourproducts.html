@@ -1,0 +1,750 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<style>
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none; 
+    }
+</style>
+
+
+<section class="relative w-full h-[580px] bg-cover bg-center flex items-center justify-center text-center" style="background-image: url('{% static 'images/Product Page2.webp' %}');">
+    <div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_4%_11%,_rgba(9,_50,_28,_1)_0%,_rgba(9,_50,_28,_0.73)_22%,_rgba(9,_50,_28,_0.65)_49%,_rgba(9,_50,_28,_0.69)_82%,_rgba(9,_50,_28,_1)_100%)]"></div>
+  
+  <div class="relative z-10">
+      <h1 class="text-4xl font-bold text-[#F6D24C]" data-aos="fade-up">Our Products</h1>
+      <nav class="mt-4">
+          <ul class="flex justify-center space-x-4 text-sm uppercase font-semibold text-white">
+              <li><a href="/" class="hover:text-[#F6D24C]">Home</a></li>
+              <li>/</li>
+              <li class="">Projects</li>
+          </ul>
+      </nav>
+  </div>
+</section>
+
+<div class="flex justify-center items-center px-4 py-12 font-bold text-sm">
+    <div class="flex flex-wrap justify-center gap-4 w-[1000PX] text-center">
+        <a href="#doors-and-windows" class="hover:text-[#09321C] transition-colors duration-300">01 DOORS AND WINDOWS</a>
+        <span class="hidden md:inline">|</span>
+        <a href="#ARCHITECTURAL-SYSTEMS" class="hover:text-[#09321C] transition-colors duration-300">02 ARCHITECTURAL SYSTEMS</a>
+        <span class="hidden md:inline">|</span>
+        <a href="#INTERIOR-SHADING" class="hover:text-[#09321C] transition-colors duration-300">03 INTERIOR SHADING</a>
+        <span class="hidden md:inline">|</span>
+        <a href="#OUTDOOR-SHADING" class="hover:text-[#09321C] transition-colors duration-300">04 OUTDOOR SHADING</a>
+        <span class="hidden md:inline">|</span>
+        <a href="#ACOUSTIC-SOLUTIONS" class="hover:text-[#09321C] transition-colors duration-300">05 ACOUSTIC SOLUTIONS</a>
+        <span class="hidden md:inline">|</span>
+        <a href="#SMART-AUTOMATION-SOLUTIONS" class="hover:text-[#09321C] transition-colors duration-300">06 SMART AUTOMATION SOLUTIONS</a>
+    </div>
+</div>
+
+
+<section id="doors-and-windows" class="flex flex-col md:flex-row items-center justify-center md:space-x-6 mt-12 px-4 relative">
+
+    <div class="relative flex items-center justify-center">
+        <span class="absolute text-[80px] sm:text-[100px] md:text-[140px] text-[#F6D24C] font-bold -top-5 md:-top-10 left-1/2 transform -translate-x-1/3 -translate-y-10 opacity-15"
+       >
+            01
+        </span>
+        <img src="{% static 'images/window.png' %}" alt="Doors and Windows"
+            class="w-28 h-auto -translate-y-10 md:-translate-y-1">
+    </div>
+    <h2 class="text-xl md:text-2xl font-bold text-[#09321C] text-left">
+        Doors and Windows
+    </h2>
+</section>
+
+<div class="relative w-full h-[550px] overflow-hidden mt-10 mb-20">
+    <div id="carousel_1" class="flex transition-transform duration-500 ease-in-out w-full">
+        
+        <!-- Slide 1 - Gracili Minimal Systems® -->
+        <div class="w-full flex-shrink-0 relative">
+            <div class="relative w-full h-[550px]">
+                <img src="{% static 'images/01 Gracelli.webp' %}" alt="Gracili Minimal Systems®" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#09321C]/60 to-[#09321C]/30"></div>
+            </div>
+            <div class="absolute inset-0 flex flex-col justify-center px-8 text-white text-left">
+                <p class="w-full max-w-xl mx-auto md:ml-5">
+                    Ellista International presents Gracili Minimal Systems®, designed for seamless integration of ultra-slim sightlines and maximum transparency in modern architecture.
+                </p>
+                <h2 class="text-3xl font-bold mt-6 md:ml-5 text-[#F6D24C] text-[#F6D24C]">Gracili Minimal Systems®</h2>
+                <button class="md:ml-5 mt-6 bg-[#09321C] w-40 h-12 text-white rounded-md">READ MORE</button>
+            </div>
+        </div>
+
+        <!-- Slide 2 - Entrance Pivot Doors -->
+        <div class="w-full flex-shrink-0 relative">
+            <div class="relative w-full h-[550px]">
+                <img src="{% static 'images/02 Pivot Doors-1.jpg' %}" alt="Entrance Pivot Doors" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#09321C]/60 to-[#09321C]/30"></div>
+            </div>
+            <div class="absolute inset-0 flex flex-col justify-center px-8 text-white text-left">
+                <p class="w-full max-w-xl mx-auto md:ml-5">
+                    Ellista International's Entrance Pivot Doors blend modern aesthetics with robust performance, offering custom finishes and seamless operation.
+                </p>
+                <h2 class="text-3xl font-bold mt-6 md:ml-5 text-[#F6D24C]">Entrance Pivot Doors</h2>
+                <button class="md:ml-5 mt-6 bg-[#09321C] w-40 h-12 text-white rounded-md">READ MORE</button>
+            </div>
+        </div>
+
+        <!-- Slide 3 - Minimal Bi-Fold Doors -->
+        <div class="w-full flex-shrink-0 relative">
+            <div class="relative w-full h-[550px]">
+                <img src="{% static 'images/03 Bi Fold doors.webp' %}" alt="Minimal Bi-Fold Doors" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#09321C]/60 to-[#09321C]/30"></div>
+            </div>
+            <div class="absolute inset-0 flex flex-col justify-center px-8 text-white text-left">
+                <p class="w-full max-w-xl mx-auto md:ml-5">
+                    Our Minimal Bi-Fold Doors offer a sleek, space-saving solution with smooth folding mechanisms and high thermal efficiency, perfect for contemporary spaces.
+                </p>
+                <h2 class="text-3xl font-bold mt-6 md:ml-5 text-[#F6D24C]">Minimal Bi-Fold Doors</h2>
+                <button class="md:ml-5 mt-6 bg-[#09321C] w-40 h-12 text-white rounded-md">READ MORE</button>
+            </div>
+        </div>
+
+        <!-- Slide 4 - Hinged Doors -->
+        <div class="w-full flex-shrink-0 relative">
+            <div class="relative w-full h-[550px]">
+                <img src="{% static 'images/04 Hinged Door.webp' %}" alt="Hinged Doors" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#09321C]/60 to-[#09321C]/30"></div>
+            </div>
+            <div class="absolute inset-0 flex flex-col justify-center px-8 text-white text-left">
+                <p class="w-full max-w-xl mx-auto md:ml-5">
+                    Ellista International's Hinged Doors redefine elegance with high-quality materials, durability, and customization for both residential and commercial use.
+                </p>
+                <h2 class="text-3xl font-bold mt-6 md:ml-5 text-[#F6D24C]">Hinged Doors</h2>
+                <button class="md:ml-5 mt-6 bg-[#09321C] w-40 h-12 text-white rounded-md">READ MORE</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="absolute bottom-0 right-0 flex overflow-x-auto whitespace-nowrap bg-[#FFF7EA] w-full md:w-[65%] border-t-[1px] border-gray-300">
+        <button onclick="moveToSlide(0, 'carousel_1')" class="px-5 py-8 bg-[#FFF7EA] flex-shrink-0 border-r-[0.5px] border-gray-200">Gracili Minimal Systems®</button>
+        <button onclick="moveToSlide(1, 'carousel_1')" class="px-5 py-8 bg-[#FFF7EA] flex-shrink-0 border-r-[0.5px] border-gray-200">Entrance Pivot Doors</button>
+        <button onclick="moveToSlide(2, 'carousel_1')" class="px-5 py-8 bg-[#FFF7EA] flex-shrink-0 border-r-[0.5px] border-gray-200">Minimal Bi-Fold Doors</button>
+        <button onclick="moveToSlide(3, 'carousel_1')" class="px-5 py-8 bg-[#FFF7EA] flex-shrink-0 border-r-[0.5px] border-gray-200">Hinged Doors</button>
+    </div>
+</div>
+
+
+
+
+<section id="Architectural-Systems" class="flex flex-col md:flex-row items-center justify-center md:space-x-6 mt-12 px-4 relative">
+    <div class="relative flex items-center justify-center">
+        <span class="absolute text-[80px] sm:text-[100px] md:text-[140px] text-[#F6D24C] font-bold -top-5 md:-top-10 left-1/2 transform -translate-x-1/3 -translate-y-10 opacity-15"
+            >
+            02
+        </span>
+        <img src="{% static 'images/measure.png' %}" alt="Architectural Systems"
+            class="w-28 h-auto -translate-y-10 md:-translate-y-1">
+    </div>
+    <h2 class="text-xl md:text-2xl font-bold text-[#09321C] text-left">
+        Architectural Systems
+    </h2>
+</section>
+
+<div class="relative w-full h-[550px] overflow-hidden mt-10 mb-20">
+    <div id="carousel_2" class="flex transition-transform duration-500 ease-in-out w-full">
+        <!-- Slide 1: Curtain Wall Glazing -->
+        <div class="w-full flex-shrink-0 relative">
+            <div class="relative w-full h-[550px]">
+                <img src="{% static 'images/Down Cutain wall_SG.webp' %}" alt="Curtain Wall Glazing" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#09321C]/60 to-[#09321C]/30"></div>
+            </div>
+            <div class="absolute inset-0 flex flex-col justify-center px-8 text-white text-left">
+                <p class="w-full max-w-xl mx-auto md:ml-5">
+                    *Ellista International* provides innovative curtain wall glazing solutions that combine aesthetics and performance. Our systems offer high durability, thermal efficiency, and seamless integration with modern architectural designs.
+                </p>
+                <h2 class="text-3xl font-bold mt-6 md:ml-5 text-[#F6D24C]">Curtain Wall Glazing</h2>
+                <button class="md:ml-5 mt-6 bg-[#09321C] w-40 h-12 text-white rounded-md">READ MORE</button>
+            </div>
+        </div>
+
+        <!-- Slide 2: Glass Skylight -->
+        <div class="w-full flex-shrink-0 relative">
+            <div class="relative w-full h-[550px]">
+                <img src="{% static 'images/Skylight Product.jpg' %}" alt="Glass Skylight" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#09321C]/60 to-[#09321C]/30"></div>
+            </div>
+            <div class="absolute inset-0 flex flex-col justify-center px-8 text-white text-left">
+                <p class="w-full max-w-xl mx-auto md:ml-5">
+                    Our premium skylight solutions bring natural light into indoor spaces while enhancing energy efficiency. Choose from walkable, minimal, or conventional designs to fit your architectural needs.
+                </p>
+                <h2 class="text-3xl font-bold mt-6 md:ml-5 text-[#F6D24C]">Glass Skylight</h2>
+                <button class="md:ml-5 mt-6 bg-[#09321C] w-40 h-12 text-white rounded-md">READ MORE</button>
+            </div>
+        </div>
+
+        <!-- Slide 3: Architectural Louvers -->
+        <div class="w-full flex-shrink-0 relative">
+            <div class="relative w-full h-[550px]">
+                <img src="{% static 'images/Euro-Systems®-External-Louvers.jpg' %}" alt="Architectural Louvers" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#09321C]/60 to-[#09321C]/30"></div>
+            </div>
+            <div class="absolute inset-0 flex flex-col justify-center px-8 text-white text-left">
+                <p class="w-full max-w-xl mx-auto md:ml-5">
+                    Our architectural louvers provide advanced shading and ventilation options. Available in both fixed and motorized designs, these solutions integrate seamlessly with smart control systems for enhanced performance.
+                </p>
+                <h2 class="text-3xl font-bold mt-6 md:ml-5 text-[#F6D24C]">Architectural Louvers</h2>
+                <button class="md:ml-5 mt-6 bg-[#09321C] w-40 h-12 text-white rounded-md">READ MORE</button>
+            </div>
+        </div>
+
+        <!-- Slide 4: Shower Enclosures -->
+        <div class="w-full flex-shrink-0 relative">
+            <div class="relative w-full h-[550px]">
+                <img src="{% static 'images/Product Page Banner.webp' %}" alt="Shower Enclosures" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#09321C]/60 to-[#09321C]/30"></div>
+            </div>
+            <div class="absolute inset-0 flex flex-col justify-center px-8 text-white text-left">
+                <p class="w-full max-w-xl mx-auto md:ml-5">
+                    We offer elegantly designed shower enclosures with high-quality tempered glass and durable aluminum framing. Our enclosures provide a sleek, modern look while ensuring privacy and functionality.
+                </p>
+                <h2 class="text-3xl font-bold mt-6 md:ml-5 text-[#F6D24C]">Shower Enclosures</h2>
+                <button class="md:ml-5 mt-6 bg-[#09321C] w-40 h-12 text-white rounded-md">READ MORE</button>
+            </div>
+        </div>
+
+        <!-- Slide 5: Hand Rails and Balustrades -->
+        <div class="w-full flex-shrink-0 relative">
+            <div class="relative w-full h-[550px]">
+                <img src="{% static 'images/Product page banner (1).jpg' %}" alt="Hand Rails and Balustrades" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#09321C]/60 to-[#09321C]/30"></div>
+            </div>
+            <div class="absolute inset-0 flex flex-col justify-center px-8 text-white text-left">
+                <p class="w-full max-w-xl mx-auto md:ml-5">
+                    Ellista International designs premium handrails and balustrades that ensure safety without compromising style. Our solutions offer high durability and minimal maintenance, perfect for residential and commercial spaces.
+                </p>
+                <h2 class="text-3xl font-bold mt-6 md:ml-5 text-[#F6D24C]">Hand Rails and Balustrades</h2>
+                <button class="md:ml-5 mt-6 bg-[#09321C] w-40 h-12 text-white rounded-md">READ MORE</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="absolute bottom-0 right-0 flex overflow-x-auto whitespace-nowrap bg-[#FFF7EA] w-full md:w-[65%] border-t-[1px] border-gray-300">
+        <button onclick="moveToSlide(0, 'carousel_2')" class="px-5 py-8 bg-[#FFF7EA] flex-shrink-0 border-r-[0.5px] border-gray-200">Curtain Wall Glazing</button>
+        <button onclick="moveToSlide(1, 'carousel_2')" class="px-5 py-8 bg-[#FFF7EA] flex-shrink-0 border-r-[0.5px] border-gray-200">Glass Skylight</button>
+        <button onclick="moveToSlide(2, 'carousel_2')" class="px-5 py-8 bg-[#FFF7EA] flex-shrink-0 border-r-[0.5px] border-gray-200">Architectural Louvers</button>
+        <button onclick="moveToSlide(3, 'carousel_2')" class="px-5 py-8 bg-[#FFF7EA] flex-shrink-0 border-r-[0.5px] border-gray-200">Shower Enclosures</button>
+        <button onclick="moveToSlide(4, 'carousel_2')" class="px-5 py-8 bg-[#FFF7EA] flex-shrink-0 border-r-[0.5px] border-gray-200">Hand Rails and Balustrades</button>
+    </div>
+</div>
+
+
+
+
+<section id="Interior-Shading" class="flex flex-col md:flex-row items-center justify-center md:space-x-6 mt-12 px-4 relative">
+
+    <div class="relative flex items-center justify-center">
+        <span class="absolute text-[80px] sm:text-[100px] md:text-[140px] text-[#F6D24C] font-bold -top-5 md:-top-10 left-1/2 transform -translate-x-1/3 -translate-y-10 opacity-15"
+            >
+            03
+        </span>
+        <img src="{% static 'images/Indoor-shading.png' %}" alt="Interior Shading"
+            class="w-28 h-auto -translate-y-10 md:-translate-y-1">
+    </div>
+    <h2 class="text-xl md:text-2xl font-bold text-[#09321C] text-left">
+        Interior Shading
+    </h2>
+</section>
+
+<div class="relative w-full h-[550px] overflow-hidden mt-10 mb-20">
+    <div id="carousel_3" class="flex transition-transform duration-500 ease-in-out w-full">
+
+        <!-- Slide 1 - Solange® Specialty Shades -->
+        <div class="w-full flex-shrink-0 relative">
+            <div class="relative w-full h-[550px]">
+                <img src="{% static 'images/Product Banner.jpg' %}" alt="Solange® Specialty Shades" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#09321C]/60 to-[#09321C]/30"></div>
+            </div>
+            <div class="absolute inset-0 flex flex-col justify-center px-8 text-white text-left">
+                <p class="w-full max-w-xl mx-auto md:ml-5">
+                    Solange® Specialty Shades offer advanced shading solutions with customizable designs and smart technology for modern interiors.
+                </p>
+                <h2 class="text-3xl font-bold mt-6 md:ml-5 text-[#F6D24C]">Solange® Specialty Shades</h2>
+                <button class="md:ml-5 mt-6 bg-[#09321C] w-40 h-12 text-white rounded-md">READ MORE</button>
+            </div>
+        </div>
+
+        <!-- Slide 2 - Roller Blinds -->
+        <div class="w-full flex-shrink-0 relative">
+            <div class="relative w-full h-[550px]">
+                <img src="{% static 'images/Roller Blinds Product.jpg' %}" alt="Roller Blinds" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#09321C]/60 to-[#09321C]/30"></div>
+            </div>
+            <div class="absolute inset-0 flex flex-col justify-center px-8 text-white text-left">
+                <p class="w-full max-w-xl mx-auto md:ml-5">
+                    Our Roller Blinds provide stylish and efficient light control with a variety of fabrics and automation options.
+                </p>
+                <h2 class="text-3xl font-bold mt-6 md:ml-5 text-[#F6D24C]">Roller Blinds</h2>
+                <button class="md:ml-5 mt-6 bg-[#09321C] w-40 h-12 text-white rounded-md">READ MORE</button>
+            </div>
+        </div>
+
+        <!-- Slide 3 - Curtains and Draperies -->
+        <div class="w-full flex-shrink-0 relative">
+            <div class="relative w-full h-[550px]">
+                <img src="{% static 'images/DSC_0302C.jpg' %}" alt="Curtains and Draperies" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#09321C]/60 to-[#09321C]/30"></div>
+            </div>
+            <div class="absolute inset-0 flex flex-col justify-center px-8 text-white text-left">
+                <p class="w-full max-w-xl mx-auto md:ml-5">
+                    Our premium Curtains and Draperies offer elegant designs with superior functionality for every space.
+                </p>
+                <h2 class="text-3xl font-bold mt-6 md:ml-5 text-[#F6D24C]">Curtains and Draperies</h2>
+                <button class="md:ml-5 mt-6 bg-[#09321C] w-40 h-12 text-white rounded-md">READ MORE</button>
+            </div>
+        </div>
+
+        <!-- Slide 4 - Roman Blinds -->
+        <div class="w-full flex-shrink-0 relative">
+            <div class="relative w-full h-[550px]">
+                <img src="{% static 'images/Roman Blinds Products.jpg' %}" alt="Roman Blinds" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#09321C]/60 to-[#09321C]/30"></div>
+            </div>
+            <div class="absolute inset-0 flex flex-col justify-center px-8 text-white text-left">
+                <p class="w-full max-w-xl mx-auto md:ml-5">
+                    Our Roman Blinds provide a timeless and luxurious look with soft fabric folds and smooth operation.
+                </p>
+                <h2 class="text-3xl font-bold mt-6 md:ml-5 text-[#F6D24C]">Roman Blinds</h2>
+                <button class="md:ml-5 mt-6 bg-[#09321C] w-40 h-12 text-white rounded-md">READ MORE</button>
+            </div>
+        </div>
+
+<!-- Slide 5 - Vertical Blinds -->
+<div class="w-full flex-shrink-0 relative">
+    <div class="relative w-full h-[550px]">
+        <img src="{% static 'images/Vertical Bliinds product.jpg' %}" alt="Vertical Blinds" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-b from-[#09321C]/60 to-[#09321C]/30"></div>
+    </div>
+    <div class="absolute inset-0 flex flex-col justify-center px-8 text-white text-left">
+        <p class="w-full max-w-xl mx-auto md:ml-5">
+            Ellista International Vertical Blinds provide a stylish and practical shading solution, offering precise light control and privacy for both residential and commercial spaces.
+        </p>
+        <h2 class="text-3xl font-bold mt-6 md:ml-5 text-[#F6D24C]">Vertical Blinds</h2>
+        <button class="md:ml-5 mt-6 bg-[#09321C] w-40 h-12 text-white rounded-md">READ MORE</button>
+    </div>
+</div>
+
+
+
+        <!-- Slide 6 -->
+<div class="w-full flex-shrink-0 relative">
+    <div class="relative w-full h-[550px]">
+        <img src="{% static 'images/Vision Blinds Product.jpg' %}" alt="Vision Blinds" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-b from-[#09321C]/60 to-[#09321C]/30"></div>
+    </div>
+    <div class="absolute inset-0 flex flex-col justify-center px-8 text-white text-left">
+        <p class="w-full max-w-xl mx-auto md:ml-5">
+            Ellista International Vision Blinds offer a perfect balance of privacy and light control with their dual-layer fabric system.
+        </p>
+        <h2 class="text-3xl font-bold mt-6 md:ml-5 text-[#F6D24C]">Vision Blinds</h2>
+        <button class="md:ml-5 mt-6 bg-[#09321C] w-40 h-12 text-white rounded-md">READ MORE</button>
+    </div>
+</div>
+
+<!-- Slide 7 -->
+<div class="w-full flex-shrink-0 relative">
+    <div class="relative w-full h-[550px]">
+        <img src="{% static 'images/Wooden Blinds Product.jpg' %}" alt="Wooden Blinds" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-b from-[#09321C]/60 to-[#09321C]/30"></div>
+    </div>
+    <div class="absolute inset-0 flex flex-col justify-center px-8 text-white text-left">
+        <p class="w-full max-w-xl mx-auto md:ml-5">
+            Our Wooden Blinds bring a touch of nature to your space, providing warmth, elegance, and superior light control.
+        </p>
+        <h2 class="text-3xl font-bold mt-6 md:ml-5 text-[#F6D24C]">Wooden Blinds</h2>
+        <button class="md:ml-5 mt-6 bg-[#09321C] w-40 h-12 text-white rounded-md">READ MORE</button>
+    </div>
+</div>
+
+<!-- Slide 8 -->
+<div class="w-full flex-shrink-0 relative">
+    <div class="relative w-full h-[550px]">
+        <img src="{% static 'images/Venetian-Residential---2-1.jpg' %}" alt="Venetian Blinds" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-b from-[#09321C]/60 to-[#09321C]/30"></div>
+    </div>
+    <div class="absolute inset-0 flex flex-col justify-center px-8 text-white text-left">
+        <p class="w-full max-w-xl mx-auto md:ml-5">
+            Ellista International Venetian Blinds are designed for flexibility, offering excellent control over light and privacy.
+        </p>
+        <h2 class="text-3xl font-bold mt-6 md:ml-5 text-[#F6D24C]">Venetian Blinds</h2>
+        <button class="md:ml-5 mt-6 bg-[#09321C] w-40 h-12 text-white rounded-md">READ MORE</button>
+    </div>
+</div>
+
+<!-- Slide 9 -->
+<div class="w-full flex-shrink-0 relative">
+    <div class="relative w-full h-[550px]">
+        <img src="{% static 'images/Euro Systems® Panel Blinds-19.jpg' %}" alt="Panel Blinds" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-b from-[#09321C]/60 to-[#09321C]/30"></div>
+    </div>
+    <div class="absolute inset-0 flex flex-col justify-center px-8 text-white text-left">
+        <p class="w-full max-w-xl mx-auto md:ml-5">
+            Panel Blinds are a modern solution for large windows and sliding doors, offering smooth operation and stylish appearance.
+        </p>
+        <h2 class="text-3xl font-bold mt-6 md:ml-5 text-[#F6D24C]">Panel Blinds</h2>
+        <button class="md:ml-5 mt-6 bg-[#09321C] w-40 h-12 text-white rounded-md">READ MORE</button>
+    </div>
+</div>
+
+<!-- Slide 10 -->
+<div class="w-full flex-shrink-0 relative">
+    <div class="relative w-full h-[550px]">
+        <img src="{% static 'images/Euro-Systems® Private Villa, Gracili Minimal Systems®, Solange® Specialty Shades, Palm Jumeirah, Dubai, Abu Dhabi, Sharjah, Ajman, UAE, Doha ,Qatar, Saudi Arabia 6.jpg' %}" alt="Skylight Shading System" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-b from-[#09321C]/60 to-[#09321C]/30"></div>
+    </div>
+    <div class="absolute inset-0 flex flex-col justify-center px-8 text-white text-left">
+        <p class="w-full max-w-xl mx-auto md:ml-5">
+            Our Skylight Shading System is designed to provide effective light control while enhancing energy efficiency.
+        </p>
+        <h2 class="text-3xl font-bold mt-6 md:ml-5 text-[#F6D24C]">Skylight Shading System</h2>
+        <button class="md:ml-5 mt-6 bg-[#09321C] w-40 h-12 text-white rounded-md">READ MORE</button>
+    </div>
+</div>
+
+<!-- Slide 11 -->
+<div class="w-full flex-shrink-0 relative">
+    <div class="relative w-full h-[550px]">
+        <img src="{% static 'images/Healthcare product.jpg' %}" alt="Healthcare Cubicle Curtains" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-b from-[#09321C]/60 to-[#09321C]/30"></div>
+    </div>
+    <div class="absolute inset-0 flex flex-col justify-center px-8 text-white text-left">
+        <p class="w-full max-w-xl mx-auto md:ml-5">
+            Our Healthcare Cubicle Curtains offer privacy solutions for medical facilities while maintaining hygiene standards.
+        </p>
+        <h2 class="text-3xl font-bold mt-6 md:ml-5 text-[#F6D24C]">Healthcare Cubicle Curtains</h2>
+        <button class="md:ml-5 mt-6 bg-[#09321C] w-40 h-12 text-white rounded-md">READ MORE</button>
+    </div>
+</div>
+
+
+    </div>
+
+    <div class="absolute bottom-0 right-0 flex overflow-x-auto whitespace-nowrap bg-[#FFF7EA] w-full md:w-[65%] border-t-[1px] border-gray-300">
+        <button onclick="moveToSlide(0, 'carousel_3')" class="px-5 py-8 bg-[#FFF7EA] flex-shrink-0 border-r-[0.5px] border-gray-200">Solange® Specialty Shades</button>
+        <button onclick="moveToSlide(1, 'carousel_3')" class="px-5 py-8 bg-[#FFF7EA] flex-shrink-0 border-r-[0.5px] border-gray-200">Roller Blinds</button>
+        <button onclick="moveToSlide(2, 'carousel_3')" class="px-5 py-8 bg-[#FFF7EA] flex-shrink-0 border-r-[0.5px] border-gray-200">Curtains and Draperies</button>
+        <button onclick="moveToSlide(3, 'carousel_3')" class="px-5 py-8 bg-[#FFF7EA] flex-shrink-0 border-r-[0.5px] border-gray-200">Roman Blinds</button>
+        <button onclick="moveToSlide(4, 'carousel_3')" class="px-5 py-8 bg-[#FFF7EA] flex-shrink-0 border-r-[0.5px] border-gray-200">Vertical Blinds</button>
+        <button onclick="moveToSlide(5, 'carousel_3')" class="px-5 py-8 bg-[#FFF7EA] flex-shrink-0 border-r-[0.5px] border-gray-200">Vision Blinds</button>
+        <button onclick="moveToSlide(6, 'carousel_3')" class="px-5 py-8 bg-[#FFF7EA] flex-shrink-0 border-r-[0.5px] border-gray-200">Wooden Blinds</button>
+        <button onclick="moveToSlide(7, 'carousel_3')" class="px-5 py-8 bg-[#FFF7EA] flex-shrink-0 border-r-[0.5px] border-gray-200">Venetian Blinds</button>
+        <button onclick="moveToSlide(8, 'carousel_3')" class="px-5 py-8 bg-[#FFF7EA] flex-shrink-0 border-r-[0.5px] border-gray-200">Panel Blinds</button>
+        <button onclick="moveToSlide(9, 'carousel_3')" class="px-5 py-8 bg-[#FFF7EA] flex-shrink-0 border-r-[0.5px] border-gray-200">Skylight Shading System</button>
+        <button onclick="moveToSlide(10, 'carousel_3')" class="px-5 py-8 bg-[#FFF7EA] flex-shrink-0 border-r-[0.5px] border-gray-200">Healthcare Cubicle Curtains</button>
+    </div>
+</div>
+
+
+<section id="Outdoor-Shading" class="flex flex-col md:flex-row items-center justify-center md:space-x-6 mt-12 px-4 relative">
+
+    <div class="relative flex items-center justify-center">
+        <span class="absolute text-[80px] sm:text-[100px] md:text-[140px] text-[#F6D24C] font-bold -top-5 md:-top-10 left-1/2 transform -translate-x-1/3 -translate-y-10 opacity-15"
+            >
+            04
+        </span>
+        <img src="{% static 'images/outdoor-shade.png' %}" alt="Doors and Windows"
+            class="w-28 h-auto -translate-y-10 md:-translate-y-1">
+    </div>
+    <h2 class="text-xl md:text-2xl font-bold text-[#09321C] text-left">
+        Outdoor Shading
+    </h2>
+</section>
+
+<div class="relative w-full h-[550px] overflow-hidden mt-10 mb-20">
+    <div id="carousel_4" class="flex transition-transform duration-500 ease-in-out w-full">
+        <!-- Slide 1 -->
+        <div class="w-full flex-shrink-0 relative">
+            <div class="relative w-full h-[550px]">
+                <img src="{% static 'images/pargola banner Product.jpg' %}" alt="Pergolas" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#09321C]/60 to-[#09321C]/30"></div>
+            </div>
+            <div class="absolute inset-0 flex flex-col justify-center px-8 text-white text-left">
+                <p class="w-full max-w-xl mx-auto md:ml-5">
+                    Ellista International provides premium pergola solutions, combining elegance and functionality. Our customizable designs offer durable shading for residential and commercial spaces.
+                </p>
+                <h2 class="text-3xl font-bold mt-6 md:ml-5 text-[#F6D24C]">Pergolas</h2>
+                <button class="md:ml-5 mt-6 bg-[#09321C] w-40 h-12 text-white rounded-md">READ MORE</button>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="w-full flex-shrink-0 relative">
+            <div class="relative w-full h-[550px]">
+                <img src="{% static 'images/Awnigs products.jpg' %}" alt="Awnings" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#09321C]/60 to-[#09321C]/30"></div>
+            </div>
+            <div class="absolute inset-0 flex flex-col justify-center px-8 text-white text-left">
+                <p class="w-full max-w-xl mx-auto md:ml-5">
+                    Our high-quality awnings offer stylish and practical shading solutions, enhancing outdoor comfort with motorized and retractable options.
+                </p>
+                <h2 class="text-3xl font-bold mt-6 md:ml-5 text-[#F6D24C]">Awnings</h2>
+                <button class="md:ml-5 mt-6 bg-[#09321C] w-40 h-12 text-white rounded-md">READ MORE</button>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="w-full flex-shrink-0 relative">
+            <div class="relative w-full h-[550px]">
+                <img src="{% static 'images/Canopies Product.jpg' %}" alt="Canopies" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#09321C]/60 to-[#09321C]/30"></div>
+            </div>
+            <div class="absolute inset-0 flex flex-col justify-center px-8 text-white text-left">
+                <p class="w-full max-w-xl mx-auto md:ml-5">
+                    Ellista International’s canopies provide durable weather protection and stylish shade, ideal for commercial and residential applications.
+                </p>
+                <h2 class="text-3xl font-bold mt-6 md:ml-5 text-[#F6D24C]">Canopies</h2>
+                <button class="md:ml-5 mt-6 bg-[#09321C] w-40 h-12 text-white rounded-md">READ MORE</button>
+            </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="w-full flex-shrink-0 relative">
+            <div class="relative w-full h-[550px]">
+                <img src="{% static 'images/Sail Shades.jpg' %}" alt="Sail Shades" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#09321C]/60 to-[#09321C]/30"></div>
+            </div>
+            <div class="absolute inset-0 flex flex-col justify-center px-8 text-white text-left">
+                <p class="w-full max-w-xl mx-auto md:ml-5">
+                    Our sail shades are modern and versatile, offering high UV protection with a sleek design, perfect for outdoor spaces.
+                </p>
+                <h2 class="text-3xl font-bold mt-6 md:ml-5 text-[#F6D24C]">Sail Shades</h2>
+                <button class="md:ml-5 mt-6 bg-[#09321C] w-40 h-12 text-white rounded-md">READ MORE</button>
+            </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="w-full flex-shrink-0 relative">
+            <div class="relative w-full h-[550px]">
+                <img src="{% static 'images/Euro-Systems-Sail-Shades.jpg' %}" alt="Sun Sail" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#09321C]/60 to-[#09321C]/30"></div>
+            </div>
+            <div class="absolute inset-0 flex flex-col justify-center px-8 text-white text-left">
+                <p class="w-full max-w-xl mx-auto md:ml-5">
+                    Ellista International’s Sun Sail systems provide stylish and durable shading, ideal for patios, gardens, and commercial outdoor spaces.
+                </p>
+                <h2 class="text-3xl font-bold mt-6 md:ml-5 text-[#F6D24C]">Sun Sail</h2>
+                <button class="md:ml-5 mt-6 bg-[#09321C] w-40 h-12 text-white rounded-md">READ MORE</button>
+            </div>
+        </div>
+
+        <!-- Slide 6 -->
+        <div class="w-full flex-shrink-0 relative">
+            <div class="relative w-full h-[550px]">
+                <img src="{% static 'images/Roller Shutter.jpg' %}" alt="Roller Shutters" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#09321C]/60 to-[#09321C]/30"></div>
+            </div>
+            <div class="absolute inset-0 flex flex-col justify-center px-8 text-white text-left">
+                <p class="w-full max-w-xl mx-auto md:ml-5">
+                    Our roller shutters enhance security and energy efficiency while providing effective shading for both residential and commercial properties.
+                </p>
+                <h2 class="text-3xl font-bold mt-6 md:ml-5 text-[#F6D24C]">Roller Shutters</h2>
+                <button class="md:ml-5 mt-6 bg-[#09321C] w-40 h-12 text-white rounded-md">READ MORE</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="absolute bottom-0 right-0 flex overflow-x-auto whitespace-nowrap bg-[#FFF7EA] w-full md:w-[65%] border-t-[1px] border-gray-300">
+        <button onclick="moveToSlide(0, 'carousel_4')" class="px-5 py-8 bg-[#FFF7EA] flex-shrink-0 border-r-[0.5px] border-gray-200">Pergolas</button>
+        <button onclick="moveToSlide(1, 'carousel_4')" class="px-5 py-8 bg-[#FFF7EA] flex-shrink-0 border-r-[0.5px] border-gray-200">Awnings</button>
+        <button onclick="moveToSlide(2, 'carousel_4')" class="px-5 py-8 bg-[#FFF7EA] flex-shrink-0 border-r-[0.5px] border-gray-200">Canopies</button>
+        <button onclick="moveToSlide(3, 'carousel_4')" class="px-5 py-8 bg-[#FFF7EA] flex-shrink-0 border-r-[0.5px] border-gray-200">Sail Shades</button>
+        <button onclick="moveToSlide(4, 'carousel_4')" class="px-5 py-8 bg-[#FFF7EA] flex-shrink-0 border-r-[0.5px] border-gray-200">Sun Sail</button>
+        <button onclick="moveToSlide(5, 'carousel_4')" class="px-5 py-8 bg-[#FFF7EA] flex-shrink-0 border-r-[0.5px] border-gray-200">Roller Shutters</button>
+    </div>
+</div>
+
+
+
+<section id="Acoustic-Solutions" class="flex flex-col md:flex-row items-center justify-center md:space-x-6 mt-12 px-4 relative">
+
+    <div class="relative flex items-center justify-center">
+        <span class="absolute text-[80px] sm:text-[100px] md:text-[140px] text-[#F6D24C] font-bold -top-5 md:-top-10 left-1/2 transform -translate-x-1/3 -translate-y-10 opacity-15"
+            >
+            05
+        </span>
+        <img src="{% static 'images/acoustic-panel.png' %}" alt="Acoustic Solutions"
+            class="w-28 h-auto -translate-y-10 md:-translate-y-1">
+    </div>
+    <h2 class="text-xl md:text-2xl font-bold text-[#09321C] text-left">
+        Acoustic Solutions
+    </h2>
+</section>
+
+<div class="relative w-full h-[550px] overflow-hidden mt-10 mb-20">
+    <div id="carousel_5" class="flex transition-transform duration-500 ease-in-out w-full">
+        <!-- Slide 1 -->
+        <div class="w-full flex-shrink-0 relative">
+            <div class="relative w-full h-[550px]">
+                <img src="{% static 'images/12_zha_beeahhq_sharjah_uae_hufton-crowAAA.jpg' %}" alt="Baswa Acoustic Ceiling" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#09321C]/60 to-[#09321C]/30"></div>
+            </div>
+            <div class="absolute inset-0 flex flex-col justify-center px-8 text-white text-left">
+                <p class="w-full max-w-xl mx-auto md:ml-5">
+                    Ellista International offers Baswa Acoustic Ceiling solutions, providing seamless noise reduction with a modern aesthetic, ideal for commercial and residential spaces.
+                </p>
+                <h2 class="text-3xl font-bold mt-6 md:ml-5 text-[#F6D24C]">Baswa Acoustic Ceiling</h2>
+                <button class="md:ml-5 mt-6 bg-[#09321C] w-40 h-12 text-white rounded-md">READ MORE</button>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="w-full flex-shrink-0 relative">
+            <div class="relative w-full h-[550px]">
+                <img src="{% static 'images/Wall Panel Product.jpg' %}" alt="Movable Partitions" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#09321C]/60 to-[#09321C]/30"></div>
+            </div>
+            <div class="absolute inset-0 flex flex-col justify-center px-8 text-white text-left">
+                <p class="w-full max-w-xl mx-auto md:ml-5">
+                    Ellista International provides high-quality movable partitions, offering flexible space management solutions with excellent sound insulation and sleek design.
+                </p>
+                <h2 class="text-3xl font-bold mt-6 md:ml-5 text-[#F6D24C]">Movable Partitions</h2>
+                <button class="md:ml-5 mt-6 bg-[#09321C] w-40 h-12 text-white rounded-md">READ MORE</button>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="w-full flex-shrink-0 relative">
+            <div class="relative w-full h-[550px]">
+                <img src="{% static 'images/Wall Panel .jpg' %}" alt="Acoustic Wall Panels" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#09321C]/60 to-[#09321C]/30"></div>
+            </div>
+            <div class="absolute inset-0 flex flex-col justify-center px-8 text-white text-left">
+                <p class="w-full max-w-xl mx-auto md:ml-5">
+                    Ellista International's Acoustic Wall Panels enhance sound absorption, reduce echo, and provide stylish design options for improved acoustics in any space.
+                </p>
+                <h2 class="text-3xl font-bold mt-6 md:ml-5 text-[#F6D24C]">Acoustic Wall Panels</h2>
+                <button class="md:ml-5 mt-6 bg-[#09321C] w-40 h-12 text-white rounded-md">READ MORE</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="absolute bottom-0 right-0 flex overflow-x-auto whitespace-nowrap bg-[#FFF7EA] w-full md:w-[65%] border-t-[1px] border-gray-300">
+        <button onclick="moveToSlide(0, 'carousel_5')" class="px-5 py-8 bg-[#FFF7EA] flex-shrink-0 border-r-[0.5px] border-gray-200">Baswa Acoustic Ceiling</button>
+        <button onclick="moveToSlide(1, 'carousel_5')" class="px-5 py-8 bg-[#FFF7EA] flex-shrink-0 border-r-[0.5px] border-gray-200">Movable Partitions</button>
+        <button onclick="moveToSlide(2, 'carousel_5')" class="px-5 py-8 bg-[#FFF7EA] flex-shrink-0 border-r-[0.5px] border-gray-200">Acoustic Wall Panels</button>
+    </div>
+</div>
+
+
+
+
+
+<section id="Smart-Automation-Solutions" class="flex flex-col md:flex-row items-center justify-center md:space-x-6 mt-12 px-4 relative">
+
+    <div class="relative flex items-center justify-center">
+        <span class="absolute text-[80px] sm:text-[100px] md:text-[140px] text-[#F6D24C] font-bold -top-5 md:-top-10 left-1/2 transform -translate-x-1/3 -translate-y-10 opacity-15"
+            >
+            06
+        </span>
+        <img src="{% static 'images/control.png' %}" alt="Smart Automation Solutions"
+            class="w-28 h-auto -translate-y-10 md:-translate-y-1">
+    </div>
+    <h2 class="text-xl md:text-2xl font-bold text-[#09321C] text-left">
+        Smart Automation Solutions
+    </h2>
+</section>
+
+<div class="relative w-full h-[550px] overflow-hidden mt-10">
+    <div id="carousel_6" class="flex transition-transform duration-500 ease-in-out w-full">
+        <!-- Slide 1 -->
+        <div class="w-full flex-shrink-0 relative">
+            <div class="relative w-full h-[550px]">
+                <img src="{% static 'images/01 Home automation.jpg' %}" alt="Home Automation" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#09321C]/60 to-[#09321C]/30"></div>
+            </div>
+            <div class="absolute inset-0 flex flex-col justify-center px-8 text-white text-left">
+                <p class="w-full max-w-xl mx-auto md:ml-5">
+                    Ellista International provides cutting-edge Home Automation solutions, offering smart lighting, climate control, and security integrations for modern living.
+                </p>
+                <h2 class="text-3xl font-bold mt-6 md:ml-5 text-[#F6D24C]">Home Automation</h2>
+                <button class="md:ml-5 mt-6 bg-[#09321C] w-40 h-12 text-white rounded-md">READ MORE</button>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="w-full flex-shrink-0 relative">
+            <div class="relative w-full h-[550px]">
+                <img src="{% static 'images/02 ELV.jpg' %}" alt="ELV Solutions" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#09321C]/60 to-[#09321C]/30"></div>
+            </div>
+            <div class="absolute inset-0 flex flex-col justify-center px-8 text-white text-left">
+                <p class="w-full max-w-xl mx-auto md:ml-5">
+                    Ellista International delivers advanced ELV (Extra Low Voltage) Solutions, ensuring efficient and secure communication, networking, and surveillance systems.
+                </p>
+                <h2 class="text-3xl font-bold mt-6 md:ml-5 text-[#F6D24C]">ELV Solutions</h2>
+                <button class="md:ml-5 mt-6 bg-[#09321C] w-40 h-12 text-white rounded-md">READ MORE</button>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="w-full flex-shrink-0 relative">
+            <div class="relative w-full h-[550px]">
+                <img src="{% static 'images/03 home cinema.jpg' %}" alt="Home Cinema" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#09321C]/60 to-[#09321C]/30"></div>
+            </div>
+            <div class="absolute inset-0 flex flex-col justify-center px-8 text-white text-left">
+                <p class="w-full max-w-xl mx-auto md:ml-5">
+                    Experience luxury entertainment with Ellista International’s Home Cinema solutions, featuring high-quality audio-visual systems and immersive surround sound setups.
+                </p>
+                <h2 class="text-3xl font-bold mt-6 md:ml-5 text-[#F6D24C]">Home Cinema</h2>
+                <button class="md:ml-5 mt-6 bg-[#09321C] w-40 h-12 text-white rounded-md">READ MORE</button>
+            </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="w-full flex-shrink-0 relative">
+            <div class="relative w-full h-[550px]">
+                <img src="{% static 'images/04 commercial.jpg' %}" alt="Custom Automation Solutions" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#09321C]/60 to-[#09321C]/30"></div>
+            </div>
+            <div class="absolute inset-0 flex flex-col justify-center px-8 text-white text-left">
+                <p class="w-full max-w-xl mx-auto md:ml-5">
+                    Ellista International specializes in Custom Automation Solutions, integrating smart technologies for seamless control of residential and commercial environments.
+                </p>
+                <h2 class="text-3xl font-bold mt-6 md:ml-5 text-[#F6D24C]">Custom Automation Solutions</h2>
+                <button class="md:ml-5 mt-6 bg-[#09321C] w-40 h-12 text-white rounded-md">READ MORE</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="absolute bottom-0 right-0 flex overflow-x-auto whitespace-nowrap bg-[#FFF7EA] w-full md:w-[65%] border-t-[1px] border-gray-300">
+        <button onclick="moveToSlide(0, 'carousel_6')" class="px-5 py-8 bg-[#FFF7EA] flex-shrink-0 border-r-[0.5px] border-gray-200">Home Automation</button>
+        <button onclick="moveToSlide(1, 'carousel_6')" class="px-5 py-8 bg-[#FFF7EA] flex-shrink-0 border-r-[0.5px] border-gray-200">ELV Solutions</button>
+        <button onclick="moveToSlide(2, 'carousel_6')" class="px-5 py-8 bg-[#FFF7EA] flex-shrink-0 border-r-[0.5px] border-gray-200">Home Cinema</button>
+        <button onclick="moveToSlide(3, 'carousel_6')" class="px-5 py-8 bg-[#FFF7EA] flex-shrink-0 border-r-[0.5px] border-gray-200">Custom Automation Solutions</button>
+    </div>
+</div>
+
+
+
+{% include 'home/contact.html' %}
+
+<script>
+    let carouselIndices = {};
+
+    function moveToSlide(index, id) {
+        const carousel = document.getElementById(id);
+        if (!carousel) {
+            console.error(`Carousel with ID '${id}' not found.`);
+            return;
+        }
+        carouselIndices[id] = index;
+    
+        carousel.style.transition = "transform 0.5s ease-in-out";
+        carousel.style.transform = `translateX(-${index * 100}%)`;
+    }
+    
+</script>
+
+
+
+
+
+{% endblock %}
